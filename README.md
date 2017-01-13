@@ -1,4 +1,4 @@
-# 📡 Indix Radar
+# 📡 Indix Technology Radar
 
 The Indix technology radar is used to assess emerging technologies in the market and their adoption strategy. This is heavily inspired by the [ThoughWorks® Radar](https://github.com/thoughtworks/build-your-own-radar).
 
@@ -17,7 +17,7 @@ Now, each time you make a change, run Hexo's generator by using the command -
 hexo clean && hexo generate && webpack
 ```
 
-To run the development server, use the command - 
+To run the development server on port `6040`, use the command - 
 
 ```
 hexo server -p 6040
