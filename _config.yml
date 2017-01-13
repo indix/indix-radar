@@ -4,8 +4,7 @@
 
 # Site
 title: Indix Tech-Radar
-subtitle: What we use @ Indix
-description:
+description: Technolofy Radar @ Indix
 author: Indix
 language:
 timezone:
@@ -71,3 +70,4 @@ deploy:
   type: git
   repo: git@github.com:paambaati/indix-radar.git
   branch: master
+  #message: And at {{ now('YYYY-MM-DD HH:mm:ss') }}, the code finished the work that he had done, and he rested.
