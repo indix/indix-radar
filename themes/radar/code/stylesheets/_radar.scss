@@ -1,0 +1,27 @@
+.blip-container {
+  position: absolute;
+  left: 50.7%;
+  top: 50px;
+}
+
+.blip {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  float: left;
+  background: $red;
+  transition: all 0.2s;
+  animation: r5 1s 0s ease-out infinite;
+}
+
+@keyframes r5 {
+  0% {
+    box-shadow: 0 0 8px 6px $red, 0 0 0px 0px transparent, 0 0 0px 0px $red;
+  }
+  10% {
+    box-shadow: 0 0 8px 6px $red, 0 0 12px 10px transparent, 0 0 12px 14px $red;
+  }
+  100% {
+    box-shadow: 0 0 8px 6px rgba(26, 140, 255, 0), 0 0 0px 40px transparent, 0 0 0px 40px rgba(26, 140, 255, 0);
+  }
+}
