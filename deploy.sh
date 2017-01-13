@@ -14,3 +14,6 @@ webpack
 
 # BAM! Deploy.
 hexo deploy
+
+# Run the server!
+hexo server -s
