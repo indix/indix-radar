@@ -18,6 +18,12 @@ pre {
   display: none !important;
 }
 
+.logo img {
+  height: 32px;
+  width: auto;
+  margin: 20px;
+}
+
 @media print {
 
   body, article {
