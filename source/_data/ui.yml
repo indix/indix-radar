@@ -1,0 +1,20 @@
+- name: React.js
+  quadrant: Framework
+  ring: Hold
+  isNew: true
+  description: REACT DESCRIPTION
+- name: AngularJS
+  quadrant: Library
+  ring: Assess
+  isNew: true
+  description: ANGULAR DESCRIPTION
+- name: ECMA6/ES2015
+  quadrant: Language
+  ring: Adopt
+  isNew: false
+  description: ECMA6 DESCRIPTION
+- name: ES7
+  quadrant: Language Spec
+  ring: Hold
+  isNew: false
+  description: ES7 DESCRIPTION

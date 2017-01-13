@@ -1,0 +1,20 @@
+- name: pm2
+  quadrant: Software
+  ring: Hold
+  isNew: true
+  description: PM2 description
+- name: ansible
+  quadrant: Utility
+  ring: Assess
+  isNew: true
+  description: ANSINDLE DESC
+- name: chef
+  quadrant: X
+  ring: Adopt
+  isNew: false
+  description: CHEF DESC
+- name: PuPpEt
+  quadrant: Z
+  ring: Hold
+  isNew: false
+  description: puppet desc
