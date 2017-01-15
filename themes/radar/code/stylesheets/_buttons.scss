@@ -1,0 +1,479 @@
+// colors
+$color-one: #2c3e50;
+$btn-colors: (
+	"green": "#2ecc71",
+	"blue": "#3498db",
+	"purple": "#9b59b6",
+	"navy": "#34495e",
+	"orange": "#e67e22",
+	"red": "#ef3829"
+);
+
+// extenders
+.animate {
+	transition: all 0.3s;
+}
+
+/* Main Styles */
+
+.btn {
+	display: inline-block;
+	line-height: 35px;
+	margin: 8px;
+	padding: 0 15px;
+	font-size: 15px;
+	position: relative;
+	opacity: .999;
+	border-radius: 3px;
+	@extend .animate;
+}
+
+.btn-border-o {
+	background-color: transparent;
+	//border: 1px solid #d0d0d0;
+	color: #B8B8B8;
+	
+	&:before,
+	&:after {
+		content: '';
+		border-style: solid;
+		position: absolute;
+		z-index: 5;
+		border-radius: 3px;
+		box-sizing: content-box;
+		@extend .animate;
+	}
+	
+	&:before {
+		width: 0;
+		height: 100%;
+		border-width: 1px 0 1px 0;
+		top: -1px;
+		left: 0;
+		transition-delay: 0.05s;
+	}
+	
+	&:after {
+		width: 100%;
+		height: 0;
+		border-width: 0 1px 0 1px;
+		top: 0;
+		left: -1px;
+	}
+	
+	&:hover {
+		
+		&:before {
+			width: 100%;
+		}
+		
+		&:after {
+			height: 100%;
+		}
+	}
+	
+	@each $name,$hex in $btn-colors {
+		
+		&.btn-#{$name} {
+			
+			&:before,
+			&:after {
+				border-color: #{$hex};
+			}
+			
+			&:hover {
+				color: #{$hex};
+			}
+		}
+	}
+}
+
+.btn-border {
+	background-color: #e5e5e5;
+	//border: 1px solid #e5e5e5;
+	color: #a6a6a6;
+	
+	&:before,
+	&:after {
+		content: '';
+		border-style: solid;
+		position: absolute;
+		z-index: 5;
+		border-radius: 3px;
+		box-sizing: content-box;
+		@extend .animate;
+	}
+	
+	&:before {
+		width: 0;
+		height: 100%;
+		border-width: 1px 0 1px 0;
+		top: -1px;
+		left: 0;
+		transition-delay: 0.05s;
+	}
+	
+	&:after {
+		width: 100%;
+		height: 0;
+		border-width: 0 1px 0 1px;
+		top: 0;
+		left: -1px;
+	}
+	
+	&:hover {
+		background-color: transparent;
+		
+		&:before {
+			width: 100%;
+		}
+		
+		&:after {
+			height: 100%;
+		}
+	}
+	
+	@each $name,$hex in $btn-colors {
+		
+		&.btn-#{$name} {
+			
+			&:before,
+			&:after {
+				border-color: #{$hex};
+			}
+			
+			&:hover {
+				color: #{$hex};
+			}
+		}
+	}
+}
+
+.btn-border-rev-o {
+	background-color: transparent;
+	border: 1px solid #d0d0d0;
+	color: #B8B8B8;
+	
+	&:before,
+	&:after {
+		content: '';
+		border-style: solid;
+		position: absolute;
+		z-index: 5;
+		border-radius: 3px;
+		box-sizing: content-box;
+		@extend .animate;
+	}
+	
+	&:before {
+		width: 0;
+		height: 100%;
+		border-width: 1px 0 1px 0;
+		top: -1px;
+		right: 0;
+		transition-delay: 0.05s;
+	}
+	
+	&:after {
+		width: 100%;
+		height: 0;
+		border-width: 0 1px 0 1px;
+		bottom: 0;
+		left: -1px;
+	}
+	
+	&:hover {
+		
+		&:before {
+			width: 100%;
+		}
+		
+		&:after {
+			height: 100%;
+		}
+	}
+	
+	@each $name,$hex in $btn-colors {
+		
+		&.btn-#{$name} {
+			
+			&:before,
+			&:after {
+				border-color: #{$hex};
+			}
+			
+			&:hover {
+				color: #{$hex};
+			}
+		}
+	}
+}
+
+.btn-border-rev {
+	background-color: #e5e5e5;
+	border: 1px solid #e5e5e5;
+	color: #a6a6a6;
+	
+	&:before,
+	&:after {
+		content: '';
+		border-style: solid;
+		position: absolute;
+		z-index: 5;
+		border-radius: 3px;
+		box-sizing: content-box;
+		@extend .animate;
+	}
+	
+	&:before {
+		width: 0;
+		height: 100%;
+		border-width: 1px 0 1px 0;
+		top: -1px;
+		right: 0;
+	}
+	
+	&:after {
+		width: 100%;
+		height: 0;
+		border-width: 0 1px 0 1px;
+		bottom: 0;
+		left: -1px;
+		transition-delay: 0.05s;
+	}
+	
+	&:hover {
+		background-color: transparent;
+		
+		&:before {
+			width: 100%;
+		}
+		
+		&:after {
+			height: 100%;
+		}
+	}
+	
+	@each $name,$hex in $btn-colors {
+		
+		&.btn-#{$name} {
+			
+			&:before,
+			&:after {
+				border-color: #{$hex};
+			}
+			
+			&:hover {
+				color: #{$hex};
+			}
+		}
+	}
+}
+
+.btn-fill-vert-o {
+	background-color: transparent;
+	border: 1px solid #d0d0d0;
+	color: #B8B8B8;
+	overflow: hidden;
+	
+	&:before,
+	&:after {
+		content: '';
+		width: 100%;
+		height: 0;
+		opacity: 0;
+		position: absolute;
+		left: 0;
+		z-index: -1;
+		@extend .animate;
+	}
+	
+	&:before {
+		top: 50%;
+	}
+	
+	&:after {
+		bottom: 50%;
+	}
+	
+	&:hover {
+		color: #fff;
+		
+		&:before,
+		&:after {
+			height: 50%;
+			opacity: 1;
+		}
+	}
+	
+	@each $name,$hex in $btn-colors {
+		
+		&.btn-#{$name} {
+			
+			&:before,
+			&:after {
+				background-color: #{$hex};
+			}
+			
+			&:hover {
+				border-color: #{$hex};
+			}
+		}
+	}
+}
+
+.btn-fill-vert {
+	background-color: #e5e5e5;
+	border: 1px solid #e5e5e5;
+	color: #a6a6a6;
+	overflow: hidden;
+	
+	&:before,
+	&:after {
+		content: '';
+		width: 100%;
+		height: 0;
+		opacity: 0;
+		position: absolute;
+		left: 0;
+		z-index: -1;
+		@extend .animate;
+	}
+	
+	&:before {
+		top: 50%;
+	}
+	
+	&:after {
+		bottom: 50%;
+	}
+	
+	&:hover {
+		color: #fff;
+		
+		&:before,
+		&:after {
+			height: 50%;
+			opacity: 1;
+		}
+	}
+	
+	@each $name,$hex in $btn-colors {
+		
+		&.btn-#{$name} {
+			
+			&:before,
+			&:after {
+				background-color: #{$hex};
+			}
+			
+			&:hover {
+				border-color: #{$hex};
+			}
+		}
+	}
+}
+
+.btn-fill-horz-o {
+	background-color: transparent;
+	border: 1px solid #d0d0d0;
+	color: #B8B8B8;
+	overflow: hidden;
+	
+	&:before,
+	&:after {
+		content: '';
+		width: 0;
+		height: 100%;
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		z-index: -1;
+		@extend .animate;
+	}
+	
+	&:before {
+		left: 50%;
+	}
+	
+	&:after {
+		right: 50%;
+	}
+	
+	&:hover {
+		color: #fff;
+		
+		&:before,
+		&:after {
+			width: 50%;
+			opacity: 1;
+		}
+	}
+	
+	@each $name,$hex in $btn-colors {
+		
+		&.btn-#{$name} {
+			
+			&:before,
+			&:after {
+				background-color: #{$hex};
+			}
+			
+			&:hover {
+				border-color: #{$hex};
+			}
+		}
+	}
+}
+
+.btn-fill-horz {
+	background-color: #e5e5e5;
+	border: 1px solid #e5e5e5;
+	color: #a6a6a6;
+	overflow: hidden;
+	
+	&:before,
+	&:after {
+		content: '';
+		width: 0;
+		height: 100%;
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		z-index: -1;
+		@extend .animate;
+	}
+	
+	&:before {
+		left: 50%;
+	}
+	
+	&:after {
+		right: 50%;
+	}
+	
+	&:hover {
+		color: #fff;
+		
+		&:before,
+		&:after {
+			width: 50%;
+			opacity: 1;
+		}
+	}
+	
+	@each $name,$hex in $btn-colors {
+		
+		&.btn-#{$name} {
+			
+			&:before,
+			&:after {
+				background-color: #{$hex};
+			}
+			
+			&:hover {
+				border-color: #{$hex};
+			}
+		}
+	}
+}
