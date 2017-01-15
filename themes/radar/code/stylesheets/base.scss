@@ -1,6 +1,7 @@
 @import 'colors';
 @import 'fonts';
 @import 'tip';
+@import 'buttons';
 @import 'form';
 @import 'error';
 @import 'header';
@@ -17,6 +18,10 @@ body {
 
 pre {
   display: none !important;
+}
+
+h2 {
+  margin: 0 auto;
 }
 
 @media screen {

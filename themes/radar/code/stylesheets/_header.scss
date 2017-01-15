@@ -4,6 +4,10 @@ header {
   text-align: center;
   margin-bottom: 15px;
 
+  a.btn {
+    text-decoration: none;
+  }
+
   .logo {
     position: relative;
     width: 300px;
@@ -18,7 +22,7 @@ header {
 
   .radar-title {
     background-color: $grey-light;
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 30px;
     display: table;
     margin: auto;
