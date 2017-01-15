@@ -1,7 +1,7 @@
 .blip-container {
   position: absolute;
-  left: 50.7%;
-  top: 50px;
+  right: 94px;
+  top: 17px;
 }
 
 .blip {
@@ -12,6 +12,13 @@
   background: $red;
   transition: all 0.2s;
   animation: r5 1s 0s ease-out infinite;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @keyframes r5 {
