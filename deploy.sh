@@ -4,8 +4,9 @@
 set -e
 
 # Install deps.
+curl -o- -L https://yarnpkg.com/install.sh | bash
 npm install hexo-cli@1.0.2 webpack@1.14.0 --global
-npm install
+yarn install
 
 # Generate Hexo static site.
 hexo clean
