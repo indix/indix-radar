@@ -7,6 +7,7 @@ const _ = {
     each: require('lodash/each')
 };
 
+const InputSanitizer = require('./inputSanitizer');
 const Radar = require('../models/radar');
 const Quadrant = require('../models/quadrant');
 const Ring = require('../models/ring');
@@ -53,6 +54,7 @@ const RadarBuilder = function (data) {
             var existingRadar = d3.select('#radar');
             if (existingRadar.empty()) {
                 d3.selectAll('.loading').remove();
+                blips = _.map(blips, new InputSanitizer().sanitize);
                 var rings = _.map(_.uniqBy(blips, 'ring'), 'ring');
                 var ringMap = {};
                 var maxRings = 4;

@@ -58,6 +58,13 @@ YAML data should be of the form -
   isNew: false
   description: Insert description here
 ```
+### Formatting Options
+
+The topic data can contain valid HTML markup! Allowed tags are -
+
+```
+'b', 'i', 'em', 'strong', 'a', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'li', 'ul', 'br', 'p', 'u'
+```
 
 #### Heads up!
 🔔  Data YAML filename should be a lowercase version of the topic markdown filename.
