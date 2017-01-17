@@ -49,34 +49,38 @@ const RadarBuilder = function (data) {
 
         // Build radar data.
         function createRadar(blips) {
-            d3.selectAll('.loading').remove();
-            var rings = _.map(_.uniqBy(blips, 'ring'), 'ring');
-            var ringMap = {};
-            var maxRings = 4;
+            // See if we already have a radar.
+            var existingRadar = d3.select('#radar');
+            if (existingRadar.empty()) {
+                d3.selectAll('.loading').remove();
+                var rings = _.map(_.uniqBy(blips, 'ring'), 'ring');
+                var ringMap = {};
+                var maxRings = 4;
 
-            _.each(rings, function (ringName, i) {
-                if (i === maxRings) {
-                    throw new MalformedDataError(ExceptionMessages.TOO_MANY_RINGS);
-                }
-                ringMap[ringName] = new Ring(ringName, i);
-            });
+                _.each(rings, function (ringName, i) {
+                    if (i === maxRings) {
+                        throw new MalformedDataError(ExceptionMessages.TOO_MANY_RINGS);
+                    }
+                    ringMap[ringName] = new Ring(ringName, i);
+                });
 
-            var quadrants = {};
-            _.each(blips, function (blip) {
-                if (!quadrants[blip.quadrant]) {
-                    quadrants[blip.quadrant] = new Quadrant(_.capitalize(blip.quadrant));
-                }
-                quadrants[blip.quadrant].add(new Blip(blip.name, ringMap[blip.ring], blip.isNew, blip.topic, blip.description));
-            });
+                var quadrants = {};
+                _.each(blips, function (blip) {
+                    if (!quadrants[blip.quadrant]) {
+                        quadrants[blip.quadrant] = new Quadrant(_.capitalize(blip.quadrant));
+                    }
+                    quadrants[blip.quadrant].add(new Blip(blip.name, ringMap[blip.ring], blip.isNew, blip.topic, blip.description));
+                });
 
-            var radar = new Radar();
-            _.each(quadrants, function (quadrant) {
-                radar.addQuadrant(quadrant);
-            });
+                var radar = new Radar();
+                _.each(quadrants, function (quadrant) {
+                    radar.addQuadrant(quadrant);
+                });
 
-            var size = (window.innerHeight - 133) < 620 ? 620 : window.innerHeight - 133;
+                var size = (window.innerHeight - 133) < 620 ? 620 : window.innerHeight - 133;
 
-            new GraphingRadar(size, radar).init().plot();
+                new GraphingRadar(size, radar).init().plot();
+            }
         }
 
         // Invoke.
