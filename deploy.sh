@@ -10,7 +10,7 @@ npm install --global yarn
 npm install hexo-cli@1.0.2 webpack@1.14.0 --global
 
 # Install code dependencies.
-yarn install --production
+yarn install
 
 # Generate Hexo static site.
 hexo clean
