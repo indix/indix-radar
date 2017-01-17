@@ -5,12 +5,14 @@
   .footer-content {
     width: 50%;
     margin: 0 auto;
+    padding-bottom: 20px;
 
     p {
-      padding-top: 60px;
+      padding-top: 40px;
       font-size: $baseFont;
       font-weight: $baseWeight;
-      text-align: left;
+      color: #B8B8B8;
+      text-align: center;
     }
 
   }
