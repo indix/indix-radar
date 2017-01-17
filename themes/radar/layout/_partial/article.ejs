@@ -12,6 +12,7 @@
     </div>
     <div id="header-title">
       <h2 id="subtitle-wrap">
+      <%- console.log(page.path) %>
       <% if (page.path == 'index.html') { %>
         <% var first_post = site.posts.data[0] %>
         <% site.posts.forEach(function(each_post){ %>
