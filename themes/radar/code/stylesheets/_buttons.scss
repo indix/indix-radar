@@ -30,7 +30,6 @@ $btn-colors: (
 
 .btn-border-o {
 	background-color: transparent;
-	//border: 1px solid #d0d0d0;
 	color: #B8B8B8;
 	
 	&:before,
@@ -88,9 +87,16 @@ $btn-colors: (
 	}
 }
 
+.btn-border-o.active {
+	border-style: solid;
+	color: unquote(map-get($btn-colors, 'red'));
+	z-index: 5;
+	border-radius: 3px;
+	box-sizing: content-box;
+}
+
 .btn-border {
 	background-color: #e5e5e5;
-	//border: 1px solid #e5e5e5;
 	color: #a6a6a6;
 	
 	&:before,
