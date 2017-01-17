@@ -1,6 +1,6 @@
 header {
   width: 100%;
-  line-height: 60px;
+  line-height: 40px;
   text-align: center;
   margin-bottom: 15px;
 
@@ -10,13 +10,13 @@ header {
 
   .logo {
     position: relative;
-    width: 300px;
+    width: 150px;
     margin: 0 auto;
 
     img {
-      width: 300px;
+      width: 150px;
       height: auto;
-      margin: 20px;
+      margin-bottom: 10px;
     }
   }
 
@@ -69,7 +69,9 @@ header {
     font-size: $baseFont;
     padding-bottom: 15px;
     text-align: left;
-    width: 80%;
+    float: left;
+    margin-left: 100px;
+    width: 50%;
   }
 
   .button {
@@ -114,6 +116,8 @@ header {
     }
 
     &.full-view {
+      // margin-top: 20px;
+      // margin-bottom: 20px;
       &.first {
         background-color: $green;
         color: $white;

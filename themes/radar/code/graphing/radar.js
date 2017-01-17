@@ -375,8 +375,6 @@ const Radar = function (size, radar) {
 
   function plotRadarFooter() {
     var radarElement = d3.select('body').insert('footer', '#footer');
-    console.log(radarElement);
-    console.log(d3.select(radarElement.parentNode));
     radarElement
         .append('div')
         .attr('id', 'footer')
