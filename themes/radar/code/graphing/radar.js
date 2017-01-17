@@ -268,7 +268,7 @@ const Radar = function (size, radar) {
   function createHomeLink(pageElement) {
     if (pageElement.select('.home-link').empty()) {
       pageElement.append('div')
-        .html('&#171; Back to Radar home')
+        .html('&#171; Back to Radar')
         .classed('home-link', true)
         .classed('selected', true)
         .on('click', redrawFullRadar)
@@ -369,22 +369,22 @@ const Radar = function (size, radar) {
   }
 
   function plotRadarHeader() {
-    var header = d3.select('body').insert('header', "#radar");
-    // header.append('div')
-    //   .attr('class', 'radar-title')
-    //   .append('div')
-    //   .attr('class', 'radar-title__text')
-    //   .append('h1')
-    //   .text(document.title)
-    //   .style('cursor', 'pointer')
-    //   .on('click', redrawFullRadar);
-
-    // header.select('.radar-title')
-    //   .append('div')
-    //   .attr('class', 'radar-title__logo')
-    //   .html('<a href="https://www.thoughtworks.com"> <img src="/images/logo.png" /> </a>');
-
+    var header = d3.select('body').insert('header', '#radar');
     return header;
+  }
+
+  function plotRadarFooter() {
+    var radarElement = d3.select('body').insert('footer', '#footer');
+    console.log(radarElement);
+    console.log(d3.select(radarElement.parentNode));
+    radarElement
+        .append('div')
+        .attr('id', 'footer')
+        .append('div')
+        .attr('class', 'footer-content')
+        .append('p')
+        .html('Made with <span class="red">&hearts;</span> at Indix.');
+      return radarElement;
   }
 
   function plotQuadrantButtons(quadrants, header) {
@@ -483,9 +483,6 @@ const Radar = function (size, radar) {
 
     rings = radar.rings();
     quadrants = radar.quadrants();
-    // Hide previous header & radar if present.
-    // d3.select('header').style('display', 'none');
-    // d3.select('#radar').style('display', 'none');
     var header = plotRadarHeader();
 
     plotQuadrantButtons(quadrants, header);
@@ -500,6 +497,7 @@ const Radar = function (size, radar) {
       plotTexts(quadrantGroup, rings, quadrant);
       plotBlips(quadrantGroup, rings, quadrant);
     });
+    plotRadarFooter();
   };
 
   return self;
