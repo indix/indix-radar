@@ -1,2 +1,2 @@
-<% var first_post = site.posts[Object.keys(site.posts)[0]][0] %>
+<% var first_post = site.posts.data[0] %>
 <%- partial('article', {post: first_post, index: true}) %>
