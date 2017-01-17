@@ -75,3 +75,7 @@ The topic data can contain valid HTML markup! Allowed tags are -
 ## ⚡ Deployment
 
 Simply run `./deploy.sh` and BAM!
+
+## License
+
+Licensed under the [GNU Affero General Public License v3](LICENSE.md).
