@@ -3,8 +3,6 @@
 # Exit immediately if something exits with error(s).
 set -e
 
-# Install global deps.
-
 # Snap-CI specific stuff.
 BASH_FILE="/var/go/.bashrc"
 if [ -e "$BASH_FILE" ]; then
@@ -16,9 +14,15 @@ if [ -e "$BASH_FILE" ]; then
 fi
 # End Snap-CI specific stuff.
 
+# Install Yarn.
 sudo curl -o- -L https://yarnpkg.com/install.sh | bash
+export PATH="$HOME/.yarn/bin:$PATH"
+
+# Install Hexo & WebPack.
 npm install hexo-cli@1.0.2 webpack@1.14.0 --global
-yarn install
+
+# Install code dependencies.
+yarn install --production
 
 # Generate Hexo static site.
 hexo clean
