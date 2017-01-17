@@ -12,13 +12,24 @@
     </div>
     <div id="header-title">
       <h2 id="subtitle-wrap">
-      <% site.posts.forEach(function(each_post){ %>
-        <% if(url_for(page.path) == url_for(each_post.path)){ %>
-          /<a class="btn btn-red btn-border-o active" href="<%- url_for(each_post.path) %>"><%= each_post.title %></a>/
-        <% } else { %>
-          /<a class="btn btn-red btn-border-o" href="<%- url_for(each_post.path) %>"><%= each_post.title %></a>/
-        <% } %>
-      <% }) %>
+      <% if (page.path == 'index.html') { %>
+        <% var first_post = site.posts[Object.keys(site.posts)[0]][0] %>
+        <% site.posts.forEach(function(each_post){ %>
+          <% if(url_for(first_post.path) == url_for(each_post.path)){ %>
+            /<a class="btn btn-red btn-border-o active" href="<%- url_for(each_post.path) %>"><%= each_post.title %></a>/
+          <% } else { %>
+            /<a class="btn btn-red btn-border-o" href="<%- url_for(each_post.path) %>"><%= each_post.title %></a>/
+          <% } %>
+        <% }) %>
+      <% } else { %>
+        <% site.posts.forEach(function(each_post){ %>
+          <% if(url_for(page.path) == url_for(each_post.path)){ %>
+            /<a class="btn btn-red btn-border-o active" href="<%- url_for(each_post.path) %>"><%= each_post.title %></a>/
+          <% } else { %>
+            /<a class="btn btn-red btn-border-o" href="<%- url_for(each_post.path) %>"><%= each_post.title %></a>/
+          <% } %>
+        <% }) %>
+      <% } %>
       </h2>
     </div>
     <div id="header-inner" class="inner">
