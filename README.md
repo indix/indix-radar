@@ -1,6 +1,6 @@
-# 📡 Indix Technology Radar
+# 📡 Indix™ Technology Radar
 
-The Indix technology radar is used to assess emerging technologies in the market and their adoption strategy. This is heavily inspired by the [ThoughWorks® Radar](https://github.com/thoughtworks/build-your-own-radar).
+The Indix™ technology radar is used to assess emerging technologies in the market and their adoption strategy. This is heavily inspired by the [ThoughWorks® Radar](https://github.com/thoughtworks/build-your-own-radar).
 
 
 ## ⚡ Usage
@@ -8,8 +8,9 @@ The Indix technology radar is used to assess emerging technologies in the market
 To start developing for Indix-Radar, set up the environment first.
 
 1. `npm install hexo-cli@1.0.2 webpack@1.14.0 --global`
-2. Clone the repo and `cd` to repo directory.
-3. `npm install`
+2. `curl -o- -L https://yarnpkg.com/install.sh | bash`
+3. Clone the repo and `cd` to repo directory.
+4. `yarn install`
 
 Now, each time you make a change, run Hexo's generator by using the command - 
 
@@ -17,7 +18,7 @@ Now, each time you make a change, run Hexo's generator by using the command -
 hexo clean && hexo generate && webpack
 ```
 
-To run the development server on port `6040`, use the command - 
+To run the development server (say, on port `6040`), use the command - 
 
 ```
 hexo server -p 6040
