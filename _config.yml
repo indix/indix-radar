@@ -11,7 +11,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://paambaati.github.io/indix-radar
+url: https://oss.indix.com/indix-radar
 root: /indix-radar/
 permalink: :title/
 permalink_defaults:
@@ -68,6 +68,6 @@ theme: radar
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:paambaati/indix-radar.git
+  repo: git@github.com:indix/indix-radar.git
   branch: master
   #message: And at {{ now('YYYY-MM-DD HH:mm:ss') }}, the code finished the work that he had done, and he rested.
