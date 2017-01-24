@@ -89,6 +89,7 @@ $btn-colors: (
 
 .btn-border-o.active {
 	border-style: solid;
+	border-width: 1px;
 	color: unquote(map-get($btn-colors, 'red'));
 	z-index: 5;
 	border-radius: 3px;

@@ -6,6 +6,7 @@ header {
 
   a.btn {
     text-decoration: none;
+    min-width: 40px;
   }
 
   .logo {
@@ -68,10 +69,6 @@ header {
     display: inline-block;
     font-size: $baseFont;
     padding-bottom: 15px;
-    text-align: left;
-    float: left;
-    margin-left: 100px;
-    width: 50%;
   }
 
   .button {
