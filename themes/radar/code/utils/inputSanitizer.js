@@ -1,4 +1,5 @@
 const sanitizeHtml = require('sanitize-html');
+const showdown = require('showdown');
 const _ = {
   forOwn: require('lodash/forOwn')
 }
@@ -34,8 +35,9 @@ const InputSanitizer = function () {
 
     var self = {};
     self.sanitize = function (rawBlip) {
+      const converter = new showdown.Converter();
       var blip = trimWhiteSpaces(rawBlip);
-      blip.description = sanitizeHtml(blip.description, relaxedOptions);
+      blip.description = converter.makeHtml(sanitizeHtml(blip.description, relaxedOptions));
       blip.name = sanitizeHtml(blip.name, restrictedOptions);
       blip.isNew = Boolean(blip.isNew);
       blip.ring = sanitizeHtml(blip.ring, restrictedOptions);
