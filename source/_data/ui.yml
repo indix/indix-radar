@@ -1,58 +1,58 @@
-- name: ECMA 6
+- name: ECMAScript 2015 (ES6)
   quadrant: Languages & Techniques
   ring: Adopt
-  isNew: true
-  description: ECMAScript 6 (ES6) was finalized in June 2015 and introduces new syntax for writing complex applications, including classes and modules. Though browser support for ES6 is still incomplete, ES6 features can be used with a [Babel](https://babeljs.io/) transpiler. ES6 is the current active version of Javascript and is __Adopt__ in Indix.
-- name: Coffee script
+  isNew: false
+  description: ECMAScript 2015 (initially referred to as ES6) was finalized in June 2015 and introduces new syntax for writing complex applications (including classes & modules) and is generally a sorely needed upgrade to the language. Though browser support for ES6 is still incomplete, ES6 features can be used with the [Babel](https://babeljs.io/) transpiler.
+- name: CoffeeScript
   quadrant: Languages & Techniques
   ring: Hold
   isNew: false
-  description: CoffeeScript is a programming language that transcompiles to JavaScript. It adds syntactic sugar in an effort to enhance JavaScript's brevity and readability. The recent ES6 solves a lot of the problems that CoffeeScript is trying to solve without drastic syntax changes. Hence CoffeeScript is on __Hold__. Projects which were written in Coffee Script will continue to exist as is.
-- name: Typescript
+  description: CoffeeScript is a programming language that transcompiles to JavaScript. It adds syntactic sugar in an effort to enhance JavaScript's brevity and readability. ES2015/ES6 solves a lot of the problems that CoffeeScript was trying to solve without drastic syntax changes. Projects which were written in CoffeeScript will continue to exist as is.
+- name: TypesSript
   quadrant: Languages & Techniques
-  ring: Assess
+  ring: Adopt
   isNew: true
-  description: TypeScript is a free and open source programming language developed and maintained by Microsoft. It is a strict superset of JavaScript and adds static typing to the language. At Indix, apps which need to communicate to micro-services which are static-typed, are __Assessing__ the possibilities of typescript.
+  description: TypeScript is a free and open-source programming language developed and maintained by Microsoft. It is a strict superset of JavaScript and adds static typing to the language. At Indix, apps which need to communicate to micro-services via APIs benefit vastly from static types.
 - name: React JSX
   quadrant: Languages & Techniques
   ring: Adopt
   isNew: true
-  description: JSX is a JavaScript syntax extension that looks similar to XML. It's more familiar for casual developers such as designers and doesn't alter the benefits of HTML. It's __Adopt__ at Indix.
+  description: JSX is a JavaScript syntax extension that looks similar to XML. It is more familiar for casual developers such as designers and doesn't alter the benefits of HTML.
 - name: Polymer
   quadrant: Languages & Techniques
   ring: Assess
   isNew: true
-  description: Polymer is a HTML language to build fast, beautiful, and interoperable web components. Web Components are a set of standards currently being produced by Google engineers as a W3C specification that allow for the creation of reusable widgets or components in web documents and web applications. Indix is __Assessing__ the possibilities of polymer and its potential looks valuable.
+  description: Polymer is a HTML language to build fast, beautiful, and interoperable web components. Web Components are a set of standards currently being produced by Google engineers as a W3C specification that allow for the creation of reusable widgets or components in web documents and web applications. Polymer looks potentially valueable.
 - name: HAML
   quadrant: Languages & Techniques
   ring: Adopt
   isNew: false
-  description: Haml (HTML abstraction markup language) is based on one primary principle :- markup should be beautiful. Haml accelerates and simplifies template creation. Some of the production apps at Indix are already __Adopting__ HAML.
+  description: HAML (HTML abstraction markup language) is based on one primary principle - markup should be beautiful. HAML accelerates and simplifies template creation. Some of the production apps at Indix are already using HAML.
 - name: LESS
   quadrant: Languages & Techniques
   ring: Hold
   isNew: false
-  description: Less is a CSS pre-processor, meaning that it extends the CSS language, adding features that allow variables, mixins, functions and many other techniques that allow you to make CSS that is more maintainable, themeable and extendable. Indix is a major consumer of [Bootstrap](http://getbootstrap.com/) and ever since Bootstrap made SASS as its default, Indix has put LESS on __Hold__.
+  description: LESS is a CSS pre-processor; it extends the CSS language, adding features that allow variables, mixins, functions and many other techniques that allow you to make CSS that is more maintainable, themeable and extendable. Indix is a major consumer of [Bootstrap](http://getbootstrap.com/) and ever since Bootstrap made SASS as its default, Indix has put LESS on hold.
 - name: SASS
   quadrant: Languages & Techniques
   ring: Adopt
   isNew: true
-  description: Sass is an extension of CSS and defines a clean structured way of writing CSS by allowing to modularize CSS snippets while offering a whole slew of features which are practised in javascript environment. Features like varables, external imports, functions and extensibility allow to experience the benefits of modular patterns. Given its advantages, Indix actively __Adopts__ Sass for styling its web apps.
+  description: Sass is an extension of CSS and defines a clean structured way of writing CSS by allowing to modularize CSS snippets while offering a whole slew of features which are practised in javascript environment. Features like varables, external imports, functions and extensibility allow to experience the benefits of modular patterns. Given its advantages, Indix actively adopts Sass for styling its web apps.
 - name: PostCSS
   quadrant: Languages & Techniques
   ring: Assess
   isNew: true
-  description: PostCSS was launched as a method to use JavaScript for CSS processing. PostCSS on its own is simply an API, which, when used with its vast ecosystem of plugins, offers powerful abilities. Because of its promising custom plugins and tools for transforming styles, indix is actively __Assessing__ the language.
+  description: PostCSS was launched as a method to use JavaScript for CSS processing. PostCSS on its own is simply an API, which, when used with its vast ecosystem of plugins, offers powerful abilities. Because of its promising custom plugins and tools for transforming styles, Indix is actively assessing the language.
 - name: Yeoman
   quadrant: Languages & Techniques
   ring: Assess
   isNew: true
-  description: Yeoman helps you to kickstart new apps by providing generator templates with frameworks of developer's choice. Indix is actively __Assessing__ the huge ecosystem of generators and use them as need arises.
+  description: Yeoman helps you to kickstart new apps by providing generator templates with frameworks of developer's choice. Indix is actively assessing the huge ecosystem of generators and will use them as need arises.
 - name: Material Design
   quadrant: Languages & Techniques
   ring: Trial
   isNew: true
-  description: Google created Material design principles with the intention to create a visual language and a single unified experience across platforms. Indix did __Trial__ Material Design in one of its apps and is actively following its associated frameworks.
+  description: Google created Material design principles with the intention to create a visual language and a single unified experience across platforms. Indix tried Material Design in one of its apps and is actively following its associated frameworks.
 - name: Typed Javascript
   quadrant: Languages & Techniques
   ring: Assess
@@ -62,164 +62,159 @@
   quadrant: Frameworks
   ring: Adopt
   isNew: false
-  description: Express is a [Node.js](https://nodejs.org/en/) web application framework with many HTTP utility methods and act as middleware for building web applications. Many utilities and active community make Express highly __Adopted__ middleware for all node.js apps at Indix.
+  description: Express is a [Node.js](https://nodejs.org/en/) web application framework with many HTTP utility methods and act as middleware for building web applications. Many utilities and an active community make Express an easy choice for middleware for all Node.js apps at Indix.
 - name: Meteor
   quadrant: Frameworks
   ring: Assess
   isNew: true
-  description: Meteor is a platform to build web, mobile and desktop apps with a same set of javascript code and connects database to end user's screen with high set of integrations. Lesser code and tighter integrations looks promising, which makes it a platform to __Assess__ at Indix.
-- name: Koa JS
+  description: Meteor is a highly-opiniated platform to build web, mobile and desktop apps with a same set of javascript code and connects database to end user's screen with high set of integrations. Lesser code and tighter integrations looks promising, which makes it a platform worth assessing at Indix.
+- name: Koa
   quadrant: Frameworks
   ring: Assess
   isNew: true
-  description: Koa is an alternate to express with better support for error handling and cascading. Koa is built using es6 generators and is more lightweight which makes it a framework for __Assessment__ at Indix.
-- name: Node JS
-  quadrant: Frameworks
+  description: Koa is an alternate to Express with better support for better error handling & middleware cascading. Koa is built using ES6 generators (with Koa v2 dropping soon with `async`/`await` support) and is more lightweight, which makes it a candidate for assessment at Indix.
+- name: Node.js
+  quadrant: Languages & Techniques
   ring: Adopt
   isNew: false
-  description: Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. It's lightweight, efficient, event-driven model and the extensive community of plugins makes Node JS the default tool for __Adoption__ at Indix.
-- name: IO JS
-  quadrant: Frameworks
+  description: Node.js is a JavaScript runtime built on top of Chrome's V8 JavaScript engine. It's lightweight, efficient, event-driven model and the extensive community of plugins makes Node.js a heavily used runtime at Indix.
+- name: Io.js
+  quadrant: Languages & Techniques
   ring: Hold
   isNew: false
-  description: IO JS is a fork of Node JS. Because of its benefits of adopting the performance improvements of V8 and [Semver](http://semver.org) based release cycles, Indix used IO JS for a brief period, but then, put it on __Hold__ when IO JS decided to merge back to Node JS.
-- name: Backbone JS
+  description: Io.js was a fork of Node.js. Because of its benefits of adopting the performance improvements of V8 and [Semver](http://semver.org)-based release cycles, Indix used Io.js for a brief period, but then, put it on hold when it was decided to merge it back with Node.js.
+- name: Backbone.js
   quadrant: Client Libraries
   ring: Hold
   isNew: false
-  description: Backbone provides the Model-View-Collection structure to web applications and helps with utilities to build APIs RESTful. Indix was early adopters of backbone, due to to its minimalistic MVC model, but then, with Redux unidirectional flow of events and virtual-dom updates, Indix has put Backbone on __Hold__.
-- name: Angular JS 1.0
+  description: Backbone.js provides a Model-View-Collection structure to web applications and helps with utilities to build APIs RESTful. Indix was an early adopter of Backbone.js due to to its minimalistic MVC model, but with Redux unidirectional flow of events and virtual-dom updates, Indix has put Backbone on hold.
+- name: AngularJS 1.0
   quadrant: Client Libraries
   ring: Hold
   isNew: false
-  description: Angular JS was developed to build dynamic web pages with support for data-binding and templates on client side. Indix evaluated Angular JS for some internal projects, but put the 1.0 version on __Hold__ after the release of Angular 2.0.
-- name: Angular JS 2.0
+  description: Angular was developed by Google to build dynamic web pages with support for data-binding and templates on client side. Indix evaluated AngularJS for some internal projects, but put the 1.0 version on hold after the release of Angular 2.0.
+- name: AngularJS 2.0
   quadrant: Client Libraries
   ring: Assess
   isNew: true
-  description: Angular 2.0 is rewritten in TypeScript and has made Components as first class citizens. Simplified directives, support for Web sockets are some features which look promising. Indix is currently __Assessing_ to possibilities of its usage.
-- name: React JS
+  description: Angular 2.0 is rewritten in TypeScript and has made Components first class citizens. Simplified directives & support for Web sockets are some features which look promising. Indix is currently assessing possibilities of its use.
+- name: React
   quadrant: Client Libraries
   ring: Adopt
   isNew: true
-  description: React is the View part of the MVC model. It abstracts the DOM away from the app and implements one-way data flow, as an alternate to Angular's two-way binding. It's benefits of composable components and intelligent state maintenance has made the tool the default framework for __adoption__ at Indix.
+  description: React is the View part of the MVC model. It abstracts the DOM away from the app and implements one-way data flow, as an alternate to Angular's two-way binding. It's benefits of composable components and intelligent state maintenance has made it the default client-side framework at Indix.
 - name: Redux
   quadrant: Client Libraries
   ring: Adopt
   isNew: true
-  description: Redux is a state container for JavaScript apps and helps the app to behave consistently. Redux helps to plug-in immutability to a web app state, resulting in lesser bugs in the code. Due to these advantages, Indix __Adopts__ redux and uses it in combination with React.
-- name: Ember JS
+  description: Redux is a state container for JavaScript apps and helps the app to behave consistently. Redux helps to plug-in immutability to a web app state, resulting in lesser bugs in the code. Due to these advantages, Indix uses Redux in combination with React.
+- name: Ember.js
   quadrant: Client Libraries
   ring: Assess
   isNew: false
-  description: Ember JS is based on the MVC pattern with support for [Handlebar](http://handlebarsjs.com/) templates. It promises improved developer productivity and has common utilities to build apps faster. Indix has put Ember on __Assess__ and will use the framework based on needs.
+  description: Ember.js is based on the MVC pattern with support for [Handlebar](http://handlebarsjs.com/) templates. It promises improved developer productivity and has common utilities to build apps faster. Indix is assessing Ember and will possibly use the framework based on needs.
 - name: Polymer
   quadrant: Client Libraries
   ring: Assess
   isNew: true
-  description: Polymer is the adopter of [Web components](http://webcomponents.org) and Indix evaluated it during it's early beta stage. Indix is continuously __Assessing_ polymer and since web components use new or still-developing browser capabilities, Polymer promise greater community adoption in the future.
+  description: Polymer is the adopter of [Web components](http://webcomponents.org) and Indix evaluated it during it's early beta stage. Indix is continuously assessing Polymer and since web components use new or still-developing browser capabilities, Polymer promises greater community adoption in the future.
 - name: Bootstrap 3.x
   quadrant: Client Libraries
   ring: Adopt
   isNew: true
-  description: Bootstrap is the most popular HTML framework with in-built support for responsive design. Indix were early adopters of Bootstrap and it's the default framework to __Adopt__ for designing web-apps.
+  description: Bootstrap is the most popular HTML framework with in-built support for responsive design. Indix was an early adopter of Bootstrap and it is our default framework for designing web-apps.
 - name: Foundation
   quadrant: Client Libraries
   ring: Adopt
   isNew: false
-  description: Foundation is an alternative to Bootstrap with lightweight code and built with better understanding of web accessibility. With more form controls out of the box and flexible navigation patterns, Indix has __Adopted__ Foundation for some of its projects.
+  description: Foundation is an alternative to Bootstrap with lightweight code and built with better understanding of web accessibility. With more form controls out of the box and flexible navigation patterns, Indix has adopted Foundation for some of its projects.
 - name: Material UI
   quadrant: Client Libraries
   ring: Assess
   isNew: true
-  description: With React being in adoption, and google introducing Material UI guidelines, The Material UI HTMl/CSS framework provides a combination of the two. Indix uses Material UI framework is some of it's projects and is __Assessing__ the possibilities of adopting Material UI themes and guidelines.
+  description: With React being in adoption, and Google introducing Material UI guidelines, The Material UI HTMl/CSS framework provides a combination of the two. Indix uses Material UI framework in some of it's projects and is assessing the possibilities of adopting more of Material UI themes and guidelines.
 - name: Lodash
   quadrant: Client Libraries
   ring: Adopt
-  isNew: true
-  description: Lodash provides utilities to act and manipulate JSON data. It has flexibility to work both in browser as well as server side. Indix __Adopts__ Lodash in majority of the apps, due to its extensive set of utilities.
-- name: Underscore
+  isNew: false
+  description: Lodash provides utilities to act and manipulate JSON data. It has flexibility to work both in browser as well as server side. Indix uses Lodash in majority of the apps, due to its extensive set of utilities.
+- name: Underscore.js
   quadrant: Client Libraries
   ring: Hold
   isNew: false
-  description: Underscore in an utility similar to lodash, but given that lodash is preferred framework for NodeJS apps, we have underscore on __Hold__ for now.
-- name: Isomorphic fetch
+  description: Underscore in an utility similar to lodash, but given that Lodash has grown into a more consistent superset of Underscore preferred framework for NodeJS apps, we have Underscore on hold for now.
+- name: Isomorphic Fetch
   quadrant: Client Libraries
   ring: Adopt
   isNew: true
-  description: Isomorphic fetch helps to write single piece of code for AJAX calls, which can work both on the server as well as the client side. It's based on latest ES6 features and Indix has __Adopted__ the framework in some of its projects.
-- name: Jquery
+  description: Isomorphic Fetch helps to write single piece of code for AJAX calls, which can work both on the server as well as the client side. It is based on latest ES6 features and Indix has adopted the library in some of its projects.
+- name: jQuery
   quadrant: Client Libraries
   ring: Hold
   isNew: false
-  description: JQuery is the lodash for DOM. With React providing all the functionalities of jQuery, Indix has put jQuery on __Hold__ and use it when need arises.
+  description: jQuery is the lodash for DOM. With React providing all the functionalities of jQuery, Indix has put jQuery on hold and will possibly use it when need arises.
 - name: RxJS
   quadrant: Client Libraries
   ring: Trial
   isNew: true
-  description: Reactive eXtensions of JavaScript is set of libraries for composing asynchronous and event-based programs using observable collections and query operations. It acts a lodash for DOM events and allow developer to chain a sequence of operations both on data as well as DOM events. Indix has __Trialed__ RxJS in one of its apps and continue to follow the community in the recent upgrades.
+  description: Reactive eXtensions of JavaScript is a set of libraries for composing asynchronous and event-based programs using observable collections and query operations. It acts like lodash for DOM events and allows developer to chain a sequence of operations both on data as well as DOM events. Indix has tried RxJS in one of its apps and continues to follow the community in recent upgrades.
 - name: NPM
   quadrant: Testing & Build Tools
   ring: Assess
   isNew: false
-  description: Node provides scripts directive with enough packages to build, compile, watch, live-reload and test with pre and post-hooks. It has packages to support streaming of these tasks, which mane NPM a good enough tool to __Assess__ for build automation.
-- name: Gulp
+  description: Node provides scripts directive with enough packages to build, compile, watch, live-reload and test with pre and post-hooks. It has packages to support streaming of these tasks, which make NPM a good enough tool to assess for build automation.
+- name: Gulp.js
   quadrant: Testing & Build Tools
   ring: Adopt
   isNew: false
-  description: Gulp uses the power of node streams to automate the build workflow. Its plethora of plugins and active community makes Gulp the tool to __Adopt__ at Indix.
+  description: Gulp uses the power of node streams to automate the build workflow. Its plethora of plugins and active community makes Gulp the build tool of choice at Indix.
 - name: Grunt
   quadrant: Testing & Build Tools
   ring: Hold
   isNew: false
-  description: Grunt is config based build automation tool as opposed to Gulp which is code based. Grunt performance in terms of file processing is comparatively slower to Gulp, and hence Indix puts it on __Hold__.
+  description: Grunt is a config-based build automation tool as opposed to Gulp which is code based. Grunt's' performance in terms of file processing is comparatively worse to Gulp, and hence Indix has it on Hold.
 - name: Mocha
   quadrant: Testing & Build Tools
   ring: Adopt
   isNew: true
-  description: Mocha is a unit testing Javascript testing framework, with support for asynchronous tests, coverage reports, handling uncaught errors and timeouts. These flexibilities make Mocha, an __Adopted__ testing framework at Indix.
+  description: Mocha is a unit testing Javascript testing framework, with support for asynchronous tests, coverage reports, handling uncaught errors and timeouts. These flexibilities make Mocha the main testing framework at Indix.
 - name: Chai
   quadrant: Testing & Build Tools
   ring: Adopt
   isNew: true
-  description: Chai is [BDD](https://en.wikipedia.org/wiki/Behavior-driven_development) assertion library and easily pairable with Mocha. Indix efficiently uses the chaining capabilities of assertions and hence the tool is in __Adopt__ stage.
+  description: Chai is a [BDD](https://en.wikipedia.org/wiki/Behavior-driven_development) assertion library and easily pairable with Mocha. Indix efficiently uses the chaining capabilities of Chai's assertions.
 - name: Jest
   quadrant: Testing & Build Tools
   ring: Trial
   isNew: true
-  description: Jest is by developers of React and provides powerful mocking functions as default behaviour. It virtualizes Javascript environment using [JSDOM](https://github.com/tmpvar/jsdom) and has utilities to test varied DOM behaviour. Due to slow performance aspects of Jest, Indix has put the framework in __Trial__ mode and is actively following the community for performance improvements.
+  description: Jest is built by developers of React and provides powerful mocking functions as default behaviour. It virtualizes Javascript environment using [JSDOM](https://github.com/tmpvar/jsdom) and has utilities to test varied DOM behaviour. Due to slow performance aspects of Jest, Indix has put the framework in trial mode and is actively following the community, looking for performance improvements.
 - name: Istanbul
   quadrant: Testing & Build Tools
   ring: Adopt
   isNew: true
-  description: Istanbul is code coverage measurement tool and offers to track statement, branches and functions. It's multiple report format and support as both a command line tool as well as a library makes Istanbul the default tool to __Adopt__ at Indix.
+  description: Istanbul is a code coverage measurement tool from the YUI team and offers coverage for statement, branches and functions. It's multiple report formats and support as both a command line tool as well as a library makes Istanbul the favourite coverage tool at Indix.
 - name: Jasmine
   quadrant: Testing & Build Tools
   ring: Hold
   isNew: false
-  description: Jasmine was one of the early Javascript testing tool and comes as an package with in-built assertion utilities. Jasmine doesn't come with test runner whereas Mocha does. Indix has put Jasmine on __Hold__, with Mocha + chai being in adopt.
+  description: Jasmine was one of the earliest Javascript testing tools and comes as an package with in-built assertion utilities. Jasmine doesn't come with a test runner, while Mocha does. Indix has put Jasmine on hold, with Mocha + Chai being adopted.
 - name: Nock
   quadrant: Testing & Build Tools
   ring: Trial
   isNew: true
-  description: Nock is a HTTP mocking and expectation library and provides utilities to mock RESTful APIs. Since much of the apps at Indix at HTTP API based, we have actively __Trialing__ nock in some of the projects.
-- name: Webdriver IO
+  description: Nock is a HTTP mocking and expectation library and provides utilities to mock RESTful APIs. Since much of the apps at Indix are API-based, we have actively tried nock in some of our projects.
+- name: WebdriverIO
   quadrant: Testing & Build Tools
   ring: Adopt
   isNew: true
-  description: Webdriver IO helps to write Functional tests. It allows to write a series of asynchronous commands which is run on a headless browser and couples well with Mocha+chai combination. Indix ha put Webdriver Io as the default choice of tool to __Adopt__ for functional testing of web apps.
-- name: Node Package Manger (NPM)
-  quadrant: Testing & Build Tools
-  ring: Adopt
-  isNew: false
-  description: The vast set of Node packages has become the default choice to __Adopt__ for Indix needs.
+  description: WebdriverIO helps to write functional tests. It allows to write a series of asynchronous commands which is run on a headless browser and couples well with Mocha+Chai combination. Indix is using WebdriverIO as the default choice of tool for functional testing of web apps.
 - name: Bower
   quadrant: Testing & Build Tools
   ring: Hold
   isNew: false
-  description: Bower is package manager for all client-side libraries. With NPM as Indix choice for packages, we have put Bower on __Hold__.
+  description: Bower is a package manager for all client-side libraries. With NPM as Indix's' choice for package management, we have put Bower on hold.
 - name: Browser Stack
   quadrant: Testing & Build Tools
   ring: Adopt
   isNew: true
-  description: Browser Stack provides a plethora of browser testing capabilities across different OS. Being a market leader in that domain, Indix has __Adopted__ Browser Stack as the default browser testing tool.
+  description: Browser Stack provides a plethora of browser testing capabilities across different OS. Being a market leader in that domain, Indix has adopted Browser Stack as the default browser testing tool.
