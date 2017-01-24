@@ -61,7 +61,7 @@ YAML data should be of the form -
 ```
 ### Formatting Options
 
-The topic data can contain valid HTML markup! Allowed tags are -
+Descriptions can contain markdown and _valid_ HTML markup! Allowed HTML tags are -
 
 ```
 'b', 'i', 'em', 'strong', 'a', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'li', 'ul', 'br', 'p', 'u'
