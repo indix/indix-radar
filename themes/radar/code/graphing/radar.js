@@ -219,9 +219,15 @@ const Radar = function (size, radar) {
 
           var blipListItem = ringList.append('li');
           var blipText = blip.number() + '. ' + blip.name() + (blip.topic() ? ('. - ' + blip.topic()) : '');
-          blipListItem.append('div')
+          var blipListItemDiv = blipListItem.append('div')
             .attr('class', 'blip-list-item')
             .text(blipText);
+
+          if (blip.isNew()) {
+            blipListItemDiv.append('span')
+              .attr('class', 'blip-badge')
+              .text('New')
+          }
 
           var blipItemDescription = blipListItem.append('div')
             .attr('class', 'blip-item-description');

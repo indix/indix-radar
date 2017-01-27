@@ -192,6 +192,9 @@ footer {
             &.highlight {
               color: white;
               background-color: rgba(0, 0, 0, 0.8);
+              .blip-badge {
+                background-color: $red;
+              }
             }
           }
 

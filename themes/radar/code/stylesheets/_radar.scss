@@ -14,6 +14,14 @@
   animation: r5 1s 0s ease-out infinite;
 }
 
+.blip-badge {
+    background-color: transparentize($red, 0.8);
+    font-weight: 100;
+    margin-left: 5px;
+    padding: 0px 3px 0px 3px;
+    border-radius: 3px;
+}
+
 .centered {
   position: fixed;
   top: 50%;
