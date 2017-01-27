@@ -8,7 +8,7 @@
   ring: Hold
   isNew: false
   description: CoffeeScript is a programming language that transcompiles to JavaScript. It adds syntactic sugar in an effort to enhance JavaScript's brevity and readability. ES2015/ES6 solves a lot of the problems that CoffeeScript was trying to solve without drastic syntax changes. Projects which were written in CoffeeScript will continue to exist as is.
-- name: TypesSript
+- name: TypeSript
   quadrant: Languages & Techniques
   ring: Adopt
   isNew: true
