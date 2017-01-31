@@ -170,8 +170,9 @@ footer {
 
       &.selected {
         position: relative;
-        max-height: 10000px;
+        max-height: 90%;
         max-width: 40%;
+        overflow-y: scroll;
       }
 
       ul {
