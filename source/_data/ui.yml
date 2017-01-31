@@ -108,7 +108,7 @@
   ring: Adopt
   isNew: true
   description: Redux is a state container for JavaScript apps and helps the app to behave consistently. Redux helps to plug-in immutability to a web app state, resulting in lesser bugs in the code. Due to these advantages, Indix uses Redux in combination with React.
-  - name: MobX
+- name: MobX
   quadrant: Client Libraries
   ring: Adopt
   isNew: true
@@ -132,7 +132,7 @@
   quadrant: Client Libraries
   ring: Adopt
   isNew: true
-  description: [Bootstrap v4](https://v4-alpha.getbootstrap.com/), still in Alpha, is a major revision to our favourite CSS framework. It introduces Flexbox support (finally!) and includes many new welcome changes like a `rem`-based grid, [cards](http://v4-alpha.getbootstrap.com/components/card/) and built-in Tether! Being an Alpha release, it is bound to break; but we have begun using Bootstrap v4 for a few internal projects.
+  description: Bootstrap v4, still in [Alpha]((https://v4-alpha.getbootstrap.com/)), is a major revision to our favourite CSS framework. It introduces Flexbox support (finally!) and includes many new welcome changes like a `rem`-based grid, [cards](http://v4-alpha.getbootstrap.com/components/card/) and built-in Tether! Being an Alpha release, it is bound to break; but we have begun using Bootstrap v4 for a few internal projects.
 - name: Foundation
   quadrant: Client Libraries
   ring: Adopt
@@ -168,7 +168,7 @@
   ring: Trial
   isNew: true
   description: Reactive eXtensions of JavaScript is a set of libraries for composing asynchronous and event-based programs using observable collections and query operations. It acts like lodash for DOM events and allows developer to chain a sequence of operations both on data as well as DOM events. Indix has tried RxJS in one of its apps and continues to follow the community in recent upgrades.
-  - name: Socket.IO
+- name: Socket.IO
   quadrant: Client Libraries
   ring: Adopt
   isNew: false
