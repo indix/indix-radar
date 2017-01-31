@@ -72,7 +72,7 @@
   quadrant: Frameworks
   ring: Assess
   isNew: true
-  description: Koa is an alternate to Express with better support for better error handling & middleware cascading. Koa is built using ES6 generators (with Koa v2 dropping soon with `async`/`await` support) and is more lightweight, which makes it a candidate for assessment at Indix.
+  description: Koa is an alternate to Express with better support for better error handling & middleware cascading. Koa is built using ES6 generators (with Koa v2 dropping around April 2017 with `async`/`await` support) and is more lightweight, which makes it a candidate for assessment at Indix.
 - name: Node.js
   quadrant: Languages & Techniques
   ring: Adopt
@@ -108,6 +108,11 @@
   ring: Adopt
   isNew: true
   description: Redux is a state container for JavaScript apps and helps the app to behave consistently. Redux helps to plug-in immutability to a web app state, resulting in lesser bugs in the code. Due to these advantages, Indix uses Redux in combination with React.
+  - name: MobX
+  quadrant: Client Libraries
+  ring: Adopt
+  isNew: true
+  description: MobX is a state management system that is somewhat similar to Redux, but is less opiniated. It makes state management very simple by transparently applying functional reactive programming (TFRP). Here at Indix, we use it in some React-based projects.
 - name: Ember.js
   quadrant: Client Libraries
   ring: Assess
@@ -121,8 +126,13 @@
 - name: Bootstrap 3.x
   quadrant: Client Libraries
   ring: Adopt
-  isNew: true
+  isNew: false
   description: Bootstrap is the most popular HTML framework with in-built support for responsive design. Indix was an early adopter of Bootstrap and it is our default framework for designing web-apps.
+- name: Bootstrap 4.x
+  quadrant: Client Libraries
+  ring: Adopt
+  isNew: true
+  description: [Bootstrap v4](https://v4-alpha.getbootstrap.com/), still in Alpha, is a major revision to our favourite CSS framework. It introduces Flexbox support (finally!) and includes many new welcome changes like a `rem`-based grid, [cards](http://v4-alpha.getbootstrap.com/components/card/) and built-in Tether! Being an Alpha release, it is bound to break; but we have begun using Bootstrap v4 for a few internal projects.
 - name: Foundation
   quadrant: Client Libraries
   ring: Adopt
@@ -158,6 +168,11 @@
   ring: Trial
   isNew: true
   description: Reactive eXtensions of JavaScript is a set of libraries for composing asynchronous and event-based programs using observable collections and query operations. It acts like lodash for DOM events and allows developer to chain a sequence of operations both on data as well as DOM events. Indix has tried RxJS in one of its apps and continues to follow the community in recent upgrades.
+  - name: Socket.IO
+  quadrant: Client Libraries
+  ring: Adopt
+  isNew: false
+  description: Socket.IO is a library that provides comprehensive support for WebSockets, enabling us at Indix to build realtime web applications. It is isomorphic (meaning we can use it on both the client & the server sides) and supports automatic reconnection and disconnection detection, making for a very robust and reliable WebSocket library.
 - name: NPM
   quadrant: Testing & Build Tools
   ring: Assess
