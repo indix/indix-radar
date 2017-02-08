@@ -1,12 +1,12 @@
 - name: ECMAScript 2015 (ES6)
   quadrant: Languages & Techniques
   ring: Adopt
-  isNew: false
+  isNew: true
   description: ECMAScript 2015 (initially referred to as ES6) was finalized in June 2015 and introduces new syntax for writing complex applications (including classes & modules) and is generally a sorely needed upgrade to the language. Though browser support for ES6 is still incomplete, ES6 features can be used with the [Babel](https://babeljs.io/) transpiler.
 - name: CoffeeScript
   quadrant: Languages & Techniques
   ring: Hold
-  isNew: false
+  isNew: true
   description: CoffeeScript is a programming language that transcompiles to JavaScript. It adds syntactic sugar in an effort to enhance JavaScript's brevity and readability. ES2015/ES6 solves a lot of the problems that CoffeeScript was trying to solve without drastic syntax changes. Projects which were written in CoffeeScript will continue to exist as is.
 - name: TypeScript
   quadrant: Languages & Techniques
@@ -26,12 +26,12 @@
 - name: HAML
   quadrant: Languages & Techniques
   ring: Adopt
-  isNew: false
+  isNew: true
   description: HAML (HTML abstraction markup language) is based on one primary principle - markup should be beautiful. HAML accelerates and simplifies template creation. Some of the production apps at Indix are already using HAML.
 - name: LESS
   quadrant: Languages & Techniques
   ring: Hold
-  isNew: false
+  isNew: true
   description: LESS is a CSS pre-processor; it extends the CSS language, adding features that allow variables, mixins, functions and many other techniques that allow you to make CSS that is more maintainable, themeable and extendable. Indix is a major consumer of [Bootstrap](http://getbootstrap.com/) and ever since Bootstrap made SASS as its default, Indix has put LESS on hold.
 - name: SASS
   quadrant: Languages & Techniques
@@ -61,7 +61,7 @@
 - name: Express
   quadrant: Frameworks
   ring: Adopt
-  isNew: false
+  isNew: true
   description: Express is a [Node.js](https://nodejs.org/en/) web application framework with many HTTP utility methods and act as middleware for building web applications. Many utilities and an active community make Express an easy choice for middleware for all Node.js apps at Indix.
 - name: Meteor
   quadrant: Frameworks
@@ -76,22 +76,22 @@
 - name: Node.js
   quadrant: Languages & Techniques
   ring: Adopt
-  isNew: false
+  isNew: true
   description: Node.js is a JavaScript runtime built on top of Chrome's V8 JavaScript engine. It's lightweight, efficient, event-driven model and the extensive community of plugins makes Node.js a heavily used runtime at Indix.
 - name: Io.js
   quadrant: Languages & Techniques
   ring: Hold
-  isNew: false
+  isNew: true
   description: Io.js was a fork of Node.js. Because of its benefits of adopting the performance improvements of V8 and [Semver](http://semver.org)-based release cycles, Indix used Io.js for a brief period, but then, put it on hold when it was decided to merge it back with Node.js.
 - name: Backbone.js
   quadrant: Client Libraries
   ring: Hold
-  isNew: false
+  isNew: true
   description: Backbone.js provides a Model-View-Collection structure to web applications and helps with utilities to build APIs RESTful. Indix was an early adopter of Backbone.js due to to its minimalistic MVC model, but with Redux unidirectional flow of events and virtual-dom updates, Indix has put Backbone on hold.
 - name: AngularJS 1.0
   quadrant: Client Libraries
   ring: Hold
-  isNew: false
+  isNew: true
   description: Angular was developed by Google to build dynamic web pages with support for data-binding and templates on client side. Indix evaluated AngularJS for some internal projects, but put the 1.0 version on hold after the release of Angular 2.0.
 - name: AngularJS 2.0
   quadrant: Client Libraries
@@ -116,7 +116,7 @@
 - name: Ember.js
   quadrant: Client Libraries
   ring: Assess
-  isNew: false
+  isNew: true
   description: Ember.js is based on the MVC pattern with support for [Handlebar](http://handlebarsjs.com/) templates. It promises improved developer productivity and has common utilities to build apps faster. Indix is assessing Ember and will possibly use the framework based on needs.
 - name: Polymer
   quadrant: Client Libraries
@@ -126,7 +126,7 @@
 - name: Bootstrap 3.x
   quadrant: Client Libraries
   ring: Adopt
-  isNew: false
+  isNew: true
   description: Bootstrap is the most popular HTML framework with in-built support for responsive design. Indix was an early adopter of Bootstrap and it is our default framework for designing web-apps.
 - name: Bootstrap 4.x
   quadrant: Client Libraries
@@ -136,7 +136,7 @@
 - name: Foundation
   quadrant: Client Libraries
   ring: Adopt
-  isNew: false
+  isNew: true
   description: Foundation is an alternative to Bootstrap with lightweight code and built with better understanding of web accessibility. With more form controls out of the box and flexible navigation patterns, Indix has adopted Foundation for some of its projects.
 - name: Material UI
   quadrant: Client Libraries
@@ -146,12 +146,12 @@
 - name: Lodash
   quadrant: Client Libraries
   ring: Adopt
-  isNew: false
+  isNew: true
   description: Lodash provides utilities to act and manipulate JSON data. It has flexibility to work both in browser as well as server side. Indix uses Lodash in majority of the apps, due to its extensive set of utilities.
 - name: Underscore.js
   quadrant: Client Libraries
   ring: Hold
-  isNew: false
+  isNew: true
   description: Underscore in an utility similar to lodash, but given that Lodash has grown into a more consistent superset of Underscore preferred framework for NodeJS apps, we have Underscore on hold for now.
 - name: Isomorphic Fetch
   quadrant: Client Libraries
@@ -161,7 +161,7 @@
 - name: jQuery
   quadrant: Client Libraries
   ring: Hold
-  isNew: false
+  isNew: true
   description: jQuery is the lodash for DOM. With React providing all the functionalities of jQuery, Indix has put jQuery on hold and will possibly use it when need arises.
 - name: RxJS
   quadrant: Client Libraries
@@ -171,12 +171,12 @@
 - name: Socket.IO
   quadrant: Client Libraries
   ring: Adopt
-  isNew: false
+  isNew: true
   description: Socket.IO is a library that provides comprehensive support for WebSockets, enabling us at Indix to build realtime web applications. It is isomorphic (meaning we can use it on both the client & the server sides) and supports automatic reconnection and disconnection detection, making for a very robust and reliable WebSocket library.
 - name: NPM
   quadrant: Testing & Build Tools
   ring: Assess
-  isNew: false
+  isNew: true
   description: Node provides scripts directive with enough packages to build, compile, watch, live-reload and test with pre and post-hooks. It has packages to support streaming of these tasks, which make NPM a good enough tool to assess for build automation.
 - name: Yarn
   quadrant: Testing & Build Tools
@@ -186,12 +186,12 @@
 - name: Gulp.js
   quadrant: Testing & Build Tools
   ring: Adopt
-  isNew: false
+  isNew: true
   description: Gulp uses the power of node streams to automate the build workflow. Its plethora of plugins and active community makes Gulp the build tool of choice at Indix.
 - name: Grunt
   quadrant: Testing & Build Tools
   ring: Hold
-  isNew: false
+  isNew: true
   description: Grunt is a config-based build automation tool as opposed to Gulp which is code based. Grunt's' performance in terms of file processing is comparatively worse to Gulp, and hence Indix has it on Hold.
 - name: Mocha
   quadrant: Testing & Build Tools
@@ -216,7 +216,7 @@
 - name: Jasmine
   quadrant: Testing & Build Tools
   ring: Hold
-  isNew: false
+  isNew: true
   description: Jasmine was one of the earliest Javascript testing tools and comes as an package with in-built assertion utilities. Jasmine doesn't come with a test runner, while Mocha does. Indix has put Jasmine on hold, with Mocha + Chai being adopted.
 - name: Nock
   quadrant: Testing & Build Tools
@@ -231,7 +231,7 @@
 - name: Bower
   quadrant: Testing & Build Tools
   ring: Hold
-  isNew: false
+  isNew: true
   description: Bower is a package manager for all client-side libraries. With NPM as Indix's' choice for package management, we have put Bower on hold.
 - name: Browser Stack
   quadrant: Testing & Build Tools
