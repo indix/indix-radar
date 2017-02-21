@@ -1,4 +1,4 @@
 ---
-title: Devops
+title: DevOps
 ---
 <pre>{{ site.data.devops }}</pre>
