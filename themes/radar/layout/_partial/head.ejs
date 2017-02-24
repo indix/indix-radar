@@ -21,9 +21,9 @@
   %>
   <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Overview of Technology choices at Indix">
-  <meta name="keywords" content="radar,tech,indix,techradar,tech-radar,indix-tech-radar">
-  <meta name="author" content="Indix">
+  <meta name="description" content="<%= config.description %>">
+  <meta name="keywords" content="<%= config.keywords %>">
+  <meta name="author" content="<%= config.author %>">
   <%- css('main') %>
   <% if (theme.favicon){ %>
     <link rel="icon" href="<%= config.root %><%- theme.favicon %>">
