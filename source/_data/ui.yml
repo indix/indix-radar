@@ -7,7 +7,8 @@
   quadrant: Languages & Techniques
   ring: Hold
   isNew: true
-  description: CoffeeScript is a programming language that transcompiles to JavaScript. It adds syntactic sugar in an effort to enhance JavaScript's brevity and readability. ES2015/ES6 solves a lot of the problems that CoffeeScript was trying to solve without drastic syntax changes. Projects which were written in CoffeeScript will continue to exist as is.
+  description: "[CoffeeScript](http://coffeescript.org/){:target='_blank'} is a programming language that transcompiles to JavaScript. It adds syntactic sugar in an effort to enhance JavaScript's brevity and readability."
+  opinion: Indix started using CoffeeScript in 2015. The primary reason was to reduce boiler plate code that we were writing due to JavaScript idiosyncarnies. Example - [Pros and cons of CoffeeScript](http://softwareengineering.stackexchange.com/questions/72569/what-are-the-pros-and-cons-of-coffeescript). It did improve our productivity during the time of usage and multiple apps based out of CoffeeScript run in production. But as of 2017 Q1, we no longer use it because ES2015/ES6 solves a lot of the problems that CoffeeScript was trying to solve without drastic syntax changes. Migration of existing apps to ES6 is in backlog and will be picked on case-by-case basis.
 - name: TypeScript
   quadrant: Languages & Techniques
   ring: Adopt
@@ -47,12 +48,14 @@
   quadrant: Languages & Techniques
   ring: Assess
   isNew: true
-  description: Yeoman helps you to kickstart new apps by providing generator templates with frameworks of developer's choice. Indix is actively assessing the huge ecosystem of generators and will use them as need arises.
+  description: "[Yeoman](http://yeoman.io/){:target='_blank'} helps you to kickstart new apps by providing generator templates with frameworks of developer's choice. Any developer who want to quickly bootstrap a web app can pick the web frameworks of his/her choice and let Yeoman generate the scaffolding of project structure."
+  opinion: Indix picked upon yeoman generators like [React-starter-kit](https://github.com/kriasoft/react-starter-kit/tree/yeoman-generator){:target='_blank'} and have active production app running on it. Indix is as well actively assessing the huge ecosystem of generators and will use them as need arises. Any non-front-end-engineer who want to quickly prototype an app, Yeoman is the preferred choice to bootstrap at a quicker pace.
 - name: Material Design
   quadrant: Languages & Techniques
   ring: Trial
   isNew: true
-  description: Google created Material design principles with the intention to create a visual language and a single unified experience across platforms. Indix tried Material Design in one of its apps and is actively following its associated frameworks.
+  description: Google created [Material Design](https://material.io/guidelines/){:target='_blank'} principles with the intention to create a visual language and a single unified experience across platforms.
+  opinion: Indix tried Material Design in one of its internal apps and is actively following its associated frameworks. The themes and the user experience are seamless and being actively adopted to Google applications. Indix is in wait and watch mode for extensive adoption of the technique, as the concept gives flexibility only to override the theme and colors of the visual elements, but not the feel and behaviour. Indix will move the technique to assess once Material design provides extensive overriding capabilities to fit the technique to Indix's visual theme and behaviour.
 - name: Typed Javascript
   quadrant: Languages & Techniques
   ring: Assess
