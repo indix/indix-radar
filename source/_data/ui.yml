@@ -2,7 +2,8 @@
   quadrant: Languages & Techniques
   ring: Adopt
   isNew: true
-  description: ECMAScript 2015 (initially referred to as ES6) was finalized in June 2015 and introduces new syntax for writing complex applications (including classes & modules) and is generally a sorely needed upgrade to the language. Though browser support for ES6 is still incomplete, ES6 features can be used with the [Babel](https://babeljs.io/) transpiler.
+  description: [ECMAScript 2015 (initially referred to as ES6)](http://es6-features.org/){:target='_blank'} was finalized in June 2015 and introduces new syntax for writing complex applications (including classes & modules) and is generally a sorely needed upgrade to the language. As of Q1 2017, majority of the ES6 features are supported by the common browsers. The not supported ES6 features can be used with the [Babel](https://babeljs.io/) transpiler.
+  opinion: Indix has been active adopter of ES6 features ever since it's inception, initially through transpilers and later as direct features. Apps written without ES6 features are being rewritten.
 - name: CoffeeScript
   quadrant: Languages & Techniques
   ring: Hold
@@ -13,37 +14,44 @@
   quadrant: Languages & Techniques
   ring: Adopt
   isNew: true
-  description: TypeScript is a free and open-source programming language developed and maintained by Microsoft. It is a strict superset of JavaScript and adds static typing to the language. At Indix, apps which need to communicate to micro-services via APIs benefit vastly from static types.
+  description: [TypeScript](https://www.typescriptlang.org/){:target='_blank'} is a free and open-source programming language developed and maintained by Microsoft. It is a strict superset of JavaScript and adds static typing to the language.   
+  opinion: Indix intially had hard-time debugging non-typed JS and the turn-around time to fix an issue was very high. Such problems led us to explore possibilities of typed JavaScript. While assessing TypeScript in one of it's apps, we found that though the initial development time was more compared to developing in Javascript, but once the app hit production, maintainance of the app has been highly productive. Any new member joining the team found it easy to bootstrap on the code base. While existing projects continue to reamin in Javascript, any new project, TypeScript has become the default choice. 
 - name: React JSX
   quadrant: Languages & Techniques
   ring: Adopt
   isNew: true
-  description: JSX is a JavaScript syntax extension that looks similar to XML. It is more familiar for casual developers such as designers and doesn't alter the benefits of HTML.
-- name: Polymer
+  description: [JSX](https://facebook.github.io/react/docs/jsx-in-depth.html) is a JavaScript syntax extension that looks similar to XML. It is developed by Facebook and is acknowledged for the benefit of writing composable micro-components. 
+  opinion: Indix has been active user of React JSX ever since it's beta stage. The ability to define every UI element as a component and pass-on rich state to the components are very benefitial. Lesser number of bugs are being observed in production apps as the views are reactive to how the state of the app changes. 
+- name: Web Components
   quadrant: Languages & Techniques
   ring: Assess
   isNew: true
-  description: Polymer is a HTML language to build fast, beautiful, and interoperable web components. Web Components are a set of standards currently being produced by Google engineers as a W3C specification that allow for the creation of reusable widgets or components in web documents and web applications. Polymer looks potentially valueable.
+  description: [Web Components](https://www.webcomponents.org/) are a set of standards currently being produced by Google engineers as a W3C specification that allow for the creation of reusable widgets or components in web documents and web applications.
+  opinion: Indix assessed WebComponents in its early alpha stages and found it promising for the core concept of representing every visual item as a component. From the time it's assessed, the list of components repository has grown drastically and Indix is looking forward to trying Web Components in one of its upcoming project.
 - name: HAML
   quadrant: Languages & Techniques
   ring: Adopt
   isNew: true
-  description: HAML (HTML abstraction markup language) is based on one primary principle - markup should be beautiful. HAML accelerates and simplifies template creation. Some of the production apps at Indix are already using HAML.
+  description: [HAML](http://haml.info/) (HTML abstraction markup language) is based on one primary principle - markup should be beautiful. HAML accelerates and simplifies HTML template creation. 
+  opinion: Some of the production apps at Indix are already using HAML. Quicker turn-around time of appp development is being observed for apps developed using HAML.
 - name: LESS
   quadrant: Languages & Techniques
   ring: Hold
   isNew: true
-  description: LESS is a CSS pre-processor; it extends the CSS language, adding features that allow variables, mixins, functions and many other techniques that allow you to make CSS that is more maintainable, themeable and extendable. Indix is a major consumer of [Bootstrap](http://getbootstrap.com/) and ever since Bootstrap made SASS as its default, Indix has put LESS on hold.
+  description: [LESS](http://lesscss.org/) is a CSS pre-processor; it extends the CSS language, adding features that allow variables, mixins, functions and many other techniques that allow you to make CSS that is more maintainable, themeable and extendable. 
+  opinion: Indix is a major consumer of [Bootstrap](http://getbootstrap.com/) and ever since Bootstrap made SASS as its default, Indix has put LESS on hold. All existing apps are already migrated to SASS.
 - name: SASS
   quadrant: Languages & Techniques
   ring: Adopt
   isNew: true
-  description: Sass is an extension of CSS and defines a clean structured way of writing CSS by allowing to modularize CSS snippets while offering a whole slew of features which are practised in javascript environment. Features like varables, external imports, functions and extensibility allow to experience the benefits of modular patterns. Given its advantages, Indix actively adopts Sass for styling its web apps.
+  description: [Sass](http://sass-lang.com/) is an extension of CSS and defines a clean structured way of writing CSS by allowing to modularize CSS snippets while offering a whole slew of features which are practised in javascript environment. Features like variables, external imports, functions and extensibility allow to experience the benefits of modular patterns. 
+  opinion: Given its advantages, Indix actively adopts Sass for styling its web apps. Sass added defined structure to app styling code base and made it easily readable. The extensible nature allowed us to define low level themes and reuse it across apps.
 - name: PostCSS
   quadrant: Languages & Techniques
   ring: Assess
   isNew: true
-  description: PostCSS was launched as a method to use JavaScript for CSS processing. PostCSS on its own is simply an API, which, when used with its vast ecosystem of plugins, offers powerful abilities. Because of its promising custom plugins and tools for transforming styles, Indix is actively assessing the language.
+  description: PostCSS was launched as a method to use JavaScript for CSS processing. PostCSS on its own is simply an API, which, when used with its vast ecosystem of plugins, offers powerful abilities. 
+  opinion: Because of its promising custom plugins and tools for transforming styles, Indix is actively assessing the language. 
 - name: Yeoman
   quadrant: Languages & Techniques
   ring: Assess
