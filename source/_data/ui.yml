@@ -64,19 +64,32 @@
   isNew: true
   description: Javascript being loosely typed, gives the developer flexibility to play with data types. While in some cases, this flexibility is useful, most of the cases, apps need to be strict-typed in-order to communicate with the backend.
   opinion: [Flow](https://flowtype.org/) and [TypeScript](https://www.typescriptlang.org/) are two frameworks which Indix assessed and picked upon Typescript being able to compile to JavaScript and catching type errors during compilation should be mentioned as a benefit compared to flow. The active community of TypeScript and its support for all the common libraries is added advantage.
+- name: Node.js
+  quadrant: Frameworks
+  ring: Adopt
+  isNew: true
+  description: [Node.js](https://nodejs.org/en/) is a JavaScript runtime built on top of Chrome's V8 JavaScript engine. It's lightweight, efficient, event-driven model and carries a extensive community of plugins. 
+  opinion: Indix adopted Node JS since its early satges and large set of internal tools use NodeJS and its plugins extensively to quickly bootstrap an app get it to production. Applying ES6 features and Typescript on top of Node JS proved to be a wholesome package of highly productive web apps. Indix runs apps on different versions of Node JS ranging from v6.0 to as recent as v7.5.
+- name: Io.js
+  quadrant: Frameworks
+  ring: Hold
+  isNew: true
+  description: [Io.js](https://iojs.org/en/) was a fork of Node.js. The benefits being adoption of performance improvements of V8 and [Semver](http://semver.org)-based release cycles. 
+  opinion: Indix used Io.js for a brief period, but then, put Io.js on hold when Io.js merged back with Node.js.
 - name: Express
   quadrant: Frameworks
   ring: Adopt
   isNew: true
-  description: Express is a [Node.js](https://nodejs.org/en/) web application framework with many HTTP utility methods and act as middleware for building web applications. 
-  opinion: Many utilities and an active community make Express an easy choice for middleware for all Node.js apps at Indix.
+  description: [Express](http://expressjs.com/) is a [Node.js](https://nodejs.org/en/) web application framework with many HTTP utility methods and act as middleware for building web applications. 
+  opinion: Many utilities and an active community make Express an easy choice of middleware for all Node.js apps at Indix.
 - name: Meteor
   quadrant: Frameworks
   ring: Assess
   isNew: true
-  description: Meteor is a highly-opiniated platform to build web, mobile and desktop apps with a same set of javascript code and connects database to end user's screen with high set of integrations. Lesser code and tighter integrations looks promising, which makes it a platform worth assessing at Indix.
+  description: [Meteor](https://www.meteor.com/) is a highly-opiniated platform to build web, mobile and desktop apps with a same set of javascript code and connects database to end user's screen with high set of integrations. 
+  opinion: Indix assessed Metoer during its beta stage. We found apps being with lesser code and tighter integrations, but support of the community and set of frameworks on top of it were quite less at that time. Indix hs left meteor in assess stage and will pick it back in later part of 2017 to re-assess the framework.
 - name: TypeScript
-  quadrant: Languages & Techniques
+  quadrant: Frameworks
   ring: Adopt
   isNew: true
   description: [TypeScript](https://www.typescriptlang.org/){:target='_blank'} is a free and open-source programming language developed and maintained by Microsoft. It is a strict superset of JavaScript and adds static typing to the language.   
@@ -85,17 +98,8 @@
   quadrant: Frameworks
   ring: Assess
   isNew: true
-  description: Koa is an alternate to Express with better support for better error handling & middleware cascading. Koa is built using ES6 generators (with Koa v2 dropping around April 2017 with `async`/`await` support) and is more lightweight, which makes it a candidate for assessment at Indix.
-- name: Node.js
-  quadrant: Languages & Techniques
-  ring: Adopt
-  isNew: true
-  description: Node.js is a JavaScript runtime built on top of Chrome's V8 JavaScript engine. It's lightweight, efficient, event-driven model and the extensive community of plugins makes Node.js a heavily used runtime at Indix.
-- name: Io.js
-  quadrant: Languages & Techniques
-  ring: Hold
-  isNew: true
-  description: Io.js was a fork of Node.js. Because of its benefits of adopting the performance improvements of V8 and [Semver](http://semver.org)-based release cycles, Indix used Io.js for a brief period, but then, put it on hold when it was decided to merge it back with Node.js.
+  description: [Koa](http://koajs.com/) is an alternate to Express+Connect with better support for error handling & middleware cascading. Koa is built using ES6 generators (with Koa v2 dropping around April 2017 with `async`/`await` support) and more lightweight.
+  opinion: Indix designs lightweight server apps with pure REST API. Majority of the heavylifting is handled in client. For such lightweight server, express+connect fits as an apt combination. Koa has kept at assessing stage due its prons and cons. pros being the lightweight and cons being lesser supoort for routing and file serving.
 - name: Backbone.js
   quadrant: Client Libraries
   ring: Hold
