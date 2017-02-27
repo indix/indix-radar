@@ -43,21 +43,25 @@ YAML data should be of the form -
   ring: Hold
   isNew: true
   description: Insert description here
+  opinion: Insert organization opinion here
 - name: Marketing Paradigm #4
   quadrant: Paradigms
   ring: Assess
   isNew: true
   description: Insert description here
+  opinion: Insert organization opinion here
 - name: Marketing Concept #3
   quadrant: Concepts
   ring: Trial
   isNew: false
   description: Insert description here
+  opinion: Insert organization opinion here
 - name: Marketing Algorithm #6
   quadrant: Algorithms
   ring: Adopt
   isNew: false
   description: Insert description here
+  opinion: Insert organization opinion here
 ```
 ### Formatting Options
 
