@@ -2,97 +2,113 @@
   quadrant: Tools
   ring: Adopt
   isNew: true
-  description: "[GoCd](https://www.gocd.io/){:target='_blank'} is a open-source Continuous Integration and Continuous Delivery System. The native support for pipelines, in house expertise(few of the members literally built the tool) and better visualizations compared to other tools made GoCD our tool of choice at Indix."
+  description: "[GoCd](https://www.gocd.io/){:target='_blank'} is a Continuous Integration and Continuous Delivery System developed by [Thoughtworks](https://www.thoughtworks.com/go/) which was open sourced in 2014."
+  opinion: "The native support for pipelines as first class citizen, parallelism of jobs inside stages while keeping separate stages for sequential dependencies and better visualizations compared to other tools made GoCD our tool of choice at Indix. We also had in house expertise (few of the members literally built the tool) that motivated us to consider it in the first place. Over time, we gained more maturity and have been actively working on contributing to various developments around it. Check out [S3 Artifacts Plugin](https://github.com/indix/gocd-s3-artifacts), [Agents auto-scaler on top of Mesos](https://github.com/indix/gocd-mesos) and [auto-scaling with containers](https://github.com/indix/vasuki)."
 
 - name: Snap CI
   quadrant: Tools
   ring: Hold
   isNew: true
-  description: "[Snap CI](https://www.snap-ci.com){:target='_blank'}"
+  description: "[Snap CI](https://www.snap-ci.com){:target='_blank'} has been a popular CI/CD tool in Cloud and used by many companies around."
+  opinion: "Even though it has been a good option, we are no longer considering it since it will be EOL [soon](https://blog.snap-ci.com/blog/2017/02/06/2017-02-06-snap-announcement/) in favour of GOCD"
 
 - name: Travis CI
   quadrant: Tools
   ring: Adopt
   isNew: true
-  description: Travis CI is a cloud based CI offering seamless integration with Github. The need for a CI tool for all the opensource projects @ Indix aptly filled, does the job well and is free.
+  description: "[Travis CI](https://travis-ci.org/) is a cloud based CI tool offering seamless integration with Github."
+  opinion: "The need for a CI tool for all the opensource projects @Indix aptly filled, does the job well and is free."
 
 - name: Concourse CI
   quadrant: Tools
   ring: Assess
   isNew: true
-  description: A CI tool with first-class support for containers and a fairly simple UI. The container support makes it a good CI tool to assess. [More ...](https://concourse.ci/index.html){:target='_blank'}
+  description: A CI tool with first-class support for containers and a fairly simple UI.
+  opinion: "The container support makes it a good CI tool to assess. [More ...](https://concourse.ci/index.html){:target='_blank'}"
 
 - name: Jenkins
   quadrant: Tools
   ring: Hold
   isNew: true
-  description: "[Jenkins](https://jenkins.io/){:target='_blank'} is the CI tool which comes with a lot of features and plugins that enable it to be a unified build and automation tool. [Jenkins](https://jenkins.io/) wasn't build from the ground up to support Continuous Delivery, hence lacked native support for pipelines and visualizations that we were able to get from GoCD."
+  description: "[Jenkins](https://jenkins.io/){:target='_blank'} is probably the most popular CI tool around which comes with a lot of features and plugins that enable it to be a unified build and automation tool." 
+  opinion: "Wasn't build from the ground up to support Continuous Delivery, hence lacked native support for pipelines and visualizations that we were able to get from GoCD."
 
 - name: Ansible
   quadrant: Tools
   ring: Adopt
   isNew: true
-  description: "[Ansible](https://www.ansible.com){:target='_blank'} is an open-source automation engine that automates cloud provisioning, configuration management, and application deployment. The agent-less architecture which enables us to create automation and manage configurations with very little effort makes us to adopt Ansible as our CM tool. Also it comes with other features like provisioning and deployment automation."
+  description: "[Ansible](https://www.ansible.com){:target='_blank'} is an open-source automation engine that automates cloud provisioning, configuration management and application deployment." 
+  opinion: "The agent-less architecture enables us to create automation and manage configurations/ deployment with very little effort. Also, it comes with a matured support for provisioning and deployment as well. Its simplicity compared to other complex tools was another reason behind our decision."
 
 - name: Chef-solo
   quadrant: Tools
   ring: Adopt
   isNew: true
   description: "[Chef-solo](https://docs.chef.io/chef_solo.html){:target='_blank'} is a command that executes chef-client in a way that does not require the Chef server in order to converge cookbooks. Similar to [ansible](https://www.ansible.com){:target='_blank'} we like the agent-less architecture and the in-house expertise made it easier to adopt Chef-solo."
+  opinion: "Chef has been our only CM tool from the very beginning and naturally we have grown expertise over time. Similar to [ansible](https://www.ansible.com){:target='_blank'}, with the server-less architecture of chef-solo we have been able to scale configuration management without any issues in hundreds of m/c in various clusters."
 
 - name: Chef-server
   quadrant: Tools
-  ring: Adopt
+  ring: Hold
   isNew: true
-  description: "[Chef](https://www.chef.io/chef){:target='_blank'} is a CM tool that enables you to manage small to large scale datacentres on and off the cloud with its client server model where the client reaches out to the server periodically to sync its configurations. Being a client sever model it has a lot of moving parts and comes with a host of challenges like Server bottleneck, Single point of failure, complicated architecture hence we put it on hold."
+  description: "[Chef](https://www.chef.io/chef){:target='_blank'} is a CM tool that enables you to manage large scale datacentres on and off the cloud with its client server model where the client reaches out to the server periodically to sync its configurations." 
+  opinion: "The server side of Chef has a lot of moving parts (Think about Nginx/ RabbitMQ/ Postgres/ Flat-file storage/ Rails together) that needs lot of efforts to maintain. Also, scaling horizontally and making it highly available with the open source version poses another challenge altogether. We didn't find it appropriate to continue using it given that we had much simpler alternatives at hand."
 
 - name: Terraform
   quadrant: Tools
   ring: Trial
   isNew: true
-  description: "[Terraform](https://www.terraform.io){:target='_blank'} is a tool for building, changing, and versioning infrastructure safely and efficiently. [Terraform](https://www.terraform.io) can manage existing and popular service providers as well as custom in-house solutions. The ability to create immutable infra backed with good community support encouraged us to try [Terraform](https://www.terraform.io) at Indix."
+  description: "[Terraform](https://www.terraform.io){:target='_blank'} is a [Hashicorp](https://www.hashicorp.com/) tool for building, changing, and versioning infrastructure safely and efficiently."
+  opinion: "Terraform can manage existing and popular service providers as well as custom in-house solutions. It's focus on provisioning, the ability to create immutable infra and a good community support encouraged us to try Terraform at Indix."
 
 - name: Cloudformation
   quadrant: Tools
   ring: Hold
   isNew: true
-  description: "[AWS](https://aws.amazon.com) [CloudFormation](https://aws.amazon.com/cloudformation) provides an easy way to create and manage a collection of related [AWS](https://aws.amazon.com){:target='_blank'} resources, provisioning and updating them in an orderly and predictable fashion. The obvious problem that we had with this tool was that it was only [AWS](https://aws.amazon.com){:target='_blank'} specific, and the complicated JSON required to create templates didn't help either hence we put it on hold."
+  description: "[AWS](https://aws.amazon.com) [CloudFormation](https://aws.amazon.com/cloudformation) provides an easy way to create and manage a collection of related [AWS](https://aws.amazon.com){:target='_blank'} resources, provisioning and updating them in an orderly and predictable fashion." 
+  opinion: "The obvious problem that we had with this tool was that it was AWS specific, and the complicated JSON required to create templates didn't help either hence we put it on hold."
 
 - name: Bind
   quadrant: Tools
   ring: Hold
   isNew: true
   description: "[BIND](https://www.isc.org/downloads/bind) is open source software that enables you to publish your Domain Name System (DNS) information on the Internet, and to resolve DNS queries for your users. At Indix we were in favor of a managed DNS service hence we put [Bind](https://www.isc.org/downloads/bind) on hold."
+  opinion: "We started with Bind since our inception but over time we realized the managing and scaling a DNS infra is far more complicated than one thinks. Given that many hosted DNS solutions came up over time, we favored to move away from maintaining our own infrastructure for such a super-critical component like DNS."
 
-- name: R53
+- name: Route53
   quadrant: Tools
   ring: Adopt
   isNew: true
-  description: "[Amazon Route 53](https://aws.amazon.com/route53){:target='_blank'} is a highly available and scalable cloud Domain Name System (DNS) web service. We liked [R53](https://aws.amazon.com/route53){:target='_blank'} from the outset as it made DNS management easy and reliable hence we adopted it as our choice of tool for DNS."
+  description: "[Amazon Route 53](https://aws.amazon.com/route53){:target='_blank'} is a highly available and scalable cloud Domain Name System (DNS) service."
+  opinion: "Route53 has matured a lot since it was released years back. Features like Private hosted zones, Vpc association, DNS aliasing (Very useful for Zone Apex)", multiple routing policies have been tremendously useful for us. Along with those, having a scalable & highly-available DNS service without any headache of maintenance made us to choose it without a second thought."
 
 - name: Capistrano
   quadrant: Tools
   ring: Hold
   isNew: true
-  description: A remote server automation and deployment tool written in [Ruby](https://www.ruby-lang.org/en){:target='_blank'}. At Indix we are using [Ansible](https://www.ansible.com){:target='_blank'} for both CM and provisioning so it made it simpler to choose the same over [Capistrano](http://capistranorb.com){:target='_blank'} as [Capistrano](http://capistranorb.com){:target='_blank'} didn't bring anything new to the table than what [Ansible](https://www.ansible.com){:target='_blank'} had to offer in terms of deployments.
+  description: A remote server automation and deployment tool written in [Ruby](https://www.ruby-lang.org/en){:target='_blank'}." 
+  opinion: "At Indix we are using [Ansible](https://www.ansible.com){:target='_blank'} for both CM and provisioning so it made it simpler to choose the same over [Capistrano](http://capistranorb.com){:target='_blank'} as Capistrano didn't bring anything new to the table than what [Ansible](https://www.ansible.com){:target='_blank'} had to offer in terms of deployments."
 
 - name: Splunk
   quadrant: Tools
   ring: Hold
   isNew: true
-  description: "[Splunk](https://www.splunk.com){:target='_blank'} is a log management tool that can be used to monitor and analyze the data collected. The data collected can then be used to generate graphs, reports, alerts and dashboards. At Indix we just need a simple and cost-effective tool for log management and [Splunk](https://www.splunk.com){:target='_blank'} was too costly for us hence we put it on hold."
+  description: "[Splunk](https://www.splunk.com){:target='_blank'} is a log management tool that can be used to monitor and analyze the data collected. The data collected can then be used to generate graphs, reports, alerts and dashboards."
+  opinion: "At Indix we just needed a simple and cost-effective tool for log management/ alerting & reporting. Even though we started with Splunk initially, it turned out to be too costly for us and hence we put it on hold."
 
 - name: Loggly
   quadrant: Tools
   ring: Adopt
   isNew: true
-  description: "[Loggly](https://www.loggly.com){:target='_blank'} is a cloud based log management tool where you simply install a client on your server and the log is shipped to a central unit for management. At Indix, we adopted [loggly](https://www.loggly.com){:target='_blank'} as it was economical, well managed, cloud based and had a decent functionality for analytics"
+  description: "[Loggly](https://www.loggly.com){:target='_blank'} is a cloud based log management tool where you simply install a client on your server and the log is shipped to a central unit for management."
+  opinion: "We adopted Loggly as it was economical, well managed, cloud based hosted solution and had a decent functionality for analytics which was good enough for our use-cases."
 
 - name: ELK
   quadrant: Tools
   ring: Hold
   isNew: true
-  description: "[ElasticSearch Logstash Kibana](https://www.elastic.co/videos/introduction-to-the-elk-stack){:target='_blank'} is a combination of open source tools which can used for log management. Its one of the commonly used tools for log management in the industry. At Indix we were looking for a managed service and [ELK](https://www.elastic.co/videos/introduction-to-the-elk-stack){:target='_blank'} stack has a complex architecture and needs effort to manage in house, and for all the effort you put in its fairly costly to build, there is no licensing cost but running a HA/ Scalable stack of [ELK](https://www.elastic.co/videos/introduction-to-the-elk-stack){:target='_blank'} wasn't cost effective hence we put it on hold. Also, in [Loggly](https://www.loggly.com){:target='_blank'} - defining alerts as and when required is simple, can be done via UI."
+  description: "[ElasticSearch Logstash Kibana](https://www.elastic.co/videos/introduction-to-the-elk-stack){:target='_blank'} is a combination of open source tools which can used for log management. Its one of the commonly used tools for log management in the industry." 
+  opinion: "At Indix we preferred a managed service for centralized logging since the complex architecture and efforts needed to manage an in-house ELK stack sounded too much. On top of that, building a HA/ Scalable stack of ELK wasn't cost effective given the amount of logs we deal with on a daily basis. Also, there were features that we wanted to have like defining alerts from UI, being able to use derived field etc were missing in ELK."
 
 
 - name: Docker
@@ -100,6 +116,7 @@
   ring: Adopt
   isNew: true
   description: "[Docker](https://www.docker.com){:target='_blank'} is synonymous to containers and we at Indix like the ease of use and portability that it offers and have adopted it for Dev/CI environments. The kernel compatibility issues that [Docker](https://www.docker.com){:target='_blank'} had didn't give sufficient confidence to adopt it across all Production environments yet hence its put on hold."
+  opinion: ""
 
 - name: Rkt
   quadrant: Platforms
