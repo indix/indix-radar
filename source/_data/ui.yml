@@ -104,12 +104,14 @@
   quadrant: Client Libraries
   ring: Hold
   isNew: true
-  description: Backbone.js provides a Model-View-Collection structure to web applications and helps with utilities to build APIs RESTful. Indix was an early adopter of Backbone.js due to to its minimalistic MVC model, but with Redux unidirectional flow of events and virtual-dom updates, Indix has put Backbone on hold.
+  description: Backbone.js provides a Model-View-Collection structure to web applications and helps with utilities to build APIs RESTful.
+  opinion: Indix was an early adopter of Backbone.js due to to its minimalistic MVC model, but with Redux unidirectional flow of events and virtual-dom updates, Indix has put Backbone on hold.
 - name: AngularJS 1.0
   quadrant: Client Libraries
   ring: Hold
   isNew: true
-  description: Angular was developed by Google to build dynamic web pages with support for data-binding and templates on client side. Indix evaluated AngularJS for some internal projects, but put the 1.0 version on hold after the release of Angular 2.0.
+  description: Angular was developed by Google to build dynamic web pages with support for data-binding and templates on client side.
+  opinion: Indix evaluated AngularJS for some internal projects, but put the 1.0 version on hold after the release of Angular 2.0.
 - name: AngularJS 2.0
   quadrant: Client Libraries
   ring: Assess
@@ -119,12 +121,14 @@
   quadrant: Client Libraries
   ring: Adopt
   isNew: true
-  description: React is the View part of the MVC model. It abstracts the DOM away from the app and implements one-way data flow, as an alternate to Angular's two-way binding. It's benefits of composable components and intelligent state maintenance has made it the default client-side framework at Indix.
+  description: React (sometimes styled React.js or ReactJS) is an open-source JavaScript library providing a view for data rendered as HTML.
+  opinion: React's benefits of composable components and intelligent state maintenance has made it the default client-side framework at Indix. It abstracts the DOM away from the app and implements one-way data flow, as an alternate to Angular's two-way binding. Moving from backbone, the learning curve initially seemed to slow things a little bit, but it made the team more productive over a longer period of time.
 - name: Redux
   quadrant: Client Libraries
   ring: Adopt
   isNew: true
-  description: Redux is a state container for JavaScript apps and helps the app to behave consistently. Redux helps to plug-in immutability to a web app state, resulting in lesser bugs in the code. Due to these advantages, Indix uses Redux in combination with React.
+  description: Redux is a state container for JavaScript apps and helps the app to behave consistently.
+  opinion: Redux helps to plug-in immutability to a web app state, resulting in lesser bugs in the code. Due to these advantages, Indix uses Redux in combination with React.
 - name: MobX
   quadrant: Client Libraries
   ring: Adopt
@@ -144,12 +148,14 @@
   quadrant: Client Libraries
   ring: Adopt
   isNew: true
-  description: Bootstrap is the most popular HTML framework with in-built support for responsive design. Indix was an early adopter of Bootstrap and it is our default framework for designing web-apps.
+  description: Bootstrap is the most popular HTML framework with in-built support for responsive design, built by Twitter.
+  opinion: Indix was an early adopter of Bootstrap and it is our default framework for designing web-apps. It took a lot of effort to move from 2.x to 3.x, but the benefits of 3.x justified the efforts invested.
 - name: Bootstrap 4.x
   quadrant: Client Libraries
   ring: Adopt
   isNew: true
-  description: Bootstrap v4, still in [Alpha]((https://v4-alpha.getbootstrap.com/)), is a major revision to our favourite CSS framework. It introduces Flexbox support (finally!) and includes many new welcome changes like a `rem`-based grid, [cards](http://v4-alpha.getbootstrap.com/components/card/) and built-in Tether! Being an Alpha release, it is bound to break; but we have begun using Bootstrap v4 for a few internal projects.
+  description: Bootstrap v4, still in [Alpha]((https://v4-alpha.getbootstrap.com/)), is a major revision to our favourite CSS framework. It introduces Flexbox support (finally!) and includes many new welcome changes like a `rem`-based grid, [cards](http://v4-alpha.getbootstrap.com/components/card/) and built-in Tether!
+  opinion: Being an Alpha release, it is bound to break; but we have begun using Bootstrap v4 for a few internal projects.
 - name: Foundation
   quadrant: Client Libraries
   ring: Adopt
@@ -159,7 +165,8 @@
   quadrant: Client Libraries
   ring: Assess
   isNew: true
-  description: With React being in adoption, and Google introducing Material UI guidelines, The Material UI HTMl/CSS framework provides a combination of the two. Indix uses Material UI framework in some of it's projects and is assessing the possibilities of adopting more of Material UI themes and guidelines.
+  description: A framework of UI components built with React by Google. With React being in adoption, and Google introducing Material UI guidelines, The Material UI HTMl/CSS framework provides a combination of the two.
+  opinion: Indix uses Material UI framework in some of it's projects and is assessing the possibilities of adopting more of Material UI themes and guidelines.
 - name: Lodash
   quadrant: Client Libraries
   ring: Adopt
@@ -169,7 +176,8 @@
   quadrant: Client Libraries
   ring: Hold
   isNew: true
-  description: Underscore in an utility similar to lodash, but given that Lodash has grown into a more consistent superset of Underscore preferred framework for NodeJS apps, we have Underscore on hold for now.
+  description: A JavaScript library that provides a whole mess of useful functional programming helpers without extending any built-in objects.
+  opinion: Underscore in an utility similar to lodash, but given that Lodash has grown into a more consistent superset of Underscore preferred framework for NodeJS apps, we have Underscore on hold for now.
 - name: Isomorphic Fetch
   quadrant: Client Libraries
   ring: Adopt
@@ -179,7 +187,8 @@
   quadrant: Client Libraries
   ring: Hold
   isNew: true
-  description: jQuery is the lodash for DOM. With React providing all the functionalities of jQuery, Indix has put jQuery on hold and will possibly use it when need arises.
+  description: jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.
+  opinion: With React providing all the functionalities of jQuery, Indix has put jQuery on hold and will possibly use it when need arises.
 - name: RxJS
   quadrant: Client Libraries
   ring: Trial
@@ -209,7 +218,7 @@
   quadrant: Testing & Build Tools
   ring: Hold
   isNew: true
-  description: Grunt is a config-based build automation tool as opposed to Gulp which is code based. Grunt's' performance in terms of file processing is comparatively worse to Gulp, and hence Indix has it on Hold.
+  description: Grunt is a config-based build automation tool as opposed to Gulp which is code based. Grunt's performance in terms of file processing is comparatively worse to Gulp, and hence Indix has it on Hold.
 - name: Mocha
   quadrant: Testing & Build Tools
   ring: Adopt
@@ -224,17 +233,20 @@
   quadrant: Testing & Build Tools
   ring: Trial
   isNew: true
-  description: Jest is built by developers of React and provides powerful mocking functions as default behaviour. It virtualizes Javascript environment using [JSDOM](https://github.com/tmpvar/jsdom) and has utilities to test varied DOM behaviour. Due to slow performance aspects of Jest, Indix has put the framework in trial mode and is actively following the community, looking for performance improvements.
+  description: Jest is built by developers of React and provides powerful mocking functions as default behaviour. It virtualizes Javascript environment using [JSDOM](https://github.com/tmpvar/jsdom) and has utilities to test varied DOM behaviour.
+  opinion: Due to slow performance aspects of Jest, Indix has put the framework in trial mode and is actively following the community, looking for performance improvements.
 - name: Istanbul
   quadrant: Testing & Build Tools
   ring: Adopt
   isNew: true
-  description: Istanbul is a code coverage measurement tool from the YUI team and offers coverage for statement, branches and functions. It's multiple report formats and support as both a command line tool as well as a library makes Istanbul the favourite coverage tool at Indix.
+  description: Istanbul is a code coverage measurement tool from the YUI team and offers coverage for statement, branches and functions.
+  opinion: It's multiple report formats and support as both a command line tool as well as a library makes Istanbul the favourite coverage tool at Indix.
 - name: Jasmine
   quadrant: Testing & Build Tools
   ring: Hold
   isNew: true
-  description: Jasmine was one of the earliest Javascript testing tools and comes as an package with in-built assertion utilities. Jasmine doesn't come with a test runner, while Mocha does. Indix has put Jasmine on hold, with Mocha + Chai being adopted.
+  description: Jasmine was one of the earliest Javascript testing tools and comes as an package with in-built assertion utilities.
+  opinion: Jasmine doesn't come with a test runner, while Mocha does. Indix has put Jasmine on hold, with Mocha + Chai being adopted.
 - name: Nock
   quadrant: Testing & Build Tools
   ring: Trial
