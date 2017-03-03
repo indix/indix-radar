@@ -30,14 +30,14 @@
   quadrant: Tools
   ring: Hold
   isNew: true
-  description: "[Jenkins](https://jenkins.io/){:target='_blank'} is probably the most popular CI tool around which comes with a lot of features and plugins that enable it to be a unified build and automation tool." 
+  description: "[Jenkins](https://jenkins.io/){:target='_blank'} is probably the most popular CI tool around which comes with a lot of features and plugins that enable it to be a unified build and automation tool."
   opinion: "Wasn't build from the ground up to support Continuous Delivery, hence lacked native support for pipelines and visualizations that we were able to get from GoCD."
 
 - name: Ansible
   quadrant: Tools
   ring: Adopt
   isNew: true
-  description: "[Ansible](https://www.ansible.com){:target='_blank'} is an open-source automation engine that automates cloud provisioning, configuration management and application deployment." 
+  description: "[Ansible](https://www.ansible.com){:target='_blank'} is an open-source automation engine that automates cloud provisioning, configuration management and application deployment."
   opinion: "The agent-less architecture enables us to create automation and manage configurations/ deployment with very little effort. Also, it comes with a matured support for provisioning and deployment as well. Its simplicity compared to other complex tools was another reason behind our decision."
 
 - name: Chef-solo
@@ -51,7 +51,7 @@
   quadrant: Tools
   ring: Hold
   isNew: true
-  description: "[Chef](https://www.chef.io/chef){:target='_blank'} is a CM tool that enables you to manage large scale datacentres on and off the cloud with its client server model where the client reaches out to the server periodically to sync its configurations." 
+  description: "[Chef](https://www.chef.io/chef){:target='_blank'} is a CM tool that enables you to manage large scale datacentres on and off the cloud with its client server model where the client reaches out to the server periodically to sync its configurations."
   opinion: "The server side of Chef has a lot of moving parts (Think about Nginx/ RabbitMQ/ Postgres/ Flat-file storage/ Rails together) that needs lot of efforts to maintain. Also, scaling horizontally and making it highly available with the open source version poses another challenge altogether. We didn't find it appropriate to continue using it given that we had much simpler alternatives at hand."
 
 - name: Terraform
@@ -65,7 +65,7 @@
   quadrant: Tools
   ring: Hold
   isNew: true
-  description: "[AWS](https://aws.amazon.com) [CloudFormation](https://aws.amazon.com/cloudformation) provides an easy way to create and manage a collection of related [AWS](https://aws.amazon.com){:target='_blank'} resources, provisioning and updating them in an orderly and predictable fashion." 
+  description: "[AWS](https://aws.amazon.com) [CloudFormation](https://aws.amazon.com/cloudformation) provides an easy way to create and manage a collection of related [AWS](https://aws.amazon.com){:target='_blank'} resources, provisioning and updating them in an orderly and predictable fashion."
   opinion: "The obvious problem that we had with this tool was that it was AWS specific, and the complicated JSON required to create templates didn't help either hence we put it on hold."
 
 - name: Bind
@@ -86,7 +86,7 @@
   quadrant: Tools
   ring: Hold
   isNew: true
-  description: A remote server automation and deployment tool written in [Ruby](https://www.ruby-lang.org/en){:target='_blank'}." 
+  description: "A remote server automation and deployment tool written in [Ruby](https://www.ruby-lang.org/en){:target='_blank'}."
   opinion: "At Indix we are using [Ansible](https://www.ansible.com){:target='_blank'} for both CM and provisioning so it made it simpler to choose the same over [Capistrano](http://capistranorb.com){:target='_blank'} as Capistrano didn't bring anything new to the table than what [Ansible](https://www.ansible.com){:target='_blank'} had to offer in terms of deployments."
 
 - name: Splunk
@@ -107,7 +107,7 @@
   quadrant: Tools
   ring: Hold
   isNew: true
-  description: "[ElasticSearch Logstash Kibana](https://www.elastic.co/videos/introduction-to-the-elk-stack){:target='_blank'} is a combination of open source tools which can used for log management. Its one of the commonly used tools for log management in the industry." 
+  description: "[ElasticSearch Logstash Kibana](https://www.elastic.co/videos/introduction-to-the-elk-stack){:target='_blank'} is a combination of open source tools which can used for log management. Its one of the commonly used tools for log management in the industry."
   opinion: "At Indix we preferred a managed service for centralized logging since the complex architecture and efforts needed to manage an in-house ELK stack sounded too much. On top of that, building a HA/ Scalable stack of ELK wasn't cost effective given the amount of logs we deal with on a daily basis. Also, there were features that we wanted to have like defining alerts from UI, being able to use derived field etc were missing in ELK."
 
 
@@ -115,124 +115,140 @@
   quadrant: Platforms
   ring: Adopt
   isNew: true
-  description: "[Docker](https://www.docker.com){:target='_blank'} is synonymous to containers and we at Indix like the ease of use and portability that it offers and have adopted it for Dev/CI environments. The kernel compatibility issues that [Docker](https://www.docker.com){:target='_blank'} had didn't give sufficient confidence to adopt it across all Production environments yet hence its put on hold."
-  opinion: ""
+  description: "[Docker](https://www.docker.com){:target='_blank'} is synonymous to containers and we at Indix like the ease of use and portability that it offers and have adopted it for Dev/CI environments."
+  opinion: "The kernel compatibility issues that [Docker](https://www.docker.com){:target='_blank'} had didn't give sufficient confidence to adopt it across all Production environments yet hence its put on hold."
 
 - name: Rkt
   quadrant: Platforms
   ring: Assess
   isNew: true
-  description: "[Rkt](https://github.com/coreos/rkt){:target='_blank'} is a pod-native container engine for Linux. It is composable, secure, and built on standards. The focus on security and a composable architecture were the key reasons why we at Indix wanted to assess this tool."
+  description: "[Rkt](https://github.com/coreos/rkt){:target='_blank'} is a pod-native container engine for Linux. It is composable, secure, and built on standards."
+  opinion: "The focus on security and a composable architecture were the key reasons why we at Indix wanted to assess this tool."
 
 - name: CoreOS
   quadrant: Platforms
   ring: Trial
   isNew: true
-  description: With Container Linux and Kubernetes, [CoreOS](https://coreos.com){:target='_blank'} provides the key components to secure, simplify and automatically update your container infrastructure. We at Indix, wanted to try out [CoreOS](https://coreos.com){:target='_blank'} as it offered an ecosystem of container specific tools that scales well and offers great flexibility.
+  description: With Container Linux and Kubernetes, [CoreOS](https://coreos.com){:target='_blank'} provides the key components to secure, simplify and automatically update your container infrastructure.
+  opinion: We at Indix, wanted to try out [CoreOS](https://coreos.com){:target='_blank'} as it offered an ecosystem of container specific tools that scales well and offers great flexibility.
 
 - name: CentOS
   quadrant: Platforms
   ring: Hold
   isNew: true
-  description: The [CentOS](https://www.centos.org){:target='_blank'} Linux distribution is a platform derived from the sources of Red Hat Enterprise Linux (RHEL). We liked the more frequent updates that come as part of Ubuntu rather than the slower updates in case of [Centos](https://www.centos.org){:target='_blank'}. Also the user community in case of Centos is not as huge as Ubuntu, hence we put it on hold.
+  description: The [CentOS](https://www.centos.org){:target='_blank'} Linux distribution is a platform derived from the sources of Red Hat Enterprise Linux (RHEL).
+  opinion: We liked the more frequent updates that come as part of Ubuntu rather than the slower updates in case of [Centos](https://www.centos.org){:target='_blank'}. Also the user community in case of Centos is not as huge as Ubuntu, hence we put it on hold.
 
 - name: Ubuntu
   quadrant: Platforms
   ring: Adopt
   isNew: true
-  description: "[Ubuntu](https://www.ubuntu.com){:target='_blank'} is one of the most popular debian Linux distros out there. We at Indix like the active community support, frequent updates and arguably the best package management."
+  description: "[Ubuntu](https://www.ubuntu.com){:target='_blank'} is one of the most popular debian Linux distros out there."
+  opinion: "We at Indix like the active community support, frequent updates and arguably the best package management."
 
 - name: Mesos
   quadrant: Platforms
   ring: Adopt
   isNew: true
-  description: "[Apache Mesos](http://mesos.apache.org){:target='_blank'} abstracts CPU, memory, storage, and other compute resources away from machines (physical or virtual), enabling fault-tolerant and elastic distributed systems to easily be built and run effectively. We at Indix use [Mesos](http://mesos.apache.org){:target='_blank'} to manage our resources for the features it provides."
+  description: "[Apache Mesos](http://mesos.apache.org){:target='_blank'} abstracts CPU, memory, storage, and other compute resources away from machines (physical or virtual), enabling fault-tolerant and elastic distributed systems to easily be built and run effectively."
+  opinion: "We at Indix use [Mesos](http://mesos.apache.org){:target='_blank'} to manage our resources for the features it provides."
 
 - name: Marathon
   quadrant: Platforms
   ring: Adopt
   isNew: true
-  description: A container orchestration platform for [Mesos](http://mesos.apache.org){:target='_blank'} and DC/OS. We use [marathon](https://mesosphere.github.io/marathon){:target='_blank'} to manage application deployments in mesos.
+  description: A container orchestration platform for [Mesos](http://mesos.apache.org){:target='_blank'} and DC/OS.
+  opinion: We use [marathon](https://mesosphere.github.io/marathon){:target='_blank'} to manage application deployments in mesos.
 
 - name: Kubernetes
   quadrant: Platforms
   ring: Trial
   isNew: true
-  description: "[Kubernetes](https://kubernetes.io){:target='_blank'} is an open-source system for automating deployment, scaling, and management of containerized applications. We at Indix wanted to try [Kubernetes](https://kubernetes.io){:target='_blank'} as it offers great scalability and flexibility."
+  description: "[Kubernetes](https://kubernetes.io){:target='_blank'} is an open-source system for automating deployment, scaling, and management of containerized applications."
+  opinion: "We at Indix wanted to try [Kubernetes](https://kubernetes.io){:target='_blank'} as it offers great scalability and flexibility."
 
 - name: Mesosphere DCOS
   quadrant: Platforms
   ring: Assess
   isNew: true
-  description: Mesosphere Enterprise DC/OS includes everything you need to elastically run containerized apps and data services in production. We wanted to assess this tool as it paired well with [mesos/marathon](https://mesosphere.github.io/marathon){:target='_blank'} that we are already using.
+  description: "Mesosphere Enterprise DC/OS includes everything you need to elastically run containerized apps and data services in production."
+  opinion: "We wanted to assess this tool as it paired well with [mesos/marathon](https://mesosphere.github.io/marathon){:target='_blank'} that we are already using."
 
 - name: AWS
   quadrant: Platforms
   ring: Adopt
   isNew: true
-  description: "[AWS](https://aws.amazon.com){:target='_blank'} is a public IAAS provider that provides a rich set of features to host your infrastructure in the public cloud. At Indix, we liked the scale, reliability and flexibility that [AWS](https://aws.amazon.com){:target='_blank'} had to offer. Also being the leading IAAS provider in the market it has good integration with the best tools for provisioning and automation required to manage a tool like this."
+  description: "[AWS](https://aws.amazon.com){:target='_blank'} is a public IAAS provider that provides a rich set of features to host your infrastructure in the public cloud."
+  opinion: "At Indix, we liked the scale, reliability and flexibility that [AWS](https://aws.amazon.com){:target='_blank'} had to offer. Also being the leading IAAS provider in the market it has good integration with the best tools for provisioning and automation required to manage a tool like this."
 
 - name: Google Cloud
   quadrant: Platforms
   ring: Assess
   isNew: true
-  description: "[Google's version of the IAAS](https://cloud.google.com){:target='_blank'}, offering similar tools and feature set as other providers in the market. Google seems to offer better data-processing and data-flow compared to [AWS](https://aws.amazon.com){:target='_blank'} hence we at Indix wanted to assess it."
+  description: "[Google's version of the IAAS](https://cloud.google.com){:target='_blank'}, offering similar tools and feature set as other providers in the market."
+  opinion: "Google seems to offer better data-processing and data-flow compared to [AWS](https://aws.amazon.com){:target='_blank'} hence we at Indix wanted to assess it."
 
 - name: Azure
   quadrant: Platforms
   ring: Hold
   isNew: true
-  description: "[Azure](https://azure.microsoft.com/en-in){:target='_blank'} is the IAAS offering from Microsoft. We find [Azure](https://azure.microsoft.com/en-in){:target='_blank'} not as matured and refined as [AWS](https://aws.amazon.com){:target='_blank'} and hence we decided to put it on hold at Indix."
+  description: "[Azure](https://azure.microsoft.com/en-in){:target='_blank'} is the IAAS offering from Microsoft."
+  opinion: "We find [Azure](https://azure.microsoft.com/en-in){:target='_blank'} not as matured and refined as [AWS](https://aws.amazon.com){:target='_blank'} and hence we decided to put it on hold at Indix."
 
 - name: BareMetal DC
   quadrant: Platforms
   ring: Hold
   isNew: true
-  description: We don't want the overhead of infrastructure management by ourselves and also to lose the flexibility of scaling on demand.
+  description: "We don't want the overhead of infrastructure management by ourselves and also to lose the flexibility of scaling on demand."
 
 - name: Private Cloud
   quadrant: Platforms
   ring: Assess
   isNew: true
-  description: We are also assessing the possibility of an in house private Cloud in DC as it would offer more visibility and control over public IAAS providers.
+  description: "We are also assessing the possibility of an in house private Cloud in DC as it would offer more visibility and control over public IAAS providers."
 
 
 - name: Letsencrypt
   quadrant: Techniques
   ring: Adopt
   isNew: true
-  description: "[Let’s Encrypt](https://letsencrypt.org){:target='_blank'} is a free, automated, and open Certificate Authority. Features like more granular and selective controls towards authorization, easy automation and no cost made it the tool of choice at Indix."
+  description: "[Let’s Encrypt](https://letsencrypt.org){:target='_blank'} is a free, automated, and open Certificate Authority provided by the Internet Security Research Group(ISRG).The key principles behind Let's Encrypt are free, automatic, secure, transparent, open and cooperative."
+  opinion: "Features like more granular and selective controls towards authorization, easy automation and no cost made it the tool of choice at Indix."
 
 - name: AWS Certificate Manager
   quadrant: Techniques
   ring: Adopt
   isNew: true
-  description: "[AWS Certificate Manager](http://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html){:target='_blank'} makes it easy to provision, manage, and deploy SSL/TLS certificates on AWS-managed resources. Since all our infra is in AWS and this being a free tool offering features like automated renewal we adopted it at Indix."
+  description: "[AWS Certificate Manager](http://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html){:target='_blank'} makes it easy to provision, manage, and deploy SSL/TLS certificates on AWS-managed resources."
+  opinion: "Since all our infra is in AWS and this being a free tool offering features like automated renewal we adopted it at Indix."
 
 - name: MultiFactor Authentication
   quadrant: Techniques
   ring: Adopt
   isNew: true
-  description: MFA is implemented in AWS, mail and github as we at Indix give security utmost importance.
-
+  description: "Multifactor Authentication is a security practice where authentication is achieved through different modes and not just one."
+  opinion: "MFA is implemented in AWS, mail and github as we at Indix give security utmost importance."
 
 - name: Bash
   quadrant: Languages
   ring: Adopt
   isNew: true
-  description: Since we are a Linux only environment [Bash](https://www.gnu.org/software/bash){:target='_blank'} is the default scripting tool. We use it for all low level system based activities and also to create small integrations between other autmoation tools.
+  description: "[Bash](https://www.gnu.org/software/bash/){:target='_blank'} is the default shell available in most linux platforms."
+  opinion: "Since we are a Linux only environment [Bash](https://www.gnu.org/software/bash){:target='_blank'} is the default scripting tool. We use it for all low level system based activities and also to create small integrations between other autmoation tools."
 
 - name: Python
   quadrant: Languages
   ring: Adopt
   isNew: true
-  description: "[Python](https://www.python.org){:target='_blank'} is a OOP language that lets you work quickly and integrate systems more effectively. For the tasks that Bash can't handle we look at [Python](https://www.python.org){:target='_blank'} since there is nothing that Python can't handle. In house expertise also makes it the language of choice compared to [Ruby](https://www.ruby-lang.org/en){:target='_blank'}."
+  description: "[Python](https://www.python.org){:target='_blank'} is a OOP language that lets you work quickly and integrate systems more effectively."
+  opinion: "For the tasks that Bash can't handle we look at [Python](https://www.python.org){:target='_blank'} since there is nothing that Python can't handle. In house expertise also makes it the language of choice compared to [Ruby](https://www.ruby-lang.org/en){:target='_blank'}."
 
 - name: Ruby
   quadrant: Languages
   ring: Hold
   isNew: true
-  description: A dynamic, open source OOP language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write. Python already filled the need for the high level language that [Bash](https://www.gnu.org/software/bash){:target='_blank'} couldn't fill and since we work a lot on Ansible(which is built in python) integrations were also lot more easier with [python](https://www.python.org){:target='_blank'} hence we put [ruby](https://www.ruby-lang.org/en){:target='_blank'} on hold.
+  description: "A dynamic, open source OOP language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write."
+  opinion: "Python already filled the need for the high level language that [Bash](https://www.gnu.org/software/bash){:target='_blank'} couldn't fill and since we work a lot on Ansible(which is built in python) integrations were also lot more easier with [python](https://www.python.org){:target='_blank'} hence we put [ruby](https://www.ruby-lang.org/en){:target='_blank'} on hold."
 
 - name: Go
   quadrant: Languages
