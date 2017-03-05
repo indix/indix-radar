@@ -151,21 +151,21 @@
   ring: Adopt
   isNew: true
   description: "[Apache Mesos](http://mesos.apache.org){:target='_blank'} abstracts CPU, memory, storage, and other compute resources away from machines (physical or virtual), enabling fault-tolerant and elastic distributed systems to easily be built and run effectively."
-  opinion: "We at Indix use [Mesos](http://mesos.apache.org){:target='_blank'} to manage our resources for the features it provides."
+  opinion: "We find Mesos as a great tool for managing resources in a heterogeneous cluster of machines. With it's native support for containers as well as support for docker, it provides a great way to run your applications with an optimized resource allocation. Along with frameworks like Marathon, the deployments and failure recovery becomes very straightforward & simple to manage."
 
 - name: Marathon
   quadrant: Platforms
   ring: Adopt
   isNew: true
-  description: A container orchestration platform for [Mesos](http://mesos.apache.org){:target='_blank'} and DC/OS.
-  opinion: We use [marathon](https://mesosphere.github.io/marathon){:target='_blank'} to manage application deployments in mesos.
+  description: A container orchestration platform for [Mesos](http://mesos.apache.org){:target='_blank'} and DC/OS."
+  opinion: "We use [marathon](https://mesosphere.github.io/marathon){:target='_blank'} to manage application deployments as no doubt this is the best deployment framework for long running services in Mesos. With its ability of scheduling & automatic recovery of applications when crashed, we consider it the right choice for our Mesos platform."
 
 - name: Kubernetes
   quadrant: Platforms
   ring: Trial
   isNew: true
   description: "[Kubernetes](https://kubernetes.io){:target='_blank'} is an open-source system for automating deployment, scaling, and management of containerized applications."
-  opinion: "We at Indix wanted to try [Kubernetes](https://kubernetes.io){:target='_blank'} as it offers great scalability and flexibility."
+  opinion: "We at Indix wanted to try [Kubernetes](https://kubernetes.io){:target='_blank'} as it offers great scalability and flexibility for managing & administration of docker containers."
 
 - name: Mesosphere DCOS
   quadrant: Platforms
@@ -179,33 +179,28 @@
   ring: Adopt
   isNew: true
   description: "[AWS](https://aws.amazon.com){:target='_blank'} is a public IAAS provider that provides a rich set of features to host your infrastructure in the public cloud."
-  opinion: "At Indix, we liked the scale, reliability and flexibility that [AWS](https://aws.amazon.com){:target='_blank'} had to offer. Also being the leading IAAS provider in the market it has good integration with the best tools for provisioning and automation required to manage a tool like this."
+  opinion: "At Indix, we liked the scale, reliability and flexibility that [AWS](https://aws.amazon.com){:target='_blank'} had to offer. Also being the leading IAAS provider in the market it has good integration with the best tools for provisioning and automation required to manage a platform like this. We have been using AWS since the beginning and have gained solid expertise on developing under AWS."
 
-- name: Google Cloud
+- name: GCE/ Azure
   quadrant: Platforms
   ring: Assess
   isNew: true
-  description: "[Google's version of the IAAS](https://cloud.google.com){:target='_blank'}, offering similar tools and feature set as other providers in the market."
-  opinion: "Google seems to offer better data-processing and data-flow compared to [AWS](https://aws.amazon.com){:target='_blank'} hence we at Indix wanted to assess it."
-
-- name: Azure
-  quadrant: Platforms
-  ring: Hold
-  isNew: true
-  description: "[Azure](https://azure.microsoft.com/en-in){:target='_blank'} is the IAAS offering from Microsoft."
-  opinion: "We find [Azure](https://azure.microsoft.com/en-in){:target='_blank'} not as matured and refined as [AWS](https://aws.amazon.com){:target='_blank'} and hence we decided to put it on hold at Indix."
+  description: "[Google's version of the IAAS](https://cloud.google.com){:target='_blank'} & [Azure](https://azure.microsoft.com/en-in) are the two competitors to AWS public cloud."
+  opinion: "Even though Indix is entirely hosted in AWS for several years now, we are thinking to assess alternate solutions like Gce & Azure to understand how do they compare with Amazon."
 
 - name: BareMetal DC
   quadrant: Platforms
   ring: Hold
   isNew: true
-  description: "We don't want the overhead of infrastructure management by ourselves and also to lose the flexibility of scaling on demand."
+  description: "The traditional data center model, that has been there for decades."
+  opinion: "We don't want the overhead of infrastructure management by ourselves and also to lose the flexibility of various features like pay as you use, scaling on demand etc."
 
 - name: Private Cloud
   quadrant: Platforms
-  ring: Assess
+  ring: Hold
   isNew: true
-  description: "We are also assessing the possibility of an in house private Cloud in DC as it would offer more visibility and control over public IAAS providers."
+  description: "In contrast to a public cloud like AWS, there are popular private cloud solutions (both hosted & on-premise) like Openstack/ Cloudstack etc."
+  opinion: "Though the general belief is that hosting your own private cloud makes your infrastructure more secure & cheaper, considering the amount of features in terms of security and SaaS/ PaaS offerings AWS has added over time, we decided it doesn't make sense to go with private cloud at this point. Targeting proper design & use, we have lot more optimizations to do both in Security & Cost optimization front which we believe would help us from all angles."
 
 
 - name: Letsencrypt
@@ -213,7 +208,7 @@
   ring: Adopt
   isNew: true
   description: "[Let’s Encrypt](https://letsencrypt.org){:target='_blank'} is a free, automated, and open Certificate Authority provided by the Internet Security Research Group(ISRG).The key principles behind Let's Encrypt are free, automatic, secure, transparent, open and cooperative."
-  opinion: "Features like more granular and selective controls towards authorization, easy automation and no cost made it the tool of choice at Indix."
+  opinion: "Features like more granular and selective controls towards authorization, easy automation and no cost made it the tool of choice at Indix. It also helps to secure sites hosted externally without sharing domain wide credentials to third-party."
 
 - name: AWS Certificate Manager
   quadrant: Techniques
@@ -226,8 +221,8 @@
   quadrant: Techniques
   ring: Adopt
   isNew: true
-  description: "Multifactor Authentication is a security practice where authentication is achieved through different modes and not just one."
-  opinion: "MFA is implemented in AWS, mail and github as we at Indix give security utmost importance."
+  description: "Multifactor Authentication is a security best practice where authentication is achieved through different modes and not just one."
+  opinion: "With more and more vulnerabilities & attacks coming in the news, security has become a concern for everybody today. There is no compromise when it comes to security at Indix. MFA (Or 2FA) adds another layer of security on top of traditional methods and we have enforced MFA for AWS, Google and Github as we give security utmost importance."
 
 - name: Bash
   quadrant: Languages
@@ -241,17 +236,18 @@
   ring: Adopt
   isNew: true
   description: "[Python](https://www.python.org){:target='_blank'} is a OOP language that lets you work quickly and integrate systems more effectively."
-  opinion: "For the tasks that Bash can't handle we look at [Python](https://www.python.org){:target='_blank'} since there is nothing that Python can't handle. In house expertise also makes it the language of choice compared to [Ruby](https://www.ruby-lang.org/en){:target='_blank'}."
+  opinion: "For the tasks that Bash can't handle we look at [Python](https://www.python.org){:target='_blank'} since there is nothing that Python can't handle. In house expertise also makes it the language of choice compared to [Ruby](https://www.ruby-lang.org/en){:target='_blank'}. Python is definitely one of the most matured scripting language around with a great community of people in the Industry have been using it for years."
 
 - name: Ruby
   quadrant: Languages
   ring: Hold
   isNew: true
   description: "A dynamic, open source OOP language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write."
-  opinion: "Python already filled the need for the high level language that [Bash](https://www.gnu.org/software/bash){:target='_blank'} couldn't fill and since we work a lot on Ansible(which is built in python) integrations were also lot more easier with [python](https://www.python.org){:target='_blank'} hence we put [ruby](https://www.ruby-lang.org/en){:target='_blank'} on hold."
+  opinion: "Python already filled the need for the high level language that [Bash](https://www.gnu.org/software/bash){:target='_blank'} couldn't and since we work a lot on Ansible (which is built in python), integrations were also lot more easier with [python](https://www.python.org){:target='_blank'}. Overall we find Python ideal for general system administration tasks as well development of backend tools."
 
 - name: Go
   quadrant: Languages
   ring: Trial
   isNew: true
-  description: "[Go](https://golang.org){:target='_blank'} is an open source programming language that makes it easy to build simple, reliable, and efficient software."
+  description: "[Go](https://golang.org){:target='_blank'} is an open source programming language created at Google that makes it easy to build simple, reliable, and efficient software."
+  opinion: "Go has been gaining popularity lately due to its simplicity, concurrency handling & great performance without compromising the ease of development time/ effort. As the documentation says - `Go is an attempt to combine the ease of programming of an interpreted, dynamically typed language, with the efficiency and safety of a statically typed, compiled language.` Worth the effort to try it out. "
