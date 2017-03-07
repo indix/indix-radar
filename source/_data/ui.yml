@@ -2,7 +2,7 @@
   quadrant: Languages & Techniques
   ring: Adopt
   isNew: true
-  description: [ECMAScript 2015 (initially referred to as ES6)](http://es6-features.org/){:target='_blank'} was finalized in June 2015 and introduces new syntax for writing complex applications (including classes & modules) and is generally a sorely needed upgrade to the language. As of Q1 2017, majority of the ES6 features are supported by the common browsers. The not supported ES6 features can be used with the [Babel](https://babeljs.io/) transpiler.
+  description: '[ECMAScript 2015 (initially referred to as ES6)](http://es6-features.org/){:target="_blank"} was finalized in June 2015 and introduces new syntax for writing complex applications (including classes & modules) and is generally a sorely needed upgrade to the language. As of Q1 2017, majority of the ES6 features are supported by the common browsers. The not supported ES6 features can be used with the [Babel](https://babeljs.io/) transpiler.'
   opinion: Indix has been active adopter of ES6 features ever since it's inception, initially through transpilers and later as direct features. Apps written without ES6 features are being rewritten.
 - name: CoffeeScript
   quadrant: Languages & Techniques
@@ -14,31 +14,31 @@
   quadrant: Languages & Techniques
   ring: Adopt
   isNew: true
-  description: [JSX](https://facebook.github.io/react/docs/jsx-in-depth.html) is a JavaScript syntax extension that looks similar to XML. It is developed by Facebook and is acknowledged for the benefit of writing composable micro-components. 
-  opinion: Indix has been active user of React JSX ever since it's beta stage. The ability to define every UI element as a component and pass-on rich state to the components are very benefitial. Lesser number of bugs are being observed in production apps as the views are reactive to how the state of the app changes. 
+  description: "[JSX](https://facebook.github.io/react/docs/jsx-in-depth.html) is a JavaScript syntax extension that looks similar to XML. It is developed by Facebook and is acknowledged for the benefit of writing composable micro-components."
+  opinion: Indix has been active user of React JSX ever since it's beta stage. The ability to define every UI element as a component and pass-on rich state to the components are very benefitial. Lesser number of bugs are being observed in production apps as the views are reactive to how the state of the app changes.
 - name: Web Components
   quadrant: Languages & Techniques
   ring: Assess
   isNew: true
-  description: [Web Components](https://www.webcomponents.org/) are a set of standards currently being produced by Google engineers as a W3C specification that allow for the creation of reusable widgets or components in web documents and web applications.
+  description: "[Web Components](https://www.webcomponents.org/) are a set of standards currently being produced by Google engineers as a W3C specification that allow for the creation of reusable widgets or components in web documents and web applications."
   opinion: Indix assessed WebComponents in its early alpha stages and found it promising for the core concept of representing every visual item as a component. From the time it's assessed, the list of components repository has grown drastically and Indix is looking forward to trying Web Components in one of its upcoming project.
 - name: HAML
   quadrant: Languages & Techniques
   ring: Adopt
   isNew: true
-  description: [HAML](http://haml.info/) (HTML abstraction markup language) is based on one primary principle - markup should be beautiful. HAML accelerates and simplifies HTML template creation. 
+  description: "[HAML](http://haml.info/) (HTML abstraction markup language) is based on one primary principle - markup should be beautiful. HAML accelerates and simplifies HTML template creation."
   opinion: Some of the production apps at Indix are already using HAML. Quicker turn-around time of appp development is being observed for apps developed using HAML.
 - name: LESS
   quadrant: Languages & Techniques
   ring: Hold
   isNew: true
-  description: [LESS](http://lesscss.org/) is a CSS pre-processor; it extends the CSS language, adding features that allow variables, mixins, functions and many other techniques that allow you to make CSS that is more maintainable, themeable and extendable. 
+  description: "[LESS](http://lesscss.org/) is a CSS pre-processor; it extends the CSS language, adding features that allow variables, mixins, functions and many other techniques that allow you to make CSS that is more maintainable, themeable and extendable."
   opinion: Indix is a major consumer of [Bootstrap](http://getbootstrap.com/) and ever since Bootstrap made SASS as its default, Indix has put LESS on hold. All existing apps are already migrated to SASS.
 - name: SASS
   quadrant: Languages & Techniques
   ring: Adopt
   isNew: true
-  description: [Sass](http://sass-lang.com/) is an extension of CSS and defines a clean structured way of writing CSS by allowing to modularize CSS snippets while offering a whole slew of features which are practised in javascript environment. Features like variables, external imports, functions and extensibility allow to experience the benefits of modular patterns. 
+  description: "[Sass](http://sass-lang.com/) is an extension of CSS and defines a clean structured way of writing CSS by allowing to modularize CSS snippets while offering a whole slew of features which are practised in javascript environment. Features like variables, external imports, functions and extensibility allow to experience the benefits of modular patterns."
   opinion: Given its advantages, Indix actively adopts Sass for styling its web apps. Sass added defined structure to app styling code base and made it easily readable. The extensible nature allowed us to define low level themes and reuse it across apps.
 - name: PostCSS
   quadrant: Languages & Techniques
@@ -63,42 +63,42 @@
   ring: Adopt
   isNew: true
   description: Javascript being loosely typed, gives the developer flexibility to play with data types. While in some cases, this flexibility is useful, most of the cases, apps need to be strict-typed in-order to communicate with the backend.
-  opinion: [Flow](https://flowtype.org/) and [TypeScript](https://www.typescriptlang.org/) are two frameworks which Indix assessed and picked upon Typescript being able to compile to JavaScript and catching type errors during compilation should be mentioned as a benefit compared to flow. The active community of TypeScript and its support for all the common libraries is added advantage.
+  opinion: "[Flow](https://flowtype.org/) and [TypeScript](https://www.typescriptlang.org/) are two frameworks which Indix assessed and picked upon Typescript being able to compile to JavaScript and catching type errors during compilation should be mentioned as a benefit compared to flow. The active community of TypeScript and its support for all the common libraries is added advantage."
 - name: Node.js
   quadrant: Frameworks
   ring: Adopt
   isNew: true
-  description: [Node.js](https://nodejs.org/en/) is a JavaScript runtime built on top of Chrome's V8 JavaScript engine. It's lightweight, efficient, event-driven model and carries a extensive community of plugins. 
+  description: "[Node.js](https://nodejs.org/en/) is a JavaScript runtime built on top of Chrome's V8 JavaScript engine. It's lightweight, efficient, event-driven model and carries a extensive community of plugins. "
   opinion: Indix adopted Node JS since its early satges and large set of internal tools use NodeJS and its plugins extensively to quickly bootstrap an app get it to production. Applying ES6 features and Typescript on top of Node JS proved to be a wholesome package of highly productive web apps. Indix runs apps on different versions of Node JS ranging from v6.0 to as recent as v7.5.
 - name: Io.js
   quadrant: Frameworks
   ring: Hold
   isNew: true
-  description: [Io.js](https://iojs.org/en/) was a fork of Node.js. The benefits being adoption of performance improvements of V8 and [Semver](http://semver.org)-based release cycles. 
-  opinion: Indix used Io.js for a brief period, but then, put Io.js on hold when Io.js merged back with Node.js.
+  description: "[Io.js](https://iojs.org/en/) was a fork of Node.js. The benefits being adoption of performance improvements of V8 and [Semver](http://semver.org)-based release cycles."
+  opinion: "Indix used Io.js for a brief period, but then, put Io.js on hold when Io.js merged back with Node.js."
 - name: Express
   quadrant: Frameworks
   ring: Adopt
   isNew: true
-  description: [Express](http://expressjs.com/) is a [Node.js](https://nodejs.org/en/) web application framework with many HTTP utility methods and act as middleware for building web applications. 
+  description: "[Express](http://expressjs.com/) is a [Node.js](https://nodejs.org/en/) web application framework with many HTTP utility methods and act as middleware for building web applications. "
   opinion: Many utilities and an active community make Express an easy choice of middleware for all Node.js apps at Indix.
 - name: Meteor
   quadrant: Frameworks
   ring: Assess
   isNew: true
-  description: [Meteor](https://www.meteor.com/) is a highly-opiniated platform to build web, mobile and desktop apps with a same set of javascript code and connects database to end user's screen with high set of integrations. 
+  description: "[Meteor](https://www.meteor.com/) is a highly-opiniated platform to build web, mobile and desktop apps with a same set of javascript code and connects database to end user's screen with high set of integrations."
   opinion: Indix assessed Metoer during its beta stage. We found apps being with lesser code and tighter integrations, but support of the community and set of frameworks on top of it were quite less at that time. Indix hs left meteor in assess stage and will pick it back in later part of 2017 to re-assess the framework.
 - name: TypeScript
   quadrant: Frameworks
   ring: Adopt
   isNew: true
-  description: [TypeScript](https://www.typescriptlang.org/){:target='_blank'} is a free and open-source programming language developed and maintained by Microsoft. It is a strict superset of JavaScript and adds static typing to the language.   
+  description: "[TypeScript](https://www.typescriptlang.org/){:target='_blank'} is a free and open-source programming language developed and maintained by Microsoft. It is a strict superset of JavaScript and adds static typing to the language."
   opinion: Indix intially had hard-time debugging non-typed JS and the turn-around time to fix an issue was very high. Such problems led us to explore possibilities of typed JavaScript. While assessing TypeScript in one of it's apps, we found that though the initial development time was more compared to developing in Javascript, but once the app hit production, maintainance of the app has been highly productive. Any new member joining the team found it easy to bootstrap on the code base. While existing projects continue to reamin in Javascript, any new project, TypeScript has become the default choice. 
 - name: Koa
   quadrant: Frameworks
   ring: Assess
   isNew: true
-  description: [Koa](http://koajs.com/) is an alternate to Express+Connect with better support for error handling & middleware cascading. Koa is built using ES6 generators (with Koa v2 dropping around April 2017 with `async`/`await` support) and more lightweight.
+  description: "[Koa](http://koajs.com/) is an alternate to Express+Connect with better support for error handling & middleware cascading. Koa is built using ES6 generators (with Koa v2 dropping around April 2017 with `async`/`await` support) and more lightweight."
   opinion: Indix designs lightweight server apps with pure REST API. Majority of the heavylifting is handled in client. For such lightweight server, express+connect fits as an apt combination. Koa has kept at assessing stage due its prons and cons. pros being the lightweight and cons being lesser supoort for routing and file serving.
 - name: Backbone.js
   quadrant: Client Libraries
