@@ -4,3 +4,5 @@ node_modules/
 .deploy_git
 public/
 db.json
+index.html
+archives/
