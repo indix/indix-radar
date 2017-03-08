@@ -46,6 +46,7 @@ const InputSanitizer = function () {
       const converter = new showdown.Converter({extensions: ['targetlink']});
       var blip = trimWhiteSpaces(rawBlip);
       blip.description = converter.makeHtml(sanitizeHtml(blip.description, relaxedOptions));
+      blip.opinion = (blip.opinion) ? converter.makeHtml(sanitizeHtml(blip.opinion, relaxedOptions)) : '';
       blip.name = sanitizeHtml(blip.name, restrictedOptions);
       blip.isNew = Boolean(blip.isNew);
       blip.ring = sanitizeHtml(blip.ring, restrictedOptions);

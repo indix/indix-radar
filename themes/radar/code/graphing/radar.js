@@ -235,6 +235,11 @@ const Radar = function (size, radar) {
             blipItemDescription.html(blip.description());
           }
 
+          var blipItemOpinion = blipItemDescription.append('span');
+          if (blip.opinion()) {
+            blipItemOpinion.html(blip.opinion());
+          }
+
           var mouseOver = function () {
             d3.selectAll('g.blip-link').attr('opacity', 0.3);
             group.attr('opacity', 1.0);
@@ -274,7 +279,7 @@ const Radar = function (size, radar) {
   function createHomeLink(pageElement) {
     if (pageElement.select('.home-link').empty()) {
       pageElement.append('div')
-        .html('&#171; Back to Radar')
+        .html('&larr; View Full Radar')
         .classed('home-link', true)
         .classed('selected', true)
         .on('click', redrawFullRadar)
