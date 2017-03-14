@@ -69,7 +69,7 @@
   ring: Adopt
   isNew: true
   description: "[Amazon Route 53](https://aws.amazon.com/route53){:target='_blank'} is a highly available and scalable cloud Domain Name System (DNS) service."
-  opinion: "Route53 has matured a lot since it was released years back. Features like Private hosted zones, Vpc association, DNS aliasing (Very useful for Zone Apex)", multiple routing policies have been tremendously useful for us. Along with those, having a scalable & highly-available DNS service without any headache of maintenance made us to choose it without a second thought."
+  opinion: "Route53 has matured a lot since it was released years back. Features like Private hosted zones, Vpc association, DNS aliasing (Very useful for Zone Apex), multiple routing policies have been tremendously useful for us. Along with those, having a scalable & highly-available DNS service without any headache of maintenance made us to choose it without a second thought."
 - name: Capistrano
   quadrant: Tools
   ring: Hold
