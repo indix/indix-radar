@@ -44,8 +44,8 @@
   quadrant: Languages & Techniques
   ring: Assess
   isNew: true
-  description: PostCSS was launched as a method to use JavaScript for CSS processing. PostCSS on its own is simply an API, which, when used with its vast ecosystem of plugins, offers powerful abilities. 
-  opinion: Because of its promising custom plugins and tools for transforming styles, Indix is actively assessing the language. Only apps which need more than what Sass can provide have attempted to use PostCSS. [Autoprexifer](https://github.com/postcss/autoprefixer) is one common plugin one top of PostCSS that's being used.
+  description: "[PostCSS](http://postcss.org/) was launched as a method to use JavaScript for CSS processing. PostCSS on its own is simply an API, which, when used with its vast ecosystem of plugins, offers powerful abilities." 
+  opinion: "Because of its promising custom plugins and tools for transforming styles, Indix is actively assessing the language. Only apps which need more than what Sass can provide have attempted to use PostCSS. [Autoprexifer](https://github.com/postcss/autoprefixer) is one common plugin one top of PostCSS that is being used."
 - name: Yeoman
   quadrant: Languages & Techniques
   ring: Assess
@@ -104,191 +104,191 @@
   quadrant: Client Libraries
   ring: Hold
   isNew: true
-  description: Backbone.js provides a Model-View-Collection structure to web applications and helps with utilities to build APIs RESTful.
+  description: "[Backbone.js](http://backbonejs.org/) provides a Model-View-Collection structure to web applications and helps with utilities to build APIs RESTful."
   opinion: Indix was an early adopter of Backbone.js due to to its minimalistic MVC model, but with Redux unidirectional flow of events and virtual-dom updates, Indix has put Backbone on hold.
 - name: AngularJS 1.0
   quadrant: Client Libraries
   ring: Hold
   isNew: true
-  description: Angular was developed by Google to build dynamic web pages with support for data-binding and templates on client side.
+  description: "[Angular 1.0](https://angularjs.org/) was developed by Google to build dynamic web pages with support for data-binding and templates on client side."
   opinion: Indix evaluated AngularJS for some internal projects, but put the 1.0 version on hold after the release of Angular 2.0.
 - name: AngularJS 2.0
   quadrant: Client Libraries
   ring: Assess
   isNew: true
-  description: Angular 2.0 is rewritten in TypeScript and has made Components first-class citizens.
+  description: "[Angular 2.0](https://angular.io/) is rewritten in TypeScript and has made Components first-class citizens."
   opinion: Although we're a React-heavy shop, we are currently assessing possibilities of its use; simplified directives & built-in support for Web sockets are some features which look promising.
 - name: React
   quadrant: Client Libraries
   ring: Adopt
   isNew: true
-  description: React (sometimes styled React.js or ReactJS) is an open-source JavaScript library providing a view for data rendered as HTML.
+  description: "[React](https://facebook.github.io/react/) is an open-source JavaScript library providing a view for data rendered as HTML."
   opinion: React's benefits of composable components and intelligent state maintenance has made it the default client-side framework at Indix. It abstracts the DOM away from the app and implements one-way data flow, as an alternate to Angular's two-way binding. Moving from backbone, the learning curve initially seemed to slow things a little bit, but it made the team more productive over a longer period of time.
 - name: Redux
   quadrant: Client Libraries
   ring: Adopt
   isNew: true
-  description: Redux is a state container for JavaScript apps and helps the app to behave consistently.
+  description: "[Redux](http://redux.js.org/) is a state container for JavaScript apps and helps the app to behave consistently."
   opinion: Redux helps to plug-in immutability to a web app state, resulting in lesser bugs in the code. Due to these advantages, Indix uses Redux in combination with React.
 - name: MobX
   quadrant: Client Libraries
   ring: Adopt
   isNew: true
-  description: MobX is a state management system that is somewhat similar to Redux, but is less opiniated. It makes state management very simple by transparently applying functional reactive programming (TFRP).
+  description: "[MobX](https://github.com/mobxjs/mobx) is a state management system that is somewhat similar to Redux, but is less opiniated. It makes state management very simple by transparently applying functional reactive programming (TFRP)."
   opinion: Here at Indix, we use it in some React-based projects. We prefer MobX over Redux for apps where automatic state flow makes more sense.
 - name: Ember.js
   quadrant: Client Libraries
   ring: Assess
   isNew: true
-  description: Ember.js is a full lifecycle MVC framework that supports [Handlebars](http://handlebarsjs.com/) templates. It promises improved developer productivity and has common utilities to build apps faster.
+  description: "[Ember.js](http://emberjs.com/) is a full lifecycle MVC framework that supports [Handlebars](http://handlebarsjs.com/) templates. It promises improved developer productivity and has common utilities to build apps faster."
   opinion: Though we are fans of non-opiniated frameworks, we're currently assessing the use of Ember.js for one of our new products to see if there are improvements to productivity.
 - name: Polymer
   quadrant: Client Libraries
   ring: Assess
   isNew: true
-  description: Polymer lets you declaratively create new [Web components](http://webcomponents.org).
+  description: "[Polymer](https://www.polymer-project.org/) lets you declaratively create new [Web components](http://webcomponents.org)."
   opinion: We assessed it in it's early alpha stages, and we're continuing keeping an eye on Polymer. We feel Polymer would gain huge community adoption in the future.
 - name: Bootstrap 3.x
   quadrant: Client Libraries
   ring: Adopt
   isNew: true
-  description: Bootstrap is the most popular HTML framework with in-built support for responsive design, built by Twitter.
+  description: "[Bootstrap 3.x](http://getbootstrap.com/) is the most popular HTML framework with in-built support for responsive design, built by Twitter."
   opinion: Indix was an early adopter of Bootstrap and it is our default framework for designing webapps. It took a lot of effort to move from 2.x to 3.x, but the benefits of 3.x justified the efforts invested.
 - name: Bootstrap 4.x
   quadrant: Client Libraries
   ring: Adopt
   isNew: true
-  description: Bootstrap v4, still in [Alpha]((https://v4-alpha.getbootstrap.com/)), is a major revision to our favourite CSS framework. It introduces Flexbox support (finally!) and includes many new welcome changes like a `rem`-based grid, [cards](http://v4-alpha.getbootstrap.com/components/card/) and built-in Tether!
+  description: "[Bootstrap 4.x](https://v4-alpha.getbootstrap.com/), still in [Alpha]((https://v4-alpha.getbootstrap.com/)), is a major revision to our favourite CSS framework. It introduces Flexbox support (finally!) and includes many new welcome changes like a `rem`-based grid, [cards](http://v4-alpha.getbootstrap.com/components/card/) and built-in Tether!"
   opinion: Being an Alpha release, it is bound to break; but we have begun using Bootstrap v4 for a few internal projects.
 - name: Foundation
   quadrant: Client Libraries
   ring: Adopt
   isNew: true
-  description: Foundation is an alternative to Bootstrap with lightweight code and built with better understanding of web accessibility.
+  description: "[Foundation](http://foundation.zurb.com/) is an alternative to Bootstrap with lightweight code and built with better understanding of web accessibility."
   opinion: With more form controls out of the box and flexible navigation patterns, we're big fans of Foundation.
 - name: Material UI
   quadrant: Client Libraries
   ring: Assess
   isNew: true
-  description: A framework of UI components built with React by Google. With React being in adoption, and Google introducing Material UI guidelines, The Material UI HTMl/CSS framework provides a combination of the two.
+  description: "[Material UI](https://www.material-ui.com/#/) framework of UI components built with React by Google. With React being in adoption, and Google introducing Material UI guidelines, The Material UI HTMl/CSS framework provides a combination of the two."
   opinion: Indix uses Material UI framework in some of it's projects and is assessing the possibilities of adopting more of Material UI themes and guidelines.
 - name: Lodash
   quadrant: Client Libraries
   ring: Adopt
   isNew: true
-  description: Lodash provies utilities to act and manipulate JSON data. It has flexibility to work both in browser as well as server side.
+  description: "[Lodash](https://lodash.com) provies utilities to act and manipulate JSON data. It has flexibility to work both in browser as well as server side."
   opinion: Lodash is used by virtually every single webapp out there, and we're no exception. Lodash cuts down on development time and helps us write simpleer and more readable code.
 - name: Underscore.js
   quadrant: Client Libraries
   ring: Hold
   isNew: true
-  description: A JavaScript library that provides a whole mess of useful functional programming helpers without extending any built-in objects.
+  description: "[Underscore.js](http://underscorejs.org/) A JavaScript library that provides a whole mess of useful functional programming helpers without extending any built-in objects."
   opinion: Underscore in an utility similar to lodash, but given that Lodash has grown into a more consistent superset of Underscore preferred framework for NodeJS apps, we have Underscore on hold for now.
 - name: Isomorphic Fetch
   quadrant: Client Libraries
   ring: Adopt
   isNew: true
-  description: Isomorphic Fetch helps write a single piece of code for AJAX calls, which can work both on the server as well as the client side.
+  description: "[Isomorphic Fetch](https://github.com/matthew-andrews/isomorphic-fetch) helps write a single piece of code for AJAX calls, which can work both on the server as well as the client side."
   opinion: Isomorphic Fetch brings us one small step closer to maintaining one codebase for both server & client; it works well on both the browser and Node.js.
 - name: jQuery
   quadrant: Client Libraries
   ring: Hold
   isNew: true
-  description: jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.
+  description: "[jQuery](https://jquery.com/) is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers."
   opinion: With React providing all the functionalities of jQuery, Indix has put jQuery on hold and will possibly use it when need arises.
 - name: RxJS
   quadrant: Client Libraries
   ring: Trial
   isNew: true
-  description: Reactive eXtensions of JavaScript is a set of libraries for composing asynchronous and event-based programs using observable collections and query operations. It acts like lodash for DOM events and allows developer to chain a sequence of operations both on data as well as DOM events.
+  description: "[Reactive eXtensions of JavaScript](https://github.com/Reactive-Extensions/RxJS) is a set of libraries for composing asynchronous and event-based programs using observable collections and query operations. It acts like lodash for DOM events and allows developer to chain a sequence of operations both on data as well as DOM events."
   opinion: We have tried RxJS in one of our apps and we continue to follow the community for more use-cases.
 - name: Socket.IO
   quadrant: Client Libraries
   ring: Adopt
   isNew: true
-  description: Socket.IO is a library that provides comprehensive support for WebSockets.
+  description: "[Socket.IO](https://socket.io/) is a library that provides comprehensive support for WebSockets."
   opinion: It is isomorphic (meaning we can use it on both the client & the server sides) and supports automatic reconnection and disconnection detection, making for a very robust and reliable WebSocket library. We use Socket.IO for realtime IPCs between many of our microservices.
 - name: NPM
   quadrant: Testing & Build Tools
   ring: Adopt
   isNew: true
-  description: NPM is the default package manager that ships with Node.js.
+  description: "[NPM](https://www.npmjs.com/) is the default package manager that ships with Node.js."
   opinion: For a number of projects, we simply use npm scripts for test runs & builds.
 - name: Yarn
   quadrant: Testing & Build Tools
   ring: Trial
   isNew: true
-  description: Written by Facebook as an alternative to NPM, [Yarn](https://yarnpkg.com/) is a package manager. Yarn uses a deterministic algorithm to quickly flatten dependencies, resulting in a completely flat dependency tree and *very fast* installation times. Yarn is also a drop-in replacement for NPM (well, almost) and so migrating should be relatively painless.
+  description: "Written by Facebook as an alternative to NPM, [Yarn](https://yarnpkg.com/) is a package manager. Yarn uses a deterministic algorithm to quickly flatten dependencies, resulting in a completely flat dependency tree and *very fast* installation times. Yarn is also a drop-in replacement for NPM (well, almost) and so migrating should be relatively painless."
   opinion: Yarn is exciting to us for a lot of reasons, but mostly a flat dependency tree & very fast install times. We've begun trials of Yarn over our in-house NPM repo.
 - name: Grunt
   quadrant: Testing & Build Tools
   ring: Hold
   isNew: true
-  description: Grunt is a config-based build automation tool as opposed to Gulp which is code based. Grunt's performance in terms of file processing is comparatively worse to Gulp, and hence Indix has it on Hold.
-  opinion: Grunt was one of the first task runners to arrive on the scene, and we immediately adopted it. But after Gulp was introduced, we put Grunt on hold and adopted it instead.
+  description: "[Grunt](https://gruntjs.com/) is a config-based build automation tool as opposed to Gulp which is code based."
+  opinion: Grunt was one of the first task runners to arrive on the scene, and we immediately adopted it. But after Gulp was introduced, we noticed that Grunt's performance in terms of file processing is comparatively worse to Gulp. We put Grunt on hold and adopted Gulp instead.
 - name: Gulp.js
   quadrant: Testing & Build Tools
   ring: Hold
   isNew: true
-  description: Gulp uses the power of Node.js streams to automate the build workflow.
+  description: "[Gulp](http://gulpjs.com/) uses the power of Node.js streams to automate the build workflow."
   opinion: After Gulp was introduced, the community around it picked up a lot of steam owing to the power of streams and its code-over-config paradigm. We used Gulp for a lot of our apps until Webpack came along.
 - name: Webpack
   quadrant: Testing & Build Tools
   ring: Adopt
   isNew: true
-  description: Webpack is a module bundler that promises chunked dependency trees and small loading times while bundling even very large products.
+  description: "[Webpack](https://webpack.github.io/) is a module bundler that promises chunked dependency trees and small loading times while bundling even very large products."
   opinion: After having used both Grunt and Gulp for bundling our static assets, Webpack was a logical next step; Webpack offers tons of plugins that take most of the work out of bundling dependencies, and our engineers get to focus on building the real stuff. We now use Webpack on most of our webapps.
 - name: Mocha
   quadrant: Testing & Build Tools
   ring: Adopt
   isNew: true
-  description: Mocha is a unit testing Javascript testing framework, with support for asynchronous tests, coverage reports, handling uncaught errors and timeouts. These flexibilities make Mocha the main testing framework at Indix.
+  description: "[Mocha](https://mochajs.org/) is a unit testing Javascript testing framework, with support for asynchronous tests, coverage reports, handling uncaught errors and timeouts."
   opinion: Mocha has been the most popular test framework for quite a while now, and we naturally adopted it for the huge community around it.
 - name: Chai
   quadrant: Testing & Build Tools
   ring: Adopt
   isNew: true
-  description: Chai is a [BDD](https://en.wikipedia.org/wiki/Behavior-driven_development) assertion library and easily pairable with Mocha. Indix efficiently uses the chaining capabilities of Chai's assertions.
-  opinion: Chai comes with a range of assertion interfaces & plugins that improves productivity during TDD.
+  description: "[Chai](http://chaijs.com/) is a [BDD](https://en.wikipedia.org/wiki/Behavior-driven_development) assertion library and easily pairable with Mocha."
+  opinion: Chai comes with a range of assertion interfaces & plugins that improves productivity during TDD. Indix efficiently uses the chaining capabilities of Chai's assertions.
 - name: Jest
   quadrant: Testing & Build Tools
   ring: Trial
   isNew: true
-  description: Jest is built by developers of React and provides powerful mocking functions as default behaviour. It virtualizes Javascript environment using [JSDOM](https://github.com/tmpvar/jsdom) and has utilities to test varied DOM behaviour.
+  description: "[Jest](https://facebook.github.io/jest/) is built by developers of React and provides powerful mocking functions as default behaviour. It virtualizes Javascript environment using [JSDOM](https://github.com/tmpvar/jsdom) and has utilities to test varied DOM behaviour."
   opinion: Due to slow performance aspects of Jest, Indix has put the framework in trial mode and is actively following the community, looking for performance improvements.
 - name: Istanbul
   quadrant: Testing & Build Tools
   ring: Adopt
   isNew: true
-  description: Istanbul is a code coverage measurement tool from the YUI team and offers coverage for statement, branches and functions.
+  description: "[Istanbul](https://github.com/gotwarlost/istanbul) is a code coverage measurement tool from the YUI team and offers coverage for statement, branches and functions."
   opinion: It's multiple report formats and support as both a command line tool as well as a library makes Istanbul the favourite coverage tool at Indix.
 - name: Jasmine
   quadrant: Testing & Build Tools
   ring: Hold
   isNew: true
-  description: Jasmine was one of the earliest Javascript testing tools and comes as a package with in-built assertion utilities.
+  description: "[Jasmine](https://jasmine.github.io/) was one of the earliest Javascript testing tools and comes as a package with in-built assertion utilities."
   opinion: Jasmine doesn't come with a test runner, while Mocha does. Indix has put Jasmine on hold, with Mocha + Chai being adopted.
 - name: Nock
   quadrant: Testing & Build Tools
   ring: Assess
   isNew: true
-  description: Nock is a HTTP mocking and expectation library and provides utilities to mock RESTful APIs.
+  description: "[Nock](https://github.com/node-nock/nock) is a HTTP mocking and expectation library and provides utilities to mock RESTful APIs."
   opinion: Since most of our products are API-based microservices, we have been actively assessing the use of Nock to mock API responses for our tests.
 - name: WebdriverIO
   quadrant: Testing & Build Tools
   ring: Adopt
   isNew: true
-  description: WebdriverIO provides Selenium bindings for Node.js, which allows us to write functional tests. It allows to write a series of asynchronous commands which is run on a headless browser and couples well with Mocha+Chai combination.
+  description: "[WebdriverIO](http://webdriver.io/) provides Selenium bindings for Node.js, which allows us to write functional tests. It allows to write a series of asynchronous commands which is run on a headless browser and couples well with Mocha+Chai combination."
   opinion: We're using WebdriverIO as the default functional testing tool for all of our web apps as it allows a great deal of control over our testcases and also comes with very good tooling.
 - name: Bower
   quadrant: Testing & Build Tools
   ring: Hold
   isNew: true
-  description: Bower is a package manager for all client-side libraries.
+  description: "[Bower](https://bower.io/) is a package manager for all client-side libraries."
   opinion: Although Bower started out as a "NPM for the frontend" tool with a guaranteed flat dependency tree, with the advent of NPM 3, Webpack & Rollup - the tooling is much better and there is really no need for another package manager. With NPM as our choice for package management, we have put Bower on hold.
 - name: Browser Stack
   quadrant: Testing & Build Tools
   ring: Adopt
   isNew: true
-  description: Browser Stack provides a plethora of browser testing capabilities across different OS.
+  description: "[Browser Stack](https://www.browserstack.com/) provides a plethora of browser testing capabilities across different OS."
   opinion:  Browser Stack being a market leader in that domain, we have adopted it as our default browser testing tool; we automatically test all of our consumer-facing products on all popular browsers.
