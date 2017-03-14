@@ -6,25 +6,9 @@ const _ = {
 
 showdown.extension('targetlink', function() {
   return [{
-    type: 'lang',
-    regex: /\[((?:\[[^\]]*]|[^\[\]])*)]\([ \t]*<?(.*?(?:\(.*?\).*?)?)>?[ \t]*((['"])(.*?)\4[ \t]*)?\)\{\:target=(["'])(.*)\6}/g,
-    replace: function(wholematch, linkText, url, a, b, title, c, target) {
-
-      var result = '<a href="' + url + '"';
-
-      if (typeof title != 'undefined' && title !== '' && title !== null) {
-        title = title.replace(/"/g, '&quot;');
-        title = showdown.helper.escapeCharacters(title, '*_', false);
-        result += ' title="' + title + '"';
-      }
-
-      if (typeof target != 'undefined' && target !== '' && target !== null) {
-        result += ' target="' + target + '"';
-      }
-
-      result += '>' + linkText + '</a>';
-      return result;
-    }
+    type: 'html',
+    regex: /(<a [^>]+?)(>.*<\/a>)/g,
+    replace: '$1 target="_blank"$2'
   }];
 });
 
@@ -62,6 +46,7 @@ const InputSanitizer = function () {
       const converter = new showdown.Converter({extensions: ['targetlink']});
       var blip = trimWhiteSpaces(rawBlip);
       blip.description = converter.makeHtml(sanitizeHtml(blip.description, relaxedOptions));
+      blip.opinion = (blip.opinion) ? converter.makeHtml(sanitizeHtml(blip.opinion, relaxedOptions)) : '';
       blip.name = sanitizeHtml(blip.name, restrictedOptions);
       blip.isNew = Boolean(blip.isNew);
       blip.ring = sanitizeHtml(blip.ring, restrictedOptions);
