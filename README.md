@@ -1,6 +1,6 @@
 # 📡 Indix™ Technology Radar
 
-The Indix™ technology radar is used to assess emerging technologies in the market and their adoption strategy. This is heavily inspired by the [ThoughWorks® Radar](https://github.com/thoughtworks/build-your-own-radar).
+The [Indix™](https://www.indix.com/) technology radar is used to assess emerging technologies in the market and their adoption strategy. This is heavily inspired by the [ThoughWorks® Radar](https://github.com/thoughtworks/build-your-own-radar).
 
 [![Build Status](https://app.snap-ci.com/indix/indix-radar/branch/source/build_image)](https://app.snap-ci.com/indix/indix-radar/branch/source)
 
@@ -43,21 +43,25 @@ YAML data should be of the form -
   ring: Hold
   isNew: true
   description: Insert description here
+  opinion: Insert organization opinion here
 - name: Marketing Paradigm #4
   quadrant: Paradigms
   ring: Assess
   isNew: true
   description: Insert description here
+  opinion: Insert organization opinion here
 - name: Marketing Concept #3
   quadrant: Concepts
   ring: Trial
   isNew: false
   description: Insert description here
+  opinion: Insert organization opinion here
 - name: Marketing Algorithm #6
   quadrant: Algorithms
   ring: Adopt
   isNew: false
   description: Insert description here
+  opinion: Insert organization opinion here
 ```
 ### Formatting Options
 
@@ -72,6 +76,7 @@ Descriptions can contain markdown and _valid_ HTML markup! Allowed HTML tags are
 
 🔔  Each topic's data should have exactly 4 unique quadrants in total.
 
+🔔  If your `description` or `opinion` tags start with markdown, be sure to wrap it in quotes.
 
 ## ⚡ Deployment
 

@@ -1,9 +1,9 @@
 $baseFont: 1em;
 $baseWeight: 100;
 
-@import url(https://fonts.googleapis.com/css?family=Armata:400,500);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500);
 
 body {
-  font: $baseFont 'Armata';
+  font: $baseFont 'Open Sans';
   -webkit-font-smoothing: antialiased;
 }
