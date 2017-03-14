@@ -116,7 +116,8 @@
   quadrant: Client Libraries
   ring: Assess
   isNew: true
-  description: Angular 2.0 is rewritten in TypeScript and has made Components first class citizens. Simplified directives & support for Web sockets are some features which look promising. Indix is currently assessing possibilities of its use.
+  description: Angular 2.0 is rewritten in TypeScript and has made Components first-class citizens.
+  opinion: Although we're a React-heavy shop, we are currently assessing possibilities of its use; simplified directives & built-in support for Web sockets are some features which look promising.
 - name: React
   quadrant: Client Libraries
   ring: Adopt
@@ -133,23 +134,26 @@
   quadrant: Client Libraries
   ring: Adopt
   isNew: true
-  description: MobX is a state management system that is somewhat similar to Redux, but is less opiniated. It makes state management very simple by transparently applying functional reactive programming (TFRP). Here at Indix, we use it in some React-based projects.
+  description: MobX is a state management system that is somewhat similar to Redux, but is less opiniated. It makes state management very simple by transparently applying functional reactive programming (TFRP).
+  opinion: Here at Indix, we use it in some React-based projects. We prefer MobX over Redux for apps where automatic state flow makes more sense.
 - name: Ember.js
   quadrant: Client Libraries
   ring: Assess
   isNew: true
-  description: Ember.js is based on the MVC pattern with support for [Handlebar](http://handlebarsjs.com/) templates. It promises improved developer productivity and has common utilities to build apps faster. Indix is assessing Ember and will possibly use the framework based on needs.
+  description: Ember.js is a full lifecycle MVC framework that supports [Handlebars](http://handlebarsjs.com/) templates. It promises improved developer productivity and has common utilities to build apps faster.
+  opinion: Though we are fans of non-opiniated frameworks, we're currently assessing the use of Ember.js for one of our new products to see if there are improvements to productivity.
 - name: Polymer
   quadrant: Client Libraries
   ring: Assess
   isNew: true
-  description: Polymer is the adopter of [Web components](http://webcomponents.org) and Indix evaluated it during it's early beta stage. Indix is continuously assessing Polymer and since web components use new or still-developing browser capabilities, Polymer promises greater community adoption in the future.
+  description: Polymer lets you declaratively create new [Web components](http://webcomponents.org).
+  opinion: We assessed it in it's early alpha stages, and we're continuing keeping an eye on Polymer. We feel Polymer would gain huge community adoption in the future.
 - name: Bootstrap 3.x
   quadrant: Client Libraries
   ring: Adopt
   isNew: true
   description: Bootstrap is the most popular HTML framework with in-built support for responsive design, built by Twitter.
-  opinion: Indix was an early adopter of Bootstrap and it is our default framework for designing web-apps. It took a lot of effort to move from 2.x to 3.x, but the benefits of 3.x justified the efforts invested.
+  opinion: Indix was an early adopter of Bootstrap and it is our default framework for designing webapps. It took a lot of effort to move from 2.x to 3.x, but the benefits of 3.x justified the efforts invested.
 - name: Bootstrap 4.x
   quadrant: Client Libraries
   ring: Adopt
@@ -160,7 +164,8 @@
   quadrant: Client Libraries
   ring: Adopt
   isNew: true
-  description: Foundation is an alternative to Bootstrap with lightweight code and built with better understanding of web accessibility. With more form controls out of the box and flexible navigation patterns, Indix has adopted Foundation for some of its projects.
+  description: Foundation is an alternative to Bootstrap with lightweight code and built with better understanding of web accessibility.
+  opinion: With more form controls out of the box and flexible navigation patterns, we're big fans of Foundation.
 - name: Material UI
   quadrant: Client Libraries
   ring: Assess
@@ -171,7 +176,8 @@
   quadrant: Client Libraries
   ring: Adopt
   isNew: true
-  description: Lodash provides utilities to act and manipulate JSON data. It has flexibility to work both in browser as well as server side. Indix uses Lodash in majority of the apps, due to its extensive set of utilities.
+  description: Lodash provies utilities to act and manipulate JSON data. It has flexibility to work both in browser as well as server side.
+  opinion: Lodash is used by virtually every single webapp out there, and we're no exception. Lodash cuts down on development time and helps us write simpleer and more readable code.
 - name: Underscore.js
   quadrant: Client Libraries
   ring: Hold
@@ -182,7 +188,8 @@
   quadrant: Client Libraries
   ring: Adopt
   isNew: true
-  description: Isomorphic Fetch helps to write single piece of code for AJAX calls, which can work both on the server as well as the client side. It is based on latest ES6 features and Indix has adopted the library in some of its projects.
+  description: Isomorphic Fetch helps write a single piece of code for AJAX calls, which can work both on the server as well as the client side.
+  opinion: Isomorphic Fetch brings us one small step closer to maintaining one codebase for both server & client; it works well on both the browser and Node.js.
 - name: jQuery
   quadrant: Client Libraries
   ring: Hold
@@ -193,42 +200,56 @@
   quadrant: Client Libraries
   ring: Trial
   isNew: true
-  description: Reactive eXtensions of JavaScript is a set of libraries for composing asynchronous and event-based programs using observable collections and query operations. It acts like lodash for DOM events and allows developer to chain a sequence of operations both on data as well as DOM events. Indix has tried RxJS in one of its apps and continues to follow the community in recent upgrades.
+  description: Reactive eXtensions of JavaScript is a set of libraries for composing asynchronous and event-based programs using observable collections and query operations. It acts like lodash for DOM events and allows developer to chain a sequence of operations both on data as well as DOM events.
+  opinion: We have tried RxJS in one of our apps and we continue to follow the community for more use-cases.
 - name: Socket.IO
   quadrant: Client Libraries
   ring: Adopt
   isNew: true
-  description: Socket.IO is a library that provides comprehensive support for WebSockets, enabling us at Indix to build realtime web applications. It is isomorphic (meaning we can use it on both the client & the server sides) and supports automatic reconnection and disconnection detection, making for a very robust and reliable WebSocket library.
+  description: Socket.IO is a library that provides comprehensive support for WebSockets.
+  opinion: It is isomorphic (meaning we can use it on both the client & the server sides) and supports automatic reconnection and disconnection detection, making for a very robust and reliable WebSocket library. We use Socket.IO for realtime IPCs between many of our microservices.
 - name: NPM
   quadrant: Testing & Build Tools
-  ring: Assess
+  ring: Adopt
   isNew: true
-  description: Node provides scripts directive with enough packages to build, compile, watch, live-reload and test with pre and post-hooks. It has packages to support streaming of these tasks, which make NPM a good enough tool to assess for build automation.
+  description: NPM is the default package manager that ships with Node.js.
+  opinion: For a number of projects, we simply use npm scripts for test runs & builds.
 - name: Yarn
   quadrant: Testing & Build Tools
   ring: Trial
   isNew: true
   description: Written by Facebook as an alternative to NPM, [Yarn](https://yarnpkg.com/) is a package manager. Yarn uses a deterministic algorithm to quickly flatten dependencies, resulting in a completely flat dependency tree and *very fast* installation times. Yarn is also a drop-in replacement for NPM (well, almost) and so migrating should be relatively painless.
-- name: Gulp.js
-  quadrant: Testing & Build Tools
-  ring: Adopt
-  isNew: true
-  description: Gulp uses the power of node streams to automate the build workflow. Its plethora of plugins and active community makes Gulp the build tool of choice at Indix.
+  opinion: Yarn is exciting to us for a lot of reasons, but mostly a flat dependency tree & very fast install times. We've begun trials of Yarn over our in-house NPM repo.
 - name: Grunt
   quadrant: Testing & Build Tools
   ring: Hold
   isNew: true
   description: Grunt is a config-based build automation tool as opposed to Gulp which is code based. Grunt's performance in terms of file processing is comparatively worse to Gulp, and hence Indix has it on Hold.
+  opinion: Grunt was one of the first task runners to arrive on the scene, and we immediately adopted it. But after Gulp was introduced, we put Grunt on hold and adopted it instead.
+- name: Gulp.js
+  quadrant: Testing & Build Tools
+  ring: Hold
+  isNew: true
+  description: Gulp uses the power of Node.js streams to automate the build workflow.
+  opinion: After Gulp was introduced, the community around it picked up a lot of steam owing to the power of streams and its code-over-config paradigm. We used Gulp for a lot of our apps until Webpack came along.
+- name: Webpack
+  quadrant: Testing & Build Tools
+  ring: Adopt
+  isNew: true
+  description: Webpack is a module bundler that promises chunked dependency trees and small loading times while bundling even very large products.
+  opinion: After having used both Grunt and Gulp for bundling our static assets, Webpack was a logical next step; Webpack offers tons of plugins that take most of the work out of bundling dependencies, and our engineers get to focus on building the real stuff. We now use Webpack on most of our webapps.
 - name: Mocha
   quadrant: Testing & Build Tools
   ring: Adopt
   isNew: true
   description: Mocha is a unit testing Javascript testing framework, with support for asynchronous tests, coverage reports, handling uncaught errors and timeouts. These flexibilities make Mocha the main testing framework at Indix.
+  opinion: Mocha has been the most popular test framework for quite a while now, and we naturally adopted it for the huge community around it.
 - name: Chai
   quadrant: Testing & Build Tools
   ring: Adopt
   isNew: true
   description: Chai is a [BDD](https://en.wikipedia.org/wiki/Behavior-driven_development) assertion library and easily pairable with Mocha. Indix efficiently uses the chaining capabilities of Chai's assertions.
+  opinion: Chai comes with a range of assertion interfaces & plugins that improves productivity during TDD.
 - name: Jest
   quadrant: Testing & Build Tools
   ring: Trial
@@ -245,25 +266,29 @@
   quadrant: Testing & Build Tools
   ring: Hold
   isNew: true
-  description: Jasmine was one of the earliest Javascript testing tools and comes as an package with in-built assertion utilities.
+  description: Jasmine was one of the earliest Javascript testing tools and comes as a package with in-built assertion utilities.
   opinion: Jasmine doesn't come with a test runner, while Mocha does. Indix has put Jasmine on hold, with Mocha + Chai being adopted.
 - name: Nock
   quadrant: Testing & Build Tools
-  ring: Trial
+  ring: Assess
   isNew: true
-  description: Nock is a HTTP mocking and expectation library and provides utilities to mock RESTful APIs. Since much of the apps at Indix are API-based, we have actively tried nock in some of our projects.
+  description: Nock is a HTTP mocking and expectation library and provides utilities to mock RESTful APIs.
+  opinion: Since most of our products are API-based microservices, we have been actively assessing the use of Nock to mock API responses for our tests.
 - name: WebdriverIO
   quadrant: Testing & Build Tools
   ring: Adopt
   isNew: true
-  description: WebdriverIO helps to write functional tests. It allows to write a series of asynchronous commands which is run on a headless browser and couples well with Mocha+Chai combination. Indix is using WebdriverIO as the default choice of tool for functional testing of web apps.
+  description: WebdriverIO provides Selenium bindings for Node.js, which allows us to write functional tests. It allows to write a series of asynchronous commands which is run on a headless browser and couples well with Mocha+Chai combination.
+  opinion: We're using WebdriverIO as the default functional testing tool for all of our web apps as it allows a great deal of control over our testcases and also comes with very good tooling.
 - name: Bower
   quadrant: Testing & Build Tools
   ring: Hold
   isNew: true
-  description: Bower is a package manager for all client-side libraries. With NPM as Indix's' choice for package management, we have put Bower on hold.
+  description: Bower is a package manager for all client-side libraries.
+  opinion: Although Bower started out as a "NPM for the frontend" tool with a guaranteed flat dependency tree, with the advent of NPM 3, Webpack & Rollup - the tooling is much better and there is really no need for another package manager. With NPM as our choice for package management, we have put Bower on hold.
 - name: Browser Stack
   quadrant: Testing & Build Tools
   ring: Adopt
   isNew: true
-  description: Browser Stack provides a plethora of browser testing capabilities across different OS. Being a market leader in that domain, Indix has adopted Browser Stack as the default browser testing tool.
+  description: Browser Stack provides a plethora of browser testing capabilities across different OS.
+  opinion:  Browser Stack being a market leader in that domain, we have adopted it as our default browser testing tool; we automatically test all of our consumer-facing products on all popular browsers.
