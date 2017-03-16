@@ -16,14 +16,14 @@ twitter_site: "@Indix"
 twitter_creator: "@Indix"
 twitter_title: Indix Tech-Radar
 twitter_description: Overview of Technology choices at Indix
-twitter_image: http://oss.indix.com/images/social_logo.png
+twitter_image: http://oss.indix.com/indix-radar/images/indix.png
 
 opengraph_type: website
 opengraph_url: http://oss.indix.com/indix-radar
 opengraph_sitename: Indix Tech-Radar
 opengraph_title: Indix Tech-Radar
 opengraph_description: Overview of Technology choices at Indix
-opengraph_image: http://oss.indix.com/images/social_logo.png
+opengraph_image: http://oss.indix.com/indix-radar/images/indix.png
 
 
 # URL
