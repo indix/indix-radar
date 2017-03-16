@@ -3,115 +3,115 @@
   ring: Adopt
   isNew: true
   description: '[ECMAScript 2015](http://es6-features.org/) (initially referred to as ES6) was finalized in June 2015 and introduces new syntax for writing complex applications (including classes & modules) and is generally a sorely needed upgrade to the language. As of Q1 2017, majority of the ES6 features are supported by the common browsers. The not supported ES6 features can be used with the [Babel](https://babeljs.io/) transpiler.'
-  opinion: Indix has been an active adopter of ES6 features ever since it's inception, initially through transpilers and later as direct features. Apps written without ES6 features are being rewritten.
+  opinion: We have been an active adopter of ES6 features ever since it's inception, initially through transpilers and later as direct features. Apps written without ES6 features are being rewritten.
 - name: CoffeeScript
   quadrant: Languages & Techniques
   ring: Hold
   isNew: true
   description: "[CoffeeScript](http://coffeescript.org/) is a programming language that transcompiles to JavaScript. It adds syntactic sugar in an effort to enhance JavaScript's brevity and readability."
-  opinion: Indix started using CoffeeScript in 2015. The primary reason was to reduce boiler plate code that we were writing due to JavaScript idiosyncarnies. Example - [Pros and cons of CoffeeScript](http://softwareengineering.stackexchange.com/questions/72569/what-are-the-pros-and-cons-of-coffeescript). It did improve our productivity during the time of usage and multiple apps based out of CoffeeScript run in production. But as of 2017 Q1, we no longer use it because ES2015/ES6 solves a lot of the problems that CoffeeScript was trying to solve without drastic syntax changes. Migration of existing apps to ES6 is in backlog and will be picked on case-by-case basis.
+  opinion: We started using CoffeeScript in 2015. The primary reason was to reduce boiler plate code that we were writing due to JavaScript idiosyncarnies. Example - [Pros and cons of CoffeeScript](http://softwareengineering.stackexchange.com/questions/72569/what-are-the-pros-and-cons-of-coffeescript). It did improve our productivity during the time of usage and multiple apps based out of CoffeeScript run in production. But as of 2017 Q1, we no longer use it because ES2015/ES6 solves a lot of the problems that CoffeeScript was trying to solve without drastic syntax changes. Migration of existing apps to ES6 is in backlog and will be picked on case-by-case basis.
 - name: React JSX
   quadrant: Languages & Techniques
   ring: Adopt
   isNew: true
   description: "[JSX](https://facebook.github.io/react/docs/jsx-in-depth.html) is a JavaScript syntax extension that looks similar to XML. It is developed by Facebook and is acknowledged for the benefit of writing composable micro-components."
-  opinion: Indix has been active user of React JSX ever since it's beta stage. The ability to define every UI element as a component and pass-on rich state to the components are very benefitial. Lesser number of bugs are being observed in production apps as the views are reactive to how the state of the app changes.
+  opinion: We've been active users of React JSX ever since it's beta stage. The ability to define every UI element as a component and pass-on rich state to the components are very benefitial. Lesser number of bugs are being observed in production apps as the views are reactive to how the state of the app changes.
 - name: Web Components
   quadrant: Languages & Techniques
   ring: Assess
   isNew: true
   description: "[Web Components](https://www.webcomponents.org/) are a set of standards currently being produced by Google engineers as a W3C specification that allow for the creation of reusable widgets or components in web documents and web applications."
-  opinion: Indix assessed WebComponents in its early alpha stages and found it promising for the core concept of representing every visual item as a component. From the time it's assessed, the list of components repository has grown drastically and Indix is looking forward to trying Web Components in one of its upcoming project.
+  opinion: We assessed WebComponents in its early alpha stages and found it promising for the core concept of representing every visual item as a component. From the time it's assessed, the list of components repository has grown drastically and we're looking forward to trying Web Components in one of its upcoming project.
 - name: HAML
   quadrant: Languages & Techniques
   ring: Adopt
   isNew: true
   description: "[HAML](http://haml.info/) (HTML abstraction markup language) is based on one primary principle - markup should be beautiful. HAML accelerates and simplifies HTML template creation."
-  opinion: Some of the production apps at Indix are already using HAML. Quicker turn-around time of appp development is being observed for apps developed using HAML.
+  opinion: Some of our production apps are already using HAML. Quicker turn-around time of appp development is being observed for apps developed using HAML.
 - name: LESS
   quadrant: Languages & Techniques
   ring: Hold
   isNew: true
   description: "[LESS](http://lesscss.org/) is a CSS pre-processor; it extends the CSS language, adding features that allow variables, mixins, functions and many other techniques that allow you to make CSS that is more maintainable, themeable and extendable."
-  opinion: Indix is a major consumer of [Bootstrap](http://getbootstrap.com/) and ever since Bootstrap made SASS as its default, Indix has put LESS on hold. All existing apps are already migrated to SASS.
+  opinion: We're a major consumer of [Bootstrap](http://getbootstrap.com/) and ever since Bootstrap made SASS as its default, LESS has been put on hold. All existing apps are already migrated to SASS.
 - name: SASS
   quadrant: Languages & Techniques
   ring: Adopt
   isNew: true
   description: "[Sass](http://sass-lang.com/) is an extension of CSS and defines a clean structured way of writing CSS by allowing to modularize CSS snippets while offering a whole slew of features which are practised in javascript environment. Features like variables, external imports, functions and extensibility allow to experience the benefits of modular patterns."
-  opinion: Given its advantages, Indix actively adopts Sass for styling its web apps. Sass added defined structure to app styling code base and made it easily readable. The extensible nature allowed us to define low level themes and reuse it across apps.
+  opinion: Given its advantages, we actively adopt SASS for styling its web apps. SASS added defined structure to app styling code base and made it easily readable. The extensible nature allowed us to define low level themes and reuse it across apps.
 - name: PostCSS
   quadrant: Languages & Techniques
   ring: Assess
   isNew: true
   description: "[PostCSS](http://postcss.org/) was launched as a method to use JavaScript for CSS processing. PostCSS on its own is simply an API, which, when used with its vast ecosystem of plugins, offers powerful abilities." 
-  opinion: "Because of its promising custom plugins and tools for transforming styles, Indix is actively assessing the language. Only apps which need more than what Sass can provide have attempted to use PostCSS. [Autoprexifer](https://github.com/postcss/autoprefixer) is one common plugin one top of PostCSS that is being used."
+  opinion: "Because of its promising custom plugins and tools for transforming styles, we're actively assessing the language. Only apps which need more than what SASS can provide have attempted to use PostCSS. [Autoprexifer](https://github.com/postcss/autoprefixer) is one common plugin one top of PostCSS that is being used."
 - name: Yeoman
   quadrant: Languages & Techniques
   ring: Assess
   isNew: true
   description: "[Yeoman](http://yeoman.io/) helps you to kickstart new apps by providing generator templates with frameworks of developer's choice. Any developer who want to quickly bootstrap a web app can pick the web frameworks of his/her choice and let Yeoman generate the scaffolding of project structure."
-  opinion: Indix picked upon yeoman generators like [React-starter-kit](https://github.com/kriasoft/react-starter-kit/tree/yeoman-generator) and have active production app running on it. Indix is as well actively assessing the huge ecosystem of generators and will use them as need arises. Any non-front-end-engineer who want to quickly prototype an app, Yeoman is the preferred choice to bootstrap at a quicker pace.
+  opinion: We picked up Yeoman generators like [React-starter-kit](https://github.com/kriasoft/react-starter-kit/tree/yeoman-generator) and have active production apps running on then. We're also actively assessing the huge ecosystem of generators and will use them as need arises. For any non-frontend engineer that wants to quickly prototype an app, Yeoman is the preferred choice to bootstrap at a quicker pace.
 - name: Material Design
   quadrant: Languages & Techniques
   ring: Trial
   isNew: true
   description: Google created [Material Design](https://material.io/guidelines/) principles with the intention to create a visual language and a single unified experience across platforms.
-  opinion: Indix tried Material Design in one of its internal apps and is actively following its associated frameworks. The themes and the user experience are seamless and being actively adopted to Google applications. Indix is in wait and watch mode for extensive adoption of the technique, as the concept gives flexibility only to override the theme and colors of the visual elements, but not the feel and behaviour. Indix will move the technique to assess once Material design provides extensive overriding capabilities to fit the technique to Indix's visual theme and behaviour.
+  opinion: We tried Material Design in one of our internal apps, and we're actively following its associated frameworks. The themes and the user experience are seamless and being actively adopted to Google applications. We're in wait-and-watch mode for extensive adoption of the technique, as the concept gives flexibility only to override the theme and colors of the visual elements, but not the feel and behaviour. We will move the technique to assess once Material design provides extensive overriding capabilities to fit the technique to our own visual theme and behaviour.
 - name: Typed Javascript
   quadrant: Languages & Techniques
   ring: Adopt
   isNew: true
   description: Javascript being loosely typed, gives the developer flexibility to play with data types. While in some cases, this flexibility is useful, most of the cases, apps need to be strict-typed in-order to communicate with the backend.
-  opinion: "[Flow](https://flowtype.org/) and [TypeScript](https://www.typescriptlang.org/) are two frameworks which Indix assessed and picked upon Typescript being able to compile to JavaScript and catching type errors during compilation should be mentioned as a benefit compared to flow. The active community of TypeScript and its support for all the common libraries is added advantage."
+  opinion: "[Flow](https://flowtype.org/) and [TypeScript](https://www.typescriptlang.org/) are two frameworks which we assessed; we ended up picking Typescript as it was better at catching type errors during compilation. The active community of TypeScript and its support for all the common libraries is another added advantage."
 - name: Node.js
   quadrant: Frameworks
   ring: Adopt
   isNew: true
   description: "[Node.js](https://nodejs.org/en/) is a JavaScript runtime built on top of Chrome's V8 JavaScript engine. It's lightweight, efficient, event-driven model and carries a extensive community of plugins. "
-  opinion: Indix adopted Node JS since its early satges and large set of internal tools use NodeJS and its plugins extensively to quickly bootstrap an app get it to production. Applying ES6 features and Typescript on top of Node JS proved to be a wholesome package of highly productive web apps. Indix runs apps on different versions of Node JS ranging from v6.0 to as recent as v7.5.
+  opinion: We adopted Node.js since its early stages, and a large set of packages help us quickly bootstrap an app get it to production. Applying ES6 features and Typescript on top of Node.js proved to be a wholesome experience of building highly productive web apps. We runs apps on different versions of Node.js ranging from v6.0 to as recent as v7.7.x.
 - name: Io.js
   quadrant: Frameworks
   ring: Hold
   isNew: true
   description: "[Io.js](https://iojs.org/en/) was a fork of Node.js. The benefits being adoption of performance improvements of V8 and [Semver](http://semver.org)-based release cycles."
-  opinion: "Indix used Io.js for a brief period, but then, put Io.js on hold when Io.js merged back with Node.js."
+  opinion: "We used Io.js for a brief period, but then put Io.js on hold when Io.js merged back with Node.js."
 - name: Express
   quadrant: Frameworks
   ring: Adopt
   isNew: true
   description: "[Express](http://expressjs.com/) is a [Node.js](https://nodejs.org/en/) web application framework with many HTTP utility methods and act as middleware for building web applications. "
-  opinion: Many utilities and an active community make Express an easy choice of middleware for all Node.js apps at Indix.
+  opinion: Many utilities and an active community make Express an easy choice of middleware for all Node.js apps for us.
 - name: Meteor
   quadrant: Frameworks
   ring: Assess
   isNew: true
   description: "[Meteor](https://www.meteor.com/) is a highly-opiniated platform to build web, mobile and desktop apps with a same set of javascript code and connects database to end user's screen with high set of integrations."
-  opinion: Indix assessed Metoer during its beta stage. We found apps being with lesser code and tighter integrations, but support of the community and set of frameworks on top of it were quite less at that time. Indix hs left meteor in assess stage and will pick it back in later part of 2017 to re-assess the framework.
+  opinion: We assessed Metoer during its beta stage. We found apps being with lesser code and tighter integrations, but support of the community and set of frameworks on top of it were quite less at that time. For now, we have left Meteor in the Assess stage and will pick it back in later part of 2017 to re-assess the framework.
 - name: TypeScript
   quadrant: Frameworks
   ring: Adopt
   isNew: true
   description: "[TypeScript](https://www.typescriptlang.org/) is a free and open-source programming language developed and maintained by Microsoft. It is a strict superset of JavaScript and adds static typing to the language."
-  opinion: Indix intially had hard-time debugging non-typed JS and the turn-around time to fix an issue was very high. Such problems led us to explore possibilities of typed JavaScript. While assessing TypeScript in one of it's apps, we found that though the initial development time was more compared to developing in Javascript, but once the app hit production, maintainance of the app has been highly productive. Any new member joining the team found it easy to bootstrap on the code base. While existing projects continue to reamin in Javascript, any new project, TypeScript has become the default choice. 
+  opinion: Intially, we had a hard-time debugging non-typed JS and the turn-around time to fix an issue was very high. Such problems led us to explore possibilities of typed JavaScript. While assessing TypeScript in one of it's apps, we found that though the initial development time was more compared to developing in Javascript, but once the app hit production, maintainance of the app has been highly productive. Any new member joining the team found it easy to bootstrap on the code base. While existing projects continue to reamin in Javascript, any new project, TypeScript has become the default choice. 
 - name: Koa
   quadrant: Frameworks
   ring: Assess
   isNew: true
   description: "[Koa](http://koajs.com/) is an alternate to Express+Connect with better support for error handling & middleware cascading. Koa is built using ES6 generators (with Koa v2 dropping around April 2017 with `async`/`await` support) and more lightweight."
-  opinion: Indix designs lightweight server apps with pure REST API. Majority of the heavylifting is handled in client. For such lightweight server, express+connect fits as an apt combination. Koa has kept at assessing stage due its prons and cons. pros being the lightweight and cons being lesser supoort for routing and file serving.
+  opinion: We design lightweight server apps with pure REST API. Majority of the heavylifting is handled in client. For such lightweight server, express+connect fits as an apt combination. Koa has kept at assessing stage due its prons and cons; pros being the lightweight and cons being lesser support for routing and file serving.
 - name: Backbone.js
   quadrant: Client Libraries
   ring: Hold
   isNew: true
   description: "[Backbone.js](http://backbonejs.org/) provides a Model-View-Collection structure to web applications and helps with utilities to build APIs RESTful."
-  opinion: Indix was an early adopter of Backbone.js due to to its minimalistic MVC model, but with Redux unidirectional flow of events and virtual-dom updates, Indix has put Backbone on hold.
+  opinion: We were an early adopter of Backbone.js due to to its minimalistic MVC model, but with Redux unidirectional flow of events and virtual DOM updates, we've put Backbone on hold.
 - name: AngularJS 1.0
   quadrant: Client Libraries
   ring: Hold
   isNew: true
   description: "[Angular 1.0](https://angularjs.org/) was developed by Google to build dynamic web pages with support for data-binding and templates on client side."
-  opinion: Indix evaluated AngularJS for some internal projects, but put the 1.0 version on hold after the release of Angular 2.0.
+  opinion: We evaluated AngularJS for some internal projects, but put the 1.0 version on hold after the release of Angular 2.0.
 - name: AngularJS 2.0
   quadrant: Client Libraries
   ring: Assess
@@ -123,19 +123,19 @@
   ring: Adopt
   isNew: true
   description: "[React](https://facebook.github.io/react/) is an open-source JavaScript library providing a view for data rendered as HTML."
-  opinion: React's benefits of composable components and intelligent state maintenance has made it the default client-side framework at Indix. It abstracts the DOM away from the app and implements one-way data flow, as an alternate to Angular's two-way binding. Moving from backbone, the learning curve initially seemed to slow things a little bit, but it made the team more productive over a longer period of time.
+  opinion: React's benefits of composable components and intelligent state maintenance has made it our default client-side framework. It abstracts the DOM away from the app and implements one-way data flow, as an alternate to Angular's two-way binding. Moving from backbone, the learning curve initially seemed to slow things a little bit, but it made the team more productive over a longer period of time.
 - name: Redux
   quadrant: Client Libraries
   ring: Adopt
   isNew: true
   description: "[Redux](http://redux.js.org/) is a state container for JavaScript apps and helps the app to behave consistently."
-  opinion: Redux helps to plug-in immutability to a web app state, resulting in lesser bugs in the code. Due to these advantages, Indix uses Redux in combination with React.
+  opinion: Redux helps to plug-in immutability to a web app state, resulting in lesser bugs in the code. Due to these advantages, we use Redux in combination with React.
 - name: MobX
   quadrant: Client Libraries
   ring: Adopt
   isNew: true
   description: "[MobX](https://github.com/mobxjs/mobx) is a state management system that is somewhat similar to Redux, but is less opiniated. It makes state management very simple by transparently applying functional reactive programming (TFRP)."
-  opinion: Here at Indix, we use it in some React-based projects. We prefer MobX over Redux for apps where automatic state flow makes more sense.
+  opinion: We use it in some React-based projects. We prefer MobX over Redux for apps where automatic state flow makes more sense.
 - name: Ember.js
   quadrant: Client Libraries
   ring: Assess
@@ -153,7 +153,7 @@
   ring: Adopt
   isNew: true
   description: "[Bootstrap 3.x](http://getbootstrap.com/) is the most popular HTML framework with in-built support for responsive design, built by Twitter."
-  opinion: Indix was an early adopter of Bootstrap and it is our default framework for designing webapps. It took a lot of effort to move from 2.x to 3.x, but the benefits of 3.x justified the efforts invested.
+  opinion: We were an early adopter of Bootstrap and it is our default framework for designing webapps. It took a lot of effort to move from 2.x to 3.x, but the benefits of 3.x justified the efforts invested.
 - name: Bootstrap 4.x
   quadrant: Client Libraries
   ring: Adopt
@@ -171,7 +171,7 @@
   ring: Assess
   isNew: true
   description: "[Material UI](https://www.material-ui.com/#/) framework of UI components built with React by Google. With React being in adoption, and Google introducing Material UI guidelines, The Material UI HTMl/CSS framework provides a combination of the two."
-  opinion: Indix uses Material UI framework in some of it's projects and is assessing the possibilities of adopting more of Material UI themes and guidelines.
+  opinion: We use Material UI framework in some of our projects and we're assessing the possibilities of adopting more of Material UI themes and guidelines.
 - name: Lodash
   quadrant: Client Libraries
   ring: Adopt
@@ -195,7 +195,7 @@
   ring: Hold
   isNew: true
   description: "[jQuery](https://jquery.com/) is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers."
-  opinion: With React providing all the functionalities of jQuery, Indix has put jQuery on hold and will possibly use it when need arises.
+  opinion: With jQuery having become a very limited library for our current needs, we've put jQuery on hold and will possibly use it when need arises.
 - name: RxJS
   quadrant: Client Libraries
   ring: Trial
@@ -249,25 +249,25 @@
   ring: Adopt
   isNew: true
   description: "[Chai](http://chaijs.com/) is a [BDD](https://en.wikipedia.org/wiki/Behavior-driven_development) assertion library and easily pairable with Mocha."
-  opinion: Chai comes with a range of assertion interfaces & plugins that improves productivity during TDD. Indix efficiently uses the chaining capabilities of Chai's assertions.
+  opinion: Chai comes with a range of assertion interfaces & plugins that improves productivity during TDD. We love the chaining capabilities of Chai's assertions.
 - name: Jest
   quadrant: Testing & Build Tools
   ring: Trial
   isNew: true
   description: "[Jest](https://facebook.github.io/jest/) is built by developers of React and provides powerful mocking functions as default behaviour. It virtualizes Javascript environment using [JSDOM](https://github.com/tmpvar/jsdom) and has utilities to test varied DOM behaviour."
-  opinion: Due to slow performance aspects of Jest, Indix has put the framework in trial mode and is actively following the community, looking for performance improvements.
+  opinion: Due to slow performance aspects of Jest, we've put the framework in trial mode; we're actively following the community, looking for performance improvements.
 - name: Istanbul
   quadrant: Testing & Build Tools
   ring: Adopt
   isNew: true
   description: "[Istanbul](https://github.com/gotwarlost/istanbul) is a code coverage measurement tool from the YUI team and offers coverage for statement, branches and functions."
-  opinion: It's multiple report formats and support as both a command line tool as well as a library makes Istanbul the favourite coverage tool at Indix.
+  opinion: It's multiple report formats and support as both a command line tool as well as a library makes Istanbul our favourite coverage tool.
 - name: Jasmine
   quadrant: Testing & Build Tools
   ring: Hold
   isNew: true
   description: "[Jasmine](https://jasmine.github.io/) was one of the earliest Javascript testing tools and comes as a package with in-built assertion utilities."
-  opinion: Jasmine doesn't come with a test runner, while Mocha does. Indix has put Jasmine on hold, with Mocha + Chai being adopted.
+  opinion: Jasmine doesn't come with a test runner, while Mocha does. We've put Jasmine on hold, with Mocha + Chai being adopted.
 - name: Nock
   quadrant: Testing & Build Tools
   ring: Assess
