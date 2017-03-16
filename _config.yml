@@ -4,15 +4,31 @@
 
 # Site
 title: Indix Tech-Radar
-description: Overview of Technology choices @ Indix
+description: Overview of Technology choices at Indix
 keywords: radar,tech,indix,techradar,tech-radar,indix-tech-radar
 author: Indix
 language:
 timezone:
 
+# SEO & Other Meta
+twitter_card: summary_large_image
+twitter_site: "@Indix"
+twitter_creator: "@Indix"
+twitter_title: Indix Tech-Radar
+twitter_description: Overview of Technology choices at Indix
+twitter_image: http://oss.indix.com/images/social_logo.png
+
+opengraph_type: website
+opengraph_url: http://oss.indix.com/indix-radar
+opengraph_sitename: Indix Tech-Radar
+opengraph_title: Indix Tech-Radar
+opengraph_description: Overview of Technology choices at Indix
+opengraph_image: http://oss.indix.com/images/social_logo.png
+
+
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://oss.indix.com/indix-radar
+url: http://oss.indix.com/indix-radar
 root: /indix-radar/
 permalink: :title/
 permalink_defaults:
