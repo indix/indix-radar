@@ -59,13 +59,18 @@ const RadarBuilder = function (data) {
                 var ringMap = {};
                 var maxRings = 4;
 
+                var ringOrder = {
+                    'adopt': 0,
+                    'trial': 1,
+                    'assess': 2,
+                    'hold': 3
+                };
                 _.each(rings, function (ringName, i) {
                     if (i === maxRings) {
                         throw new MalformedDataError(ExceptionMessages.TOO_MANY_RINGS);
                     }
-                    ringMap[ringName] = new Ring(ringName, i);
+                    ringMap[ringName] = new Ring(ringName, ringOrder[ringName.toLowerCase()] || i);
                 });
-
                 var quadrants = {};
                 _.each(blips, function (blip) {
                     if (!quadrants[blip.quadrant]) {
