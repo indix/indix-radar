@@ -228,3 +228,37 @@ footer {
     }
   }
 }
+
+@media not screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+  svg#radar-plot {
+    display: none !important;
+  }
+  header .button {
+    display: block;
+    margin: 0 auto !important;
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+    border-radius: 0 !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+  #radar {
+    width: 90% !important;
+    .quadrant-table.first {
+      right: 0 !important;
+    }
+    .quadrant-table.selected {
+      float: left !important;
+      max-width: 100% !important;
+      width: 100% !important;
+    }
+    .quadrant-table ul li {
+      .blip-list-item {
+        border-radius: 0;
+      }
+      .blip-item-description {
+        width: 100% !important;
+      }
+    }
+  }
+}
