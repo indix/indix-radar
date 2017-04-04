@@ -42,16 +42,16 @@
   opinion: Given its advantages, we actively adopt SASS for styling its web apps. SASS added defined structure to app styling code base and made it easily readable. The extensible nature allowed us to define low level themes and reuse it across apps.
 - name: PostCSS
   quadrant: Languages & Techniques
-  ring: Assess
+  ring: Trial
   isNew: true
   description: "[PostCSS](http://postcss.org/) was launched as a method to use JavaScript for CSS processing. PostCSS on its own is simply an API, which, when used with its vast ecosystem of plugins, offers powerful abilities." 
-  opinion: "Because of its promising custom plugins and tools for transforming styles, we're actively assessing the language. Only apps which need more than what SASS can provide have attempted to use PostCSS. [Autoprexifer](https://github.com/postcss/autoprefixer) is one common plugin one top of PostCSS that is being used."
+  opinion: "Because of its promising custom plugins and tools for transforming styles, the language is under active trial. Only apps which need more than what SASS can provide have attempted to use PostCSS. [Autoprexifer](https://github.com/postcss/autoprefixer) is one common plugin one top of PostCSS that is being used."
 - name: Yeoman
   quadrant: Languages & Techniques
-  ring: Assess
+  ring: Trial
   isNew: true
   description: "[Yeoman](http://yeoman.io/) helps you to kickstart new apps by providing generator templates with frameworks of developer's choice. Any developer who want to quickly bootstrap a web app can pick the web frameworks of his/her choice and let Yeoman generate the scaffolding of project structure."
-  opinion: We picked up Yeoman generators like [React-starter-kit](https://github.com/kriasoft/react-starter-kit/tree/yeoman-generator) and have active production apps running on then. We're also actively assessing the huge ecosystem of generators and will use them as need arises. For any non-frontend engineer that wants to quickly prototype an app, Yeoman is the preferred choice to bootstrap at a quicker pace.
+  opinion: We picked up Yeoman generators like [React-starter-kit](https://github.com/kriasoft/react-starter-kit/tree/yeoman-generator) and have active production apps running on then. We handpicked some from the huge ecosystem of generators under active trail and will use them as need arises. For any non-frontend engineer that wants to quickly prototype an app, Yeoman is the preferred choice to bootstrap at a quicker pace.
 - name: Material Design
   quadrant: Languages & Techniques
   ring: Trial
@@ -99,7 +99,7 @@
   ring: Assess
   isNew: true
   description: "[Koa](http://koajs.com/) is an alternate to Express+Connect with better support for error handling & middleware cascading. Koa is built using ES6 generators (with Koa v2 dropping around April 2017 with `async`/`await` support) and more lightweight."
-  opinion: We design lightweight server apps with pure REST API. Majority of the heavylifting is handled in client. For such lightweight server, express+connect fits as an apt combination. Koa has kept at assessing stage due its prons and cons; pros being the lightweight and cons being lesser support for routing and file serving.
+  opinion: We design lightweight server apps with pure REST API. Majority of the heavylifting is handled in client. For such lightweight server, express+connect fits as an apt combination. Koa is kept at assessing stage due its prons and cons; pros being the lightweight and cons being lesser support for routing and file serving.
 - name: Backbone.js
   quadrant: Client Libraries
   ring: Hold
@@ -117,7 +117,7 @@
   ring: Assess
   isNew: true
   description: "[Angular 2.0](https://angular.io/) is rewritten in TypeScript and has made Components first-class citizens."
-  opinion: Although we're a React-heavy shop, we are currently assessing possibilities of its use; simplified directives & built-in support for Web sockets are some features which look promising.
+  opinion: Although we're a React-heavy shop, we are currently assessing possibilities of Angular 2.0 use; simplified directives & built-in support for Web sockets are some features which look promising.
 - name: React
   quadrant: Client Libraries
   ring: Adopt
@@ -147,7 +147,7 @@
   ring: Assess
   isNew: true
   description: "[Polymer](https://www.polymer-project.org/) lets you declaratively create new [Web components](http://webcomponents.org)."
-  opinion: We assessed it in it's early alpha stages, and we're continuing keeping an eye on Polymer. We feel Polymer would gain huge community adoption in the future.
+  opinion: We assessed it in it's early alpha stages, and we're continuing keeping an eye on Polymer. We feel Polymer would gain huge community adoption in the future, since it's one of the early adopters of web compoents.
 - name: Bootstrap 3.x
   quadrant: Client Libraries
   ring: Adopt
@@ -168,10 +168,10 @@
   opinion: With more form controls out of the box and flexible navigation patterns, we're big fans of Foundation.
 - name: Material UI
   quadrant: Client Libraries
-  ring: Assess
+  ring: Trial
   isNew: true
   description: "[Material UI](https://www.material-ui.com/#/) framework of UI components built with React by Google. With React being in adoption, and Google introducing Material UI guidelines, The Material UI HTMl/CSS framework provides a combination of the two."
-  opinion: We use Material UI framework in some of our projects and we're assessing the possibilities of adopting more of Material UI themes and guidelines.
+  opinion: We use Material UI framework in some of our projects and we're evaluating the possibilities of adopting more of Material UI themes and guidelines.
 - name: Lodash
   quadrant: Client Libraries
   ring: Adopt
@@ -201,7 +201,7 @@
   ring: Trial
   isNew: true
   description: "[Reactive eXtensions of JavaScript](https://github.com/Reactive-Extensions/RxJS) is a set of libraries for composing asynchronous and event-based programs using observable collections and query operations. It acts like lodash for DOM events and allows developer to chain a sequence of operations both on data as well as DOM events."
-  opinion: We have tried RxJS in one of our apps and we continue to follow the community for more use-cases.
+  opinion: We have tried RxJS in one of our apps which is in need of heavy DOM interactions. We continue to follow the community for more use-cases.
 - name: Socket.IO
   quadrant: Client Libraries
   ring: Adopt
@@ -219,7 +219,7 @@
   ring: Trial
   isNew: true
   description: "Written by Facebook as an alternative to NPM, [Yarn](https://yarnpkg.com/) is a package manager. Yarn uses a deterministic algorithm to quickly flatten dependencies, resulting in a completely flat dependency tree and *very fast* installation times. Yarn is also a drop-in replacement for NPM (well, almost) and so migrating should be relatively painless."
-  opinion: Yarn is exciting to us for a lot of reasons, but mostly a flat dependency tree & very fast install times. We've begun trials of Yarn over our in-house NPM repo.
+  opinion: Yarn is exciting to us for a lot of reasons, but mostly a flat dependency tree & very fast install times. We've begun trails of Yarn over our in-house NPM repo.
 - name: Grunt
   quadrant: Testing & Build Tools
   ring: Hold
@@ -252,10 +252,10 @@
   opinion: Chai comes with a range of assertion interfaces & plugins that improves productivity during TDD. We love the chaining capabilities of Chai's assertions.
 - name: Jest
   quadrant: Testing & Build Tools
-  ring: Trial
+  ring: Assess
   isNew: true
   description: "[Jest](https://facebook.github.io/jest/) is built by developers of React and provides powerful mocking functions as default behaviour. It virtualizes Javascript environment using [JSDOM](https://github.com/tmpvar/jsdom) and has utilities to test varied DOM behaviour."
-  opinion: Due to slow performance aspects of Jest, we've put the framework in trial mode; we're actively following the community, looking for performance improvements.
+  opinion: We initially tried Jest in one of our React apps. But due to slow performance aspects of Jest, we've put the framework back to assess mode; we're actively following the community, looking for performance improvements.
 - name: Istanbul
   quadrant: Testing & Build Tools
   ring: Adopt
