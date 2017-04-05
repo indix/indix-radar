@@ -177,18 +177,12 @@
   isNew: true
   description: "In contrast to a public cloud like AWS, there are popular private cloud solutions (both hosted & on-premise) like Openstack/ Cloudstack etc."
   opinion: "Though the general belief is that hosting your own private cloud makes your infrastructure more secure & cheaper, considering the amount of features in terms of security and SaaS/ PaaS offerings AWS has added over time, we decided it doesn't make sense to go with private cloud at this point. Targeting proper design & use, we have lot more optimizations to do both in Security & Cost optimization front which we believe would help us from all angles."
-- name: Letsencrypt
+- name: HTTPS Everywhere
   quadrant: Techniques
   ring: Adopt
   isNew: true
-  description: "[Let’s Encrypt](https://letsencrypt.org) is a free, automated, and open Certificate Authority provided by the Internet Security Research Group(ISRG).The key principles behind Let's Encrypt are free, automatic, secure, transparent, open and cooperative."
-  opinion: "Features like more granular and selective controls towards authorization, easy automation and no cost made it the tool of choice at Indix. It also helps to secure sites hosted externally without sharing domain wide credentials to third-party."
-- name: AWS Certificate Manager
-  quadrant: Techniques
-  ring: Adopt
-  isNew: true
-  description: "[AWS Certificate Manager](http://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html) makes it easy to provision, manage, and deploy SSL/TLS certificates on AWS-managed resources."
-  opinion: "Since all our infra is in AWS and this being a free tool offering features like automated renewal we adopted it at Indix."
+  description: "Enabling HTTPS for web sites is easier than ever with services like [Let’s Encrypt](https://letsencrypt.org) and [AWS Certificate Manager (ACM)](http://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html)"
+  opinion: "We are using ACM with AWS resources like ELBs and Let's Encrypt when SSL termination happens with other third party integrations like Apigee."
 - name: MultiFactor Authentication
   quadrant: Techniques
   ring: Adopt
