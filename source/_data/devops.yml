@@ -2,86 +2,80 @@
   quadrant: Tools
   ring: Adopt
   isNew: true
-  description: "[GoCd](https://www.gocd.io/) is a Continuous Integration and Continuous Delivery System developed by [Thoughtworks](https://www.thoughtworks.com/go/) which was open sourced in 2014."
-  opinion: "The native support for pipelines as first class citizen, parallelism of jobs inside stages while keeping separate stages for sequential dependencies and better visualizations compared to other tools made GoCD our tool of choice at Indix. We also had in house expertise (few of the members literally built the tool) that motivated us to consider it in the first place. Over time, we gained more maturity and have been actively working on contributing to various developments around it. Check out [S3 Artifacts Plugin](https://github.com/indix/gocd-s3-artifacts), [Agents auto-scaler on top of Mesos](https://github.com/indix/gocd-mesos) and [auto-scaling with containers](https://github.com/indix/vasuki)."
+  description: "[GoCD](https://www.gocd.io/) is a Continuous Integration and Continuous Delivery System developed by [Thoughtworks](https://www.thoughtworks.com/go/) which was open sourced in 2014."
+  opinion: "The native support for pipelines as first class citizen, parallelism of jobs inside stages while keeping separate stages for sequential dependencies and better visualizations compared to other tools made GoCD our tool of choice at Indix. We also had in house expertise (one of our engineers was part of the core team) that motivated us to consider it in the first place. Over time, we gained more maturity and have been actively working on contributing to various developments around it. Check out [S3 Artifacts Plugin](https://github.com/indix/gocd-s3-artifacts), [Agents auto-scaler on top of Mesos](https://github.com/indix/gocd-mesos) and [auto-scaling with containers](https://github.com/indix/vasuki)."
 - name: Snap CI
   quadrant: Tools
   ring: Hold
   isNew: true
-  description: "[Snap CI](https://www.snap-ci.com) has been a popular CI/CD tool in Cloud and used by many companies around."
-  opinion: "Even though it has been a good option, we are no longer considering it since it will be EOL [soon](https://blog.snap-ci.com/blog/2017/02/06/2017-02-06-snap-announcement/) in favour of GOCD"
+  description: "[Snap CI](https://www.snap-ci.com) is a CI/CD tool hosted on the cloud that allows easy configuration of build pipelines."
+  opinion: "We were actively using Snap CI for hosting our OSS builds. However, we are migrating away from it to Travis CI as SnapCI is being [decommissioned soon](https://blog.snap-ci.com/blog/2017/02/06/2017-02-06-snap-announcement/)"
 - name: Travis CI
   quadrant: Tools
   ring: Adopt
   isNew: true
   description: "[Travis CI](https://travis-ci.org/) is a cloud based CI tool offering seamless integration with Github."
-  opinion: "The need for a CI tool for all the opensource projects @Indix aptly filled, does the job well and is free."
+  opinion: "We are in the process of migrating away from Snap CI for our open source projects. Feature wise we found it to be the best out of the available CI solutions on the cloud."
 - name: Concourse CI
   quadrant: Tools
   ring: Assess
   isNew: true
-  description: A CI tool with first-class support for containers and a fairly simple UI.
-  opinion: "The container support makes it a good CI tool to assess. [More ...](https://concourse.ci/index.html)"
+  description: [Concourse CI](https://concourse.ci/index.html) comes with first-class support for containers and a fairly simple UI.
+  opinion: "The container support makes it a good CI tool to assess"
 - name: Jenkins
   quadrant: Tools
   ring: Hold
   isNew: true
-  description: "[Jenkins](https://jenkins.io/) is probably the most popular CI tool around which comes with a lot of features and plugins that enable it to be a unified build and automation tool."
-  opinion: "Wasn't build from the ground up to support Continuous Delivery, hence lacked native support for pipelines and visualizations that we were able to get from GoCD."
+  description: "[Jenkins](https://jenkins.io/) is the most popular CI tool around which comes with a lot of features and plugins that enable it to be a unified build and automation tool."
+  opinion: "A big drawback for us was that Jenkins lacks first class support for pipelines thereby making it tricky to implement non trivial CD workflows."
 - name: Ansible
   quadrant: Tools
   ring: Adopt
   isNew: true
   description: "[Ansible](https://www.ansible.com) is an open-source automation engine that automates cloud provisioning, configuration management and application deployment."
   opinion: "The agent-less architecture enables us to create automation and manage configurations/ deployment with very little effort. Also, it comes with a matured support for provisioning and deployment as well. Its simplicity compared to other complex tools was another reason behind our decision."
-- name: Chef-solo
-  quadrant: Tools
-  ring: Adopt
-  isNew: true
-  description: "[Chef-solo](https://docs.chef.io/chef_solo.html) is a command that executes chef-client in a way that does not require the Chef server in order to converge cookbooks. Similar to [ansible](https://www.ansible.com) we like the agent-less architecture and the in-house expertise made it easier to adopt Chef-solo."
-  opinion: "Chef has been our only CM tool from the very beginning and naturally we have grown expertise over time. Similar to [ansible](https://www.ansible.com), with the server-less architecture of chef-solo we have been able to scale configuration management without any issues in hundreds of m/c in various clusters."
 - name: Chef-server
   quadrant: Tools
   ring: Hold
   isNew: true
   description: "[Chef](https://www.chef.io/chef) is a CM tool that enables you to manage large scale datacentres on and off the cloud with its client server model where the client reaches out to the server periodically to sync its configurations."
-  opinion: "The server side of Chef has a lot of moving parts (Think about Nginx/ RabbitMQ/ Postgres/ Flat-file storage/ Rails together) that needs lot of efforts to maintain. Also, scaling horizontally and making it highly available with the open source version poses another challenge altogether. We didn't find it appropriate to continue using it given that we had much simpler alternatives at hand."
+  opinion: "Maintaining a higly available Chef server able to handle the scale of our infrastructure was proving to be a difficult task."
 - name: Terraform
   quadrant: Tools
   ring: Trial
   isNew: true
-  description: "[Terraform](https://www.terraform.io) is a [Hashicorp](https://www.hashicorp.com/) tool for building, changing, and versioning infrastructure safely and efficiently."
-  opinion: "Terraform can manage existing and popular service providers as well as custom in-house solutions. It's focus on provisioning, the ability to create immutable infra and a good community support encouraged us to try Terraform at Indix."
+  description: "[Terraform](https://www.terraform.io) is a tool for building, changing, and versioning infrastructure safely and efficiently."
+  opinion: "Terraform's focus on provisioning, the ability to create immutable infra and a good community support were the primary motivations for us to try it at Indix. The support for AWS and the pace at which newer features are available in the tool encouraged us to use it for a part of our infrastructure."
 - name: Cloudformation
   quadrant: Tools
   ring: Hold
   isNew: true
-  description: "[AWS](https://aws.amazon.com) [CloudFormation](https://aws.amazon.com/cloudformation) provides an easy way to create and manage a collection of related [AWS](https://aws.amazon.com) resources, provisioning and updating them in an orderly and predictable fashion."
-  opinion: "The obvious problem that we had with this tool was that it was AWS specific, and the complicated JSON required to create templates didn't help either hence we put it on hold."
+  description: "[AWS CloudFormation](https://aws.amazon.com/cloudformation) helps create and manage a collection of related AWS resources."
+  opinion: "The complicated JSON required to create templates in CloudFormation and a solid alternative in Terraform made us put this on hold"
 - name: Bind
   quadrant: Tools
   ring: Hold
   isNew: true
   description: "[BIND](https://www.isc.org/downloads/bind) is open source software that enables you to publish your Domain Name System (DNS) information on the Internet, and to resolve DNS queries for your users. At Indix we were in favor of a managed DNS service hence we put [Bind](https://www.isc.org/downloads/bind) on hold."
-  opinion: "We started with Bind since our inception but over time we realized the managing and scaling a DNS infra is far more complicated than one thinks. Given that many hosted DNS solutions came up over time, we favored to move away from maintaining our own infrastructure for such a super-critical component like DNS."
+  opinion: "We started with Bind since our inception but over time we realized the managing and scaling a DNS infra is far more complicated than one thinks. Given that many hosted DNS solutions came up over time, we favored to move away from maintaining our own infrastructure for such a super-critical component like DNS. More details can be found in our blog [post](https://www.indix.com/blog/developer/dns-at-indix-part-1/)" 
 - name: Route53
   quadrant: Tools
   ring: Adopt
   isNew: true
   description: "[Amazon Route 53](https://aws.amazon.com/route53) is a highly available and scalable cloud Domain Name System (DNS) service."
-  opinion: "Route53 has matured a lot since it was released years back. Features like Private hosted zones, Vpc association, DNS aliasing (Very useful for Zone Apex), multiple routing policies have been tremendously useful for us. Along with those, having a scalable & highly-available DNS service without any headache of maintenance made us to choose it without a second thought."
+  opinion: "Route53 has matured a lot since it was released years back. Features like Private hosted zones, VPC association, DNS aliasing (Very useful for Zone Apex), multiple routing policies have been tremendously useful for us. Along with those, having a scalable & highly-available DNS service without any headache of maintenance made us to choose it."
 - name: Capistrano
   quadrant: Tools
   ring: Hold
   isNew: true
-  description: "A remote server automation and deployment tool written in [Ruby](https://www.ruby-lang.org/en)."
+  description: "A remote server automation and deployment tool written in Ruby."
   opinion: "At Indix we are using [Ansible](https://www.ansible.com) for both CM and provisioning so it made it simpler to choose the same over [Capistrano](http://capistranorb.com) as Capistrano didn't bring anything new to the table than what [Ansible](https://www.ansible.com) had to offer in terms of deployments."
 - name: Splunk
   quadrant: Tools
   ring: Hold
   isNew: true
   description: "[Splunk](https://www.splunk.com) is a log management tool that can be used to monitor and analyze the data collected. The data collected can then be used to generate graphs, reports, alerts and dashboards."
-  opinion: "At Indix we just needed a simple and cost-effective tool for log management/ alerting & reporting. Even though we started with Splunk initially, it turned out to be too costly for us and hence we put it on hold."
+  opinion: "At Indix we just needed a simple and cost-effective tool for log management/ alerting & reporting. Even though we started with Splunk initially (via a startup discount), it turned out to be too costly for us and hence we put it on hold."
 - name: Loggly
   quadrant: Tools
   ring: Adopt
@@ -93,55 +87,55 @@
   ring: Hold
   isNew: true
   description: "[ElasticSearch Logstash Kibana](https://www.elastic.co/videos/introduction-to-the-elk-stack) is a combination of open source tools which can used for log management. Its one of the commonly used tools for log management in the industry."
-  opinion: "At Indix we preferred a managed service for centralized logging since the complex architecture and efforts needed to manage an in-house ELK stack sounded too much. On top of that, building a HA/ Scalable stack of ELK wasn't cost effective given the amount of logs we deal with on a daily basis. Also, there were features that we wanted to have like defining alerts from UI, being able to use derived field etc were missing in ELK."
-- name: Docker
+  opinion: "At Indix we chose a managed service for centralized logging since the complex architecture and efforts needed to manage an in-house ELK stack sounded too much. Based on our evaluation, building a Highly Available and Scalable ELK stack wasn't cost effective given we were dealing with several hundred GBs of logs on a daily basis. Moreover, there were features like defining alerts from UI, being able to use derived field etc were missing in ELK."
+- name: Docker for production
   quadrant: Platforms
-  ring: Adopt
+  ring: Assess
   isNew: true
-  description: "[Docker](https://www.docker.com) is synonymous to containers and we at Indix like the ease of use and portability that it offers and have adopted it for Dev/CI environments."
-  opinion: "The kernel compatibility issues that [Docker](https://www.docker.com) had didn't give sufficient confidence to adopt it across all Production environments yet hence its put on hold."
+  description: "[Docker](https://www.docker.com) is currently synonymous to containers"
+  opinion: "The continuosly changing set of features, incompatbilities across versions have made us cautious."
 - name: Rkt
   quadrant: Platforms
   ring: Assess
   isNew: true
-  description: "[Rkt](https://github.com/coreos/rkt) is a pod-native container engine for Linux. It is composable, secure, and built on standards."
-  opinion: "The focus on security and a composable architecture were the key reasons why we at Indix wanted to assess this tool."
+  description: "[Rkt](https://github.com/coreos/rkt) is a container engine from CoreOs. It is composable, secure, and built on standards."
+  opinion: "The focus on security and a composable architecture are the key reasons why we want to assess this tool."
 - name: CoreOS
   quadrant: Platforms
   ring: Trial
   isNew: true
-  description: With Container Linux and Kubernetes, [CoreOS](https://coreos.com) provides the key components to secure, simplify and automatically update your container infrastructure.
-  opinion: We at Indix, wanted to try out [CoreOS](https://coreos.com) as it offered an ecosystem of container specific tools that scales well and offers great flexibility.
+  description: CoreOS (Container Linux) is a lightweight operating system based on the Linux kernel and designed for providing infrastructure to clustered deployments.
+  opinion: Focus on containers, stable Docker support and the synergy with using it as a base OS for Kubernetes clusters mean that CoreOS is the OS of choice for our Kubernetes cluster.
 - name: CentOS
   quadrant: Platforms
   ring: Hold
   isNew: true
   description: The [CentOS](https://www.centos.org) Linux distribution is a platform derived from the sources of Red Hat Enterprise Linux (RHEL).
-  opinion: We liked the more frequent updates that come as part of Ubuntu rather than the slower updates in case of [Centos](https://www.centos.org). Also the user community in case of Centos is not as huge as Ubuntu, hence we put it on hold.
+  opinion: Outdated packages and with our engineers being more comfortable with Ubuntu, made us move away from CentOS.
 - name: Ubuntu
   quadrant: Platforms
   ring: Adopt
   isNew: true
   description: "[Ubuntu](https://www.ubuntu.com) is one of the most popular debian Linux distros out there."
-  opinion: "We at Indix like the active community support, frequent updates and arguably the best package management."
+  opinion: "We like the active community support, frequent updates and the up-to-date package management."
 - name: Mesos
   quadrant: Platforms
   ring: Adopt
   isNew: true
   description: "[Apache Mesos](http://mesos.apache.org) abstracts CPU, memory, storage, and other compute resources away from machines (physical or virtual), enabling fault-tolerant and elastic distributed systems to easily be built and run effectively."
-  opinion: "We find Mesos as a great tool for managing resources in a heterogeneous cluster of machines. With it's native support for containers as well as support for docker, it provides a great way to run your applications with an optimized resource allocation. Along with frameworks like Marathon, the deployments and failure recovery becomes very straightforward & simple to manage."
+  opinion: "We find Mesos as a great tool for managing resources in a heterogeneous cluster of machines. With it's native support for containers, it provides a great way to run your applications with an optimized resource allocation. Along with frameworks like Marathon, the deployments and failure recovery becomes very straightforward & simple to manage."
 - name: Marathon
   quadrant: Platforms
   ring: Adopt
   isNew: true
-  description: A container orchestration platform for [Mesos](http://mesos.apache.org) and DC/OS."
-  opinion: "We use [marathon](https://mesosphere.github.io/marathon) to manage application deployments as no doubt this is the best deployment framework for long running services in Mesos. With its ability of scheduling & automatic recovery of applications when crashed, we consider it the right choice for our Mesos platform."
+  description: [Marathon](https://mesosphere.github.io/marathon) is a container orchestration platform on top of Mesos
+  opinion: "We use Marathon to manage application deployments for long running services in Mesos. With its ability of advanced scheduling & automatic recovery of crashed applications, it was a good addition into our Mesos platform."
 - name: Kubernetes
   quadrant: Platforms
   ring: Trial
   isNew: true
   description: "[Kubernetes](https://kubernetes.io) is an open-source system for automating deployment, scaling, and management of containerized applications."
-  opinion: "We at Indix wanted to try [Kubernetes](https://kubernetes.io) as it offers great scalability and flexibility for managing & administration of docker containers."
+  opinion: "Kubernetes, out of the box, provided lots of features around service discovery, load balancing and internal DNS that had to be configured in other such tools. The abstractions for applications deployments were much easier from Developer perspective and we wanted to try Kubernetes for our newer applications and services."
 - name: Mesosphere DCOS
   quadrant: Platforms
   ring: Assess
@@ -153,30 +147,13 @@
   ring: Adopt
   isNew: true
   description: "[AWS](https://aws.amazon.com) is a public IAAS provider that provides a rich set of features to host your infrastructure in the public cloud."
-  opinion: "At Indix, we liked the scale, reliability and flexibility that [AWS](https://aws.amazon.com) had to offer. Also being the leading IAAS provider in the market it has good integration with the best tools for provisioning and automation required to manage a platform like this. We have been using AWS since the beginning and have gained solid expertise on developing under AWS."
-- name: GCE/ Azure
+  opinion: "We like the scale, reliability and flexibility that [AWS](https://aws.amazon.com) had to offer. Also being the leading IAAS provider in the market it has good integration with the best tools for provisioning and automation required to manage a platform like this. We have been using AWS since the beginning and have gained solid expertise on developing under AWS."
+- name: Google Cloud
   quadrant: Platforms
   ring: Assess
   isNew: true
-  description: "[Google's version of the IAAS](https://cloud.google.com) & [Azure](https://azure.microsoft.com/en-in) are the two competitors to AWS public cloud."
-  opinion: "Even though Indix is entirely hosted in AWS for several years now, we are thinking to assess alternate solutions like Gce & Azure to understand how do they compare with Amazon."
-- name: Azure
-  quadrant: Platforms
-  ring: Hold
-  isNew: true
-  description: "[Azure](https://azure.microsoft.com/en-in) is the IAAS offering from Microsoft. We find [Azure](https://azure.microsoft.com/en-in) not as matured and refined as [AWS](https://aws.amazon.com) and hence we decided to put it on hold at Indix."
-- name: BareMetal DC
-  quadrant: Platforms
-  ring: Hold
-  isNew: true
-  description: "The traditional data center model, that has been there for decades."
-  opinion: "We don't want the overhead of infrastructure management by ourselves and also to lose the flexibility of various features like pay as you use, scaling on demand etc."
-- name: Private Cloud
-  quadrant: Platforms
-  ring: Hold
-  isNew: true
-  description: "In contrast to a public cloud like AWS, there are popular private cloud solutions (both hosted & on-premise) like Openstack/ Cloudstack etc."
-  opinion: "Though the general belief is that hosting your own private cloud makes your infrastructure more secure & cheaper, considering the amount of features in terms of security and SaaS/ PaaS offerings AWS has added over time, we decided it doesn't make sense to go with private cloud at this point. Targeting proper design & use, we have lot more optimizations to do both in Security & Cost optimization front which we believe would help us from all angles."
+  description: "[Google Cloud](https://cloud.google.com) is Google's cloud offering."
+  opinion: "Even though Indix is entirely hosted in AWS for several years now, we are thinking to assess alternate solutions like Google Cloud, especially from a cost perspective. We currently do not have a compelling reason /use case to intiate such a migration, but something that we are keeping an eye on."
 - name: HTTPS Everywhere
   quadrant: Techniques
   ring: Adopt
@@ -194,22 +171,22 @@
   ring: Adopt
   isNew: true
   description: "[Bash](https://www.gnu.org/software/bash/) is the default shell available in most linux platforms."
-  opinion: "Since we are a Linux only environment [Bash](https://www.gnu.org/software/bash) is the default scripting tool. We use it for all low level system based activities and also to create small integrations between other autmoation tools."
+  opinion: "Since we are a Linux only environment Bash is the default scripting tool. We use it for all low level system based activities and also to create small integrations between other automation tools."
 - name: Python
   quadrant: Languages
   ring: Adopt
   isNew: true
-  description: "[Python](https://www.python.org) is a OOP language that lets you work quickly and integrate systems more effectively."
-  opinion: "For the tasks that Bash can't handle we look at [Python](https://www.python.org) since there is nothing that Python can't handle. In house expertise also makes it the language of choice compared to [Ruby](https://www.ruby-lang.org/en). Python is definitely one of the most matured scripting language around with a great community of people in the Industry have been using it for years."
+  description: "[Python](https://www.python.org) is a well known scripting and programming language."
+  opinion: "Python fills the need for a high level language where Bash can be inadequate or too verbose. Python is a default in most Linux operation systems and is a requirement for configuration management with Ansible."
 - name: Ruby
   quadrant: Languages
   ring: Hold
   isNew: true
-  description: "A dynamic, open source OOP language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write."
-  opinion: "Python already filled the need for the high level language that [Bash](https://www.gnu.org/software/bash) couldn't and since we work a lot on Ansible (which is built in python), integrations were also lot more easier with [python](https://www.python.org). Overall we find Python ideal for general system administration tasks as well development of backend tools."
+  description: "[Ruby](https://www.ruby-lang.org) is a well known scripting and programming language."
+  opinion: "We started using Ruby since we were using Capistrano and Chef. Having moved away (or initiated the process of moving away) from both, and with Python filling all the needs, we want to avoid Ruby usage in any new scripts."
 - name: Go
   quadrant: Languages
   ring: Trial
   isNew: true
   description: "[Go](https://golang.org) is an open source programming language created at Google that makes it easy to build simple, reliable, and efficient software."
-  opinion: "Go has been gaining popularity lately due to its simplicity, concurrency handling & great performance without compromising the ease of development time/ effort. As the documentation says - `Go is an attempt to combine the ease of programming of an interpreted, dynamically typed language, with the efficiency and safety of a statically typed, compiled language.` Worth the effort to try it out. "
+  opinion: "Go has been gaining popularity due to its concurrency primitives & ease of development. We've built a bunch of infrastructure automation tools in Go. Go will the language of choice for any new tools we build in the Infra and Ops space."
