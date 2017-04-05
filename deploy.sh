@@ -15,7 +15,7 @@ yarn install
 # Generate Hexo static site.
 hexo clean
 hexo generate
-./node_modules/webpack/bin/webpack.js
+./node_modules/.bin/webpack
 
 # BAM! Deploy.
 hexo deploy
