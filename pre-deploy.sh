@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Test for YML errors in data files.
 # You can also use this as a pre-commit hook by using the command -
