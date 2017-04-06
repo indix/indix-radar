@@ -20,7 +20,7 @@
     "hexo-renderer-marked": "0.3.0",
     "hexo-renderer-stylus": "0.3.1",
     "hexo-server": "0.2.0",
-    "js-yaml": "^3.8.3",
+    "js-yaml": "3.8.3",
     "lodash": "4.16.2",
     "sanitize-html": "1.13.0",
     "showdown": "1.6.4",
@@ -37,7 +37,7 @@
     "node-sass": "4.5.2",
     "sass-loader": "4.1.1",
     "style-loader": "0.16.1",
-    "webpack": "1.13.2",
+    "webpack": "1.14.0",
     "webpack-dev-server": "1.16.1",
     "xmlhttprequest": "1.8.0",
     "yargs": "7.0.2"
