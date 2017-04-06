@@ -12,8 +12,7 @@ for file in source/_data/*.yml
 do
     ./node_modules/.bin/js-yaml "$file" > /dev/null
 	rc=$?
-	if [[ $rc != 0 ]]
-	then
+	if [ $rc -ne 0 ]; then
 		echo "$EMOJI Aborting commit due to YML validation failure!"
 		exit $rc
 	fi
