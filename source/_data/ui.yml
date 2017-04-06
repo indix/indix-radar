@@ -219,7 +219,7 @@
   ring: Trial
   isNew: true
   description: "Written by Facebook as an alternative to NPM, [Yarn](https://yarnpkg.com/) is a package manager. Yarn uses a deterministic algorithm to quickly flatten dependencies, resulting in a completely flat dependency tree and *very fast* installation times. Yarn is also a drop-in replacement for NPM (well, almost) and so migrating should be relatively painless."
-  opinion: Yarn is exciting to us for a lot of reasons, but mostly a flat dependency tree & very fast install times. We've begun trails of Yarn over our in-house NPM repo.
+  opinion: Yarn is exciting to us for a lot of reasons, but mostly a flat dependency tree & very fast install times. We've begun trials of Yarn over our in-house NPM repo.
 - name: Grunt
   quadrant: Testing & Build Tools
   ring: Hold
