@@ -5,8 +5,7 @@ branches:
   only:
     - source
 before_script:
-  - npm install yarn --global
-  - yarn global add webpack
+  - npm install yarn webpack@1.14.0--global
   - "./pre-deploy.sh"
 script:
   - "./deploy.sh"
