@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+ - "7"
+branches:
+  only:
+    - source
+before_script:
+  - "./pre-deploy.sh"
+script:
+  - "./deploy.sh"
+notifications:
+  slack:
+    rooms:
+      secure: HQdcZwqDY9+vGW7N9YZ2tFeU50SgqrWEQefI/injWVcndkAL7U/TFOoFvyOdxPZA1sya3aKUyAfVVv7BzMdPUfas41LgYj+iSWAaidiwqrJMp3lkvvALoXId9IDrdWcbhqJ4F51dfO8ck6Jf0S9cXtXC8/dSunWJORdr9ycgkxs=
+    on_success: change
+    on_failure: always
