@@ -2,7 +2,7 @@
 
 The [Indix™](https://www.indix.com/) technology radar is used to assess emerging technologies in the market and their adoption strategy. This is heavily inspired by the [ThoughWorks® Radar](https://github.com/thoughtworks/build-your-own-radar).
 
-[![Build Status](https://app.snap-ci.com/indix/indix-radar/branch/source/build_image)](https://app.snap-ci.com/indix/indix-radar/branch/source)
+[![Build Status](https://travis-ci.org/indix/indix-radar.svg?branch=master)](https://travis-ci.org/indix/indix-radar)
 
 ## ⚡ Usage
 
