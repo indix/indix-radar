@@ -20,7 +20,7 @@
   quadrant: Tools
   ring: Assess
   isNew: true
-  description: [Concourse CI](https://concourse.ci/index.html) comes with first-class support for containers and a fairly simple UI.
+  description: "[Concourse CI](https://concourse.ci/index.html) comes with first-class support for containers and a fairly simple UI."
   opinion: "The container support makes it a good CI tool to assess"
 - name: Jenkins
   quadrant: Tools
@@ -128,7 +128,7 @@
   quadrant: Platforms
   ring: Adopt
   isNew: true
-  description: [Marathon](https://mesosphere.github.io/marathon) is a container orchestration platform on top of Mesos
+  description: "[Marathon](https://mesosphere.github.io/marathon) is a container orchestration platform on top of Mesos."
   opinion: "We use Marathon to manage application deployments for long running services in Mesos. With its ability of advanced scheduling & automatic recovery of crashed applications, it was a good addition into our Mesos platform."
 - name: Kubernetes
   quadrant: Platforms
