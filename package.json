@@ -5,10 +5,13 @@
   "hexo": {
     "version": "3.3.1"
   },
+  "scripts": {
+    "build": "webpack"
+  },
   "dependencies": {
     "chance": "1.0.6",
-    "d3": "^4.2.6",
-    "d3-tip": "^0.7.1",
+    "d3": "4.2.6",
+    "d3-tip": "0.7.1",
     "hexo": "3.3.1",
     "hexo-deployer-git": "0.2.0",
     "hexo-generator-archive": "0.1.4",
