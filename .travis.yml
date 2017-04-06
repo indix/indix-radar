@@ -7,7 +7,7 @@ branches:
 before_script:
   - "./pre-deploy.sh"
 script:
-  - yarn cache clean
+  - npm cache clean
   - "./deploy.sh"
 notifications:
   slack:
