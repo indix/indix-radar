@@ -7,7 +7,7 @@ set -e
 npm install --global yarn
 
 # Install Hexo & WebPack.
-npm install hexo-cli@1.0.2 webpack@1.14.0 --global
+npm install hexo-cli@1.0.2 --global
 
 # Install code dependencies.
 yarn install
