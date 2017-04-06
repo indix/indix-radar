@@ -8,6 +8,7 @@ before_script:
   - "./pre-deploy.sh"
 script:
   - npm cache clean
+  - npm install webpack
   - "./deploy.sh"
 notifications:
   slack:
