@@ -1,6 +1,7 @@
 {
   "name": "indix-radar",
   "version": "1.0.0",
+  "private": true,
   "hexo": {
     "version": "3.3.1"
   },
