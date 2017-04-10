@@ -39,7 +39,7 @@
   ring: Adopt
   isNew: true
   description: "[Sass](http://sass-lang.com/) is an extension of CSS and defines a clean structured way of writing CSS by allowing to modularize CSS snippets while offering a whole slew of features which are practised in javascript environment. Features like variables, external imports, functions and extensibility allow to experience the benefits of modular patterns."
-  opinion: Given SASS advantages, we actively adopt SASS for styling our web apps. SASS adds defined structure to app styling code base and make the code easily readable. The extensible nature allowed us to define low level themes and reuse it across apps.
+  opinion: Given SASS advantages, we actively adopt it for styling our web apps. SASS adds defined structure to app styling code base and make the code easily readable. The extensible nature allowed us to define low level themes and reuse it across apps.
 - name: PostCSS
   quadrant: Languages & Techniques
   ring: Trial
@@ -267,7 +267,7 @@
   ring: Hold
   isNew: true
   description: "[Jasmine](https://jasmine.github.io/) was one of the earliest Javascript testing tools and comes as a package with in-built assertion utilities."
-  opinion: Jasmine doesn't come with a test runner, while Mocha does. We've put Jasmine on hold, with Mocha + Chai being at adopt.
+  opinion: Jasmine doesn't come with a test runner, while Mocha does. We've put Jasmine on hold, with Mocha + Chai being adopted.
 - name: Nock
   quadrant: Testing & Build Tools
   ring: Assess
