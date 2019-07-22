@@ -10,4 +10,5 @@ archives/
 images/
 yarn-error.log
 npm-error.log
+yarn.lock
 
