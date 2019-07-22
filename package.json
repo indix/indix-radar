@@ -25,7 +25,7 @@
     "hexo-renderer-stylus": "0.3.1",
     "hexo-server": "0.2.0",
     "js-yaml": "3.8.3",
-    "lodash": "4.16.2",
+    "lodash": ">=4.17.13",
     "sanitize-html": "1.13.0",
     "showdown": "1.6.4",
     "yamljs": "0.2.9"
