@@ -27,7 +27,7 @@
     "js-yaml": "3.8.3",
     "lodash": ">=4.17.13",
     "sanitize-html": "1.13.0",
-    "showdown": "1.6.4",
+    "showdown": "1.9.1",
     "yamljs": "0.2.9"
   },
   "devDependencies": {
